@@ -7,6 +7,7 @@ const boxMoving = () =>{
             currentBox++;
             if(currentBox == box.length){
                 clearInterval(boxLoop)
+                boxWrap.classList.add('active')
             }
         }
         const boxLoop = setInterval(boxAnimation , 200);
@@ -16,6 +17,7 @@ const contentScroll = () =>{
         width = contentWrap.offsetWidth,
         scroll = document.querySelector('.scroll-bar'),
         scrollBg = scroll.querySelector('span');
+        console.log(width);
     return {
         init : function(){
             console.log(width);
