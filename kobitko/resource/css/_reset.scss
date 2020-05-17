@@ -1,0 +1,110 @@
+html,
+body,
+header,
+nav,
+main,
+aside,
+section,
+article,
+div,
+p,
+input,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+address {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+	font-weight: 400;
+	line-height: 1;
+	box-sizing: border-box;
+}
+
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+input,
+button,
+textarea {
+	background: none;
+	border: none;
+	font-size: 100%;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	&:active,
+	&:focus {
+		color: inherit;
+	}
+}
+input {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	&[type="password"]{
+		font-family:sans-serif;
+	}
+}
+address {
+	font-style: normal;
+}
+
+textarea {
+	resize: none;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+caption {
+	overflow: hidden;
+	position: absolute;
+	width: 0;
+	height: 0;
+	transform: scale(0);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	&:active,
+	&:focus {
+		border: none;
+		outline: none;
+	}
+}
+img {
+	vertical-align: top;
+}
+
+$fonts: (
+	"Ligth": 300,
+	"Regular": 400,
+	"Medium": 500,
+	"Bold": 700,
+	"Black": 900
+);
+@each $font, $weight in $fonts {
+	@font-face {
+		font-family: "Roboto";
+		src: url("../fonts/Roboto-#{$font}.ttf") format("ttf"), url("../fonts/Roboto-#{$font}.ttf") format("ttf");
+		font-weight: #{$weight};
+		font-style: normal;
+	}
+}
