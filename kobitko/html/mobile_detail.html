@@ -16,7 +16,7 @@
         </div>
         <h2>비트코인(BTC/KRW)</h2>
         <div class="left">
-          <a href="#" class="navTrigger" data-fx="Active"
+          <a href="#" class="nav"
             ><i></i><i></i><i></i
           ></a>
         </div>
@@ -32,11 +32,11 @@
           </div>
           <div class="graph"></div>
         </span>
-        <div class="tab-lnb">
-            <a href="#" class="active" data-selector="tab1" title="주문">주문</a>
-            <a href="#" title="호가" data-selector="tab2">호가</a>
-            <a href="#" title="차트" data-selector="tab3">차트</a>
-            <a href="#" title="시세" data-selector="tab4">시세</a>
+        <div class="tab type1">
+            <button type="button" class="active" data-selector="tab1" title="주문">주문</button>
+            <button type="button" title="호가" data-selector="tab2">호가</button>
+            <button type="button" title="차트" data-selector="tab3">차트</button>
+            <button type="button" title="시세" data-selector="tab4">시세</button>
         </div>
         <div class="tab-cont ask-wrap active" data-target="tab1">
           <div class="inner">
@@ -187,10 +187,10 @@
             </a>
           </div>
           <div class="oder-section"
-            ><div class="tab">
-              <a href="#" class="active" title="매수" data-selector="tab01">매수</a>
-              <a href="#" class="" title="매도" data-selector="tab02">매도</a>
-              <a href="#" class="" title="거래내역" data-selector="tab03">거래내역</a>
+            ><div class="tab type2">
+              <button type="button" class="active" title="매수" data-selector="tab01">매수</button>
+              <button type="button" class="" title="매도" data-selector="tab02">매도</button>
+              <button type="button" class="" title="거래내역" data-selector="tab03">거래내역</button>
             </div>
             <div class="tab-cont active" data-target="tab01">
               <div class="check-wrap">
@@ -884,7 +884,7 @@
         </div>
         <!-- /.tab-cont -->
         <div class="tab-cont" data-target="tab4">
-          <div class="inner-tab">
+          <div class="tab center">
             <button type="button" data-selector="inner-tab1" class="active">체결</button>
             <button type="button" data-selector="inner-tab2">일별</button>
           </div>
