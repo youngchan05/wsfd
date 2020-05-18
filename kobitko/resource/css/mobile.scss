@@ -35,7 +35,12 @@ body {
     }
   }
 }
-
+.tab-cont {
+  display:none;
+  &.active{
+    display:block;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -118,6 +123,7 @@ header {
 
   .tab {
     padding: 12px 16px;
+  
 
     div {
       display: flex;
@@ -128,7 +134,10 @@ header {
       width: 33.33%;
       line-height: 28px;
       font-size: 16px;
-
+      &.active {
+        color:#093687;
+        font-weight: 500;
+      }
       + button {
         border-left: 1px solid #707070;
       }
@@ -175,6 +184,11 @@ header {
         line-height: 12px;
         font-size: 14px;
         font-weight: 500;
+      }
+      em {
+        display: block;
+        color: #999;
+        font-size: 11px;
       }
     }
 
@@ -352,44 +366,41 @@ thead {
   display: flex;
   border-bottom: 1px solid #707070;
   padding: 0 40px;
-
-  li {
+  a {
+    display: block;
     width: 25%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 34px;
 
-    a {
-      display: block;
-      text-align: center;
-      font-size: 14px;
-      line-height: 34px;
+    &.active {
+      position: relative;
+      font-weight: 700;
+      color: #093687;
 
-      &.active {
-        position: relative;
-        font-weight: 700;
-        color: #093687;
-
-        &::after {
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 1px;
-          background-color: #093687;
-          content: "";
-          display: block;
-        }
+      &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #093687;
+        content: "";
+        display: block;
       }
     }
   }
 }
 
 .ask-wrap {
-  display: flex;
+  position: relative;
   height: calc(100% - 93px);
 
   > .inner {
     position: relative;
     width: 40%;
     padding-bottom: 30px;
+    height:100%;
     &.full {
       width: 100%;
     }
@@ -464,6 +475,9 @@ thead {
   }
 }
 .oder-section {
+  position: absolute;
+  right:0;
+  top:0;
   width: 60%;
   p.total {
     float: left;
@@ -476,43 +490,39 @@ thead {
     padding: 0 12px;
     box-sizing: border-box;
   }
-  ul {
-    &.tab {
-      display: flex;
+  .tab {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding: 0;
+    a {
+      display: block;
       width: 100%;
-      margin-bottom: 0;
-      overflow: hidden;
-      padding: 0;
-      li {
-        width: 33.333%;
-        height: 34px;
-        + li {
-          border-left: 1px solid #fff;
-        }
-        a {
-          display: block;
-          width: 100%;
-          height: 34px;
-          background-color: #f4f4f4;
-          line-height: 34px;
-          color: #000000;
-          font-size: 14px;
-          text-align: center;
-          &.on {
-            font-weight: 700;
-            color: #093687;
-            background-color: #fff;
-            font-weight: 600;
-          }
-        }
-        &.ty01 {
-          .on {
-            background: #fff;
-            color: #c4291c;
-          }
-        }
+      height: 34px;
+      width: 33.333%;
+      height: 34px;
+      border-left: 1px solid #fff;
+      background-color: #f4f4f4;
+      line-height: 34px;
+      color: #000000;
+      font-size: 14px;
+      text-align: center;
+      &.active {
+        font-weight: 700;
+        color: #093687;
+        background-color: #fff;
+        font-weight: 600;
       }
     }
+    &.ty01 {
+      .on {
+        background: #fff;
+        color: #c4291c;
+      }
+    }
+  }
+  ul {
     &.price {
       margin: 0 12px;
       border-bottom: 0 solid #eee;
@@ -923,6 +933,7 @@ thead {
     &.active {
       border-color: #093687;
       color: #093687;
+      border-left:1px solid #093687;
     }
   }
 }

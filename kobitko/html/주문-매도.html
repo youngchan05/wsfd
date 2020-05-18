@@ -32,13 +32,13 @@
           </div>
           <div class="graph"></div>
         </span>
-        <ul class="tab-lnb">
-          <li><a href="#" class="active" title="주문">주문</a></li>
-          <li><a href="#" title="호가">호가</a></li>
-          <li><a href="#" title="차트">차트</a></li>
-          <li><a href="#" title="시세">시세</a></li>
-        </ul>
-        <div class="tab-cont ask-wrap">
+        <div class="tab-lnb">
+            <a href="#" class="active" data-selector="tab1" title="주문">주문</a>
+            <a href="#" title="호가" data-selector="tab2">호가</a>
+            <a href="#" title="차트" data-selector="tab3">차트</a>
+            <a href="#" title="시세" data-selector="tab4">시세</a>
+        </div>
+        <div class="tab-cont ask-wrap active" data-target="tab1">
           <div class="inner">
             <div class="scroll">
               <table class="askprice-table">
@@ -186,129 +186,796 @@
               수량(BTC)
             </a>
           </div>
-          <span class="oder-section"
-            ><ul class="tab">
-              <li class="ty01"><a href="#" class="" title="매수">매수</a></li>
-              <li class="ty02"><a href="#" class="on" title="매도">매도</a></li>
-              <li class="ty03">
-                <a href="#" class="" title="거래내역">거래내역</a>
-              </li>
-            </ul>
-            <div class="check-wrap">
-              <span class="checkbox">
-                <input type="radio" nama="check" />
-                <label for="">지정가</label>
-              </span>
-              <span class="checkbox">
-                <input type="radio" nama="check" />
-                <label for="">시장가</label>
-              </span>
+          <div class="oder-section"
+            ><div class="tab">
+              <a href="#" class="active" title="매수" data-selector="tab01">매수</a>
+              <a href="#" class="" title="매도" data-selector="tab02">매도</a>
+              <a href="#" class="" title="거래내역">거래내역</a>
             </div>
-            <dl class="ty01 total">
-              <dt>주문가능</dt>
-              <dd>
-                <strong>0 BTC</strong>
-                <p>0 KRW</p>
-              </dd>
-            </dl>
-            <ul class="price">
-              <li>
-                <a href="#" class="minus" title="-">-</a>
-                <div class="inputB">
-                  <span class="inner"
-                    ><p>가격</p>
-                    <input
-                      type="number"
-                      step="0.01"
-                      class="txt"
-                      value="11453000"
-                  /></span>
-                </div>
-                <a href="#" class="plus" title="+">+</a>
-              </li>
-              <li>
-                <div class="current">
+            <div class="tab-cont active" data-target="tab01">
+              <div class="check-wrap">
+                <span class="checkbox">
+                  <input type="radio" nama="check" />
+                  <label for="">지정가</label>
+                </span>
+                <span class="checkbox">
+                  <input type="radio" nama="check" />
+                  <label for="">시장가</label>
+                </span>
+              </div>
+              <dl class="ty01 total">
+                <dt>주문가능</dt>
+                <dd><strong>0 KRW</strong></dd>
+              </dl>
+              <ul class="price">
+                <li>
+                  <a href="#" class="minus" title="-">-</a>
+                  <div class="inputB">
+                    <span class="inner"
+                      ><p>가격</p>
+                      <input
+                        type="number"
+                        step="0.01"
+                        class="txt"
+                        value="11453000"
+                    /></span>
+                  </div>
+                  <a href="#" class="plus" title="+">+</a>
+                </li>
+                <li>
+                  <div class="current">
+                    <div class="selectB">
+                      <select
+                        ><option value="100">100%</option
+                        ><option value="95">95%</option
+                        ><option value="90">90%</option
+                        ><option value="85">85%</option
+                        ><option value="80">80%</option
+                        ><option value="75">75%</option
+                        ><option value="70">70%</option
+                        ><option value="65">65%</option
+                        ><option value="60">60%</option
+                        ><option value="55">55%</option
+                        ><option value="50">50%</option
+                        ><option value="45">45%</option
+                        ><option value="40">40%</option
+                        ><option value="35">35%</option
+                        ><option value="30">30%</option
+                        ><option value="25">25%</option
+                        ><option value="20">20%</option
+                        ><option value="15">15%</option
+                        ><option value="10">10%</option
+                        ><option value="5">5%</option
+                        ><option value="0">현재가 대비 %</option
+                        ><option value="-5">-5%</option
+                        ><option value="-10">-10%</option
+                        ><option value="-15">-15%</option
+                        ><option value="-20">-20%</option
+                        ><option value="-25">-25%</option
+                        ><option value="-30">-30%</option
+                        ><option value="-35">-35%</option
+                        ><option value="-40">-40%</option
+                        ><option value="-45">-45%</option
+                        ><option value="-50">-50%</option
+                        ><option value="-55">-55%</option
+                        ><option value="-60">-60%</option
+                        ><option value="-65">-65%</option
+                        ><option value="-70">-70%</option
+                        ><option value="-75">-75%</option
+                        ><option value="-80">-80%</option
+                        ><option value="-85">-85%</option
+                        ><option value="-90">-90%</option
+                        ><option value="-95">-95%</option
+                        ><option value="-100">-100%</option></select
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inputB">
+                    <span class="inner"
+                      ><p>수량</p>
+                      <input type="number" step="0.01" value="0"
+                    /></span>
+                  </div>
                   <div class="selectB">
                     <select
-                      ><option value="100">100%</option
-                      ><option value="95">95%</option
-                      ><option value="90">90%</option
-                      ><option value="85">85%</option
-                      ><option value="80">80%</option
-                      ><option value="75">75%</option
-                      ><option value="70">70%</option
-                      ><option value="65">65%</option
-                      ><option value="60">60%</option
-                      ><option value="55">55%</option
-                      ><option value="50">50%</option
-                      ><option value="45">45%</option
-                      ><option value="40">40%</option
-                      ><option value="35">35%</option
-                      ><option value="30">30%</option
-                      ><option value="25">25%</option
-                      ><option value="20">20%</option
-                      ><option value="15">15%</option
                       ><option value="10">10%</option
-                      ><option value="5">5%</option
-                      ><option value="0">현재가 대비 %</option
-                      ><option value="-5">-5%</option
-                      ><option value="-10">-10%</option
-                      ><option value="-15">-15%</option
-                      ><option value="-20">-20%</option
-                      ><option value="-25">-25%</option
-                      ><option value="-30">-30%</option
-                      ><option value="-35">-35%</option
-                      ><option value="-40">-40%</option
-                      ><option value="-45">-45%</option
-                      ><option value="-50">-50%</option
-                      ><option value="-55">-55%</option
-                      ><option value="-60">-60%</option
-                      ><option value="-65">-65%</option
-                      ><option value="-70">-70%</option
-                      ><option value="-75">-75%</option
-                      ><option value="-80">-80%</option
-                      ><option value="-85">-85%</option
-                      ><option value="-90">-90%</option
-                      ><option value="-95">-95%</option
-                      ><option value="-100">-100%</option></select
+                      ><option value="25">25%</option
+                      ><option value="50">50%</option
+                      ><option value="99.95002498750625">100%</option
+                      ><option value="0">가능</option></select
                     >
                   </div>
-                </div>
-              </li>
-              <li>
-                <div class="inputB">
-                  <span class="inner"
-                    ><p>수량</p>
-                    <input type="number" step="0.01" value="0"
-                  /></span>
-                </div>
-                <div class="selectB">
-                  <select
-                    ><option value="10">10%</option
-                    ><option value="25">25%</option
-                    ><option value="50">50%</option
-                    ><option value="99.95002498750625">100%</option
-                    ><option value="0">가능</option></select
-                  >
-                </div>
-              </li>
-            </ul>
-            <div class="total">
-              <span class="inputTotal"
-                ><label>총액</label
-                ><input type="text" placeholder="0" value="0" /><em
-                  >원</em
-                ></span
-              >
+                </li>
+              </ul>
+              <div class="total">
+                <span class="inputTotal"
+                  ><label>총액</label
+                  ><input type="text" placeholder="0" value="0" /><em
+                    >원</em
+                  ></span
+                >
+              </div>
+              <ul class="btnB">
+                <li class="all">
+                  <a class="" href="#" title="로그인">초기화</a>
+                  <a class="btnBuy" href="#" title="로그인">매수</a>
+                </li>
+              </ul>
             </div>
-            <ul class="btnB">
-              <li class="">
-                <a class="" href="#" title="로그인">초기화</a>
-                <a class="btnSell" href="#" title="로그인">매도</a>
-              </li>
-            </ul>
-          </span>
+            <!-- /.tab-cont -->
+            <div class="tab-cont" data-target="tab02">
+              <div class="check-wrap">
+                <span class="checkbox">
+                  <input type="radio" nama="check" />
+                  <label for="">지정가</label>
+                </span>
+                <span class="checkbox">
+                  <input type="radio" nama="check" />
+                  <label for="">시장가</label>
+                </span>
+              </div>
+              <dl class="ty01 total">
+                <dt>주문가능</dt>
+                <dd>
+                  <strong>0 BTC</strong>
+                  <p>0 KRW</p>
+                </dd>
+              </dl>
+              <ul class="price">
+                <li>
+                  <a href="#" class="minus" title="-">-</a>
+                  <div class="inputB">
+                    <span class="inner"
+                      ><p>가격</p>
+                      <input
+                        type="number"
+                        step="0.01"
+                        class="txt"
+                        value="11453000"
+                    /></span>
+                  </div>
+                  <a href="#" class="plus" title="+">+</a>
+                </li>
+                <li>
+                  <div class="current">
+                    <div class="selectB">
+                      <select
+                        ><option value="100">100%</option
+                        ><option value="95">95%</option
+                        ><option value="90">90%</option
+                        ><option value="85">85%</option
+                        ><option value="80">80%</option
+                        ><option value="75">75%</option
+                        ><option value="70">70%</option
+                        ><option value="65">65%</option
+                        ><option value="60">60%</option
+                        ><option value="55">55%</option
+                        ><option value="50">50%</option
+                        ><option value="45">45%</option
+                        ><option value="40">40%</option
+                        ><option value="35">35%</option
+                        ><option value="30">30%</option
+                        ><option value="25">25%</option
+                        ><option value="20">20%</option
+                        ><option value="15">15%</option
+                        ><option value="10">10%</option
+                        ><option value="5">5%</option
+                        ><option value="0">현재가 대비 %</option
+                        ><option value="-5">-5%</option
+                        ><option value="-10">-10%</option
+                        ><option value="-15">-15%</option
+                        ><option value="-20">-20%</option
+                        ><option value="-25">-25%</option
+                        ><option value="-30">-30%</option
+                        ><option value="-35">-35%</option
+                        ><option value="-40">-40%</option
+                        ><option value="-45">-45%</option
+                        ><option value="-50">-50%</option
+                        ><option value="-55">-55%</option
+                        ><option value="-60">-60%</option
+                        ><option value="-65">-65%</option
+                        ><option value="-70">-70%</option
+                        ><option value="-75">-75%</option
+                        ><option value="-80">-80%</option
+                        ><option value="-85">-85%</option
+                        ><option value="-90">-90%</option
+                        ><option value="-95">-95%</option
+                        ><option value="-100">-100%</option></select
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inputB">
+                    <span class="inner"
+                      ><p>수량</p>
+                      <input type="number" step="0.01" value="0"
+                    /></span>
+                  </div>
+                  <div class="selectB">
+                    <select
+                      ><option value="10">10%</option
+                      ><option value="25">25%</option
+                      ><option value="50">50%</option
+                      ><option value="99.95002498750625">100%</option
+                      ><option value="0">가능</option></select
+                    >
+                  </div>
+                </li>
+              </ul>
+              <div class="total">
+                <span class="inputTotal"
+                  ><label>총액</label
+                  ><input type="text" placeholder="0" value="0" /><em
+                    >원</em
+                  ></span
+                >
+              </div>
+              <ul class="btnB">
+                <li class="">
+                  <a class="" href="#" title="로그인">초기화</a>
+                  <a class="btnSell" href="#" title="로그인">매도</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.tab-cont -->
+          </div>
         </div>
+        <div class="tab-cont ask-wrap" data-target="tab2">
+          <div class="inner full">
+            <div class="scroll">
+              <div class="hoga-wrap">
+                <ul class="askprice-table type02">
+                  <li class="down-section">
+                    <a href="#"
+                      ><span class="bar">
+                        <span class="num"><p>1,045</p></span
+                        ><span> </span></span
+                      ><span class="up"
+                        ><div>
+                          <strong>11,429,000</strong><i>+0.92%</i>
+                        </div></span
+                      ></a
+                    >
+                  </li>
+                  <li class="down-section">
+                    <a href="#"
+                      ><span class="bar">
+                        <span class="num"><p>1,045</p></span
+                        ><span> </span></span
+                      ><span class="up"
+                        ><div>
+                          <strong>11,429,000</strong><i>+0.92%</i>
+                        </div></span
+                      ></a
+                    >
+                  </li>
+                  <li class="down-section">
+                    <a href="#"
+                      ><span class="bar">
+                        <span class="num"><p>1,045</p></span
+                        ><span> </span></span
+                      ><span class="up"
+                        ><div>
+                          <strong>11,429,000</strong><i>+0.92%</i>
+                        </div></span
+                      ></a
+                    >
+                  </li>
+                  <li class="down-section">
+                    <a href="#"
+                      ><span class="bar">
+                        <span class="num"><p>1,045</p></span
+                        ><span> </span></span
+                      ><span class="up"
+                        ><div>
+                          <strong>11,429,000</strong><i>+0.92%</i>
+                        </div></span
+                      ></a
+                    >
+                  </li>
+                  <li class="down-section">
+                    <a href="#"
+                      ><span class="bar">
+                        <span class="num"><p>1,045</p></span
+                        ><span> </span></span
+                      ><span class="up"
+                        ><div>
+                          <strong>11,429,000</strong><i>+0.92%</i>
+                        </div></span
+                      ></a
+                    >
+                  </li>
+                  <li class="down-section">
+                    <a href="#"
+                      ><span class="bar">
+                        <span class="num"><p>1,045</p></span
+                        ><span> </span></span
+                      ><span class="up"
+                        ><div>
+                          <strong>11,429,000</strong><i>+0.92%</i>
+                        </div></span
+                      ></a
+                    >
+                  </li>
+                  <li class="down-section">
+                    <a href="#"
+                      ><span class="bar">
+                        <span class="num"><p>1,045</p></span
+                        ><span> </span></span
+                      ><span class="up"
+                        ><div>
+                          <strong>11,429,000</strong><i>+0.92%</i>
+                        </div></span
+                      ></a
+                    >
+                  </li>
+                  <li class="down-section">
+                    <a href="#"
+                      ><span class="bar">
+                        <span class="num"><p>1,045</p></span
+                        ><span> </span></span
+                      ><span class="up"
+                        ><div>
+                          <strong>11,429,000</strong><i>+0.92%</i>
+                        </div></span
+                      ></a
+                    >
+                  </li>
+                  <li class="down-section">
+                    <a href="#"
+                      ><span class="bar">
+                        <span class="num"><p>1,045</p></span
+                        ><span> </span></span
+                      ><span class="up"
+                        ><div>
+                          <strong>11,429,000</strong><i>+0.92%</i>
+                        </div></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+                <div class="right-info">
+                  <ul>
+                    <li>
+                      <div class="box">
+                        <p class="info">
+                          <span class="title">거래량</span
+                          ><span class="price">3,043 BTC</span>
+                        </p>
+                        <p class="info">
+                          <span class="title">거래금</span
+                          ><span class="price">34,651 백만원</span>
+                        </p>
+                        <p class="time"><span>(최근24시간)</span></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <p class="info">
+                          <span class="title">52주최고</span
+                          ><span class="price up">16,840,000</span>
+                        </p>
+                        <p class="time"><span>(2019.06.26)</span></p>
+                        <p class="info">
+                          <span class="title">52주최저</span
+                          ><span class="price down">5,489,000</span>
+                        </p>
+                        <p class="time"><span>(2020.03.13)</span></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <p class="info">
+                          <span class="title">전일종가</span
+                          ><span class="price">11,325,000</span>
+                        </p>
+                        <p class="info">
+                          <span class="title">당일고가</span
+                          ><span class="price up">11,511,000</span>
+                        </p>
+                        <p class="time"><span class="up">+1.64%</span></p>
+                        <p class="info">
+                          <span class="title">당일저가</span
+                          ><span class="price down">11,275,000</span>
+                        </p>
+                        <p class="time"><span class="down">-0.44%</span></p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hoga-wrap right">
+                <ul class="askprice-table type02">
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                  <li class="up-section">
+                    <a href="#"
+                      ><span class="up"
+                        ><div style="">
+                          <strong>11,438,000</strong><i>+1.00%</i>
+                        </div></span
+                      ><span class="bar">
+                        <span class="num"><p>8,400,727</p></span
+                        ><span> </span></span
+                    ></a>
+                  </li>
+                </ul>
+                <ul class="left-info">
+                  <li class="header">
+                    <p>
+                      <span class="label">체결강도</span
+                      ><span class="txt">+134.36%</span>
+                    </p>
+                  </li>
+                  <li class="headerlabel">
+                    <p>
+                      <span class="labelL">체결가</span
+                      ><span class="labelR">체결액</span>
+                    </p>
+                  </li>
+                  <li class="list">
+                    <p>
+                      <span class="price up">11,435,000</span
+                      ><span class="down cur">943,166</span>
+                    </p>
+                    <p>
+                      <span class="price up">11,435,000</span
+                      ><span class="down cur">200,334</span>
+                    </p>
+                    <p>
+                      <span class="price up">11,435,000</span
+                      ><span class="down cur">1,009</span>
+                    </p>
+                    <p>
+                      <span class="price up">11,435,000</span
+                      ><span class="down cur">1,018</span>
+                    </p>
+                    <p>
+                      <span class="price up">11,435,000</span
+                      ><span class="down cur">1,098</span>
+                    </p>
+                    <p>
+                      <span class="price up">11,436,000</span
+                      ><span class="up cur">423,132</span>
+                    </p>
+                    <p>
+                      <span class="price up">11,435,000</span
+                      ><span class="down cur">1,054</span>
+                    </p>
+                    <p>
+                      <span class="price up">11,436,000</span
+                      ><span class="up cur">4,739,078</span>
+                    </p>
+                    <p>
+                      <span class="price up">11,436,000</span
+                      ><span class="down cur">4,998</span>
+                    </p>
+                    <p>
+                      <span class="price up">11,436,000</span
+                      ><span class="down cur">40,277</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bottom-select">
+              <p>3.305</p>
+              <a href="" class="select">
+                수량(BTC)
+              </a>
+              <p>10.305</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-cont" data-target="tab3">
+          차트영역
+        </div>
+        <!-- /.tab-cont -->
+        <div class="tab-cont" data-target="tab4">
+          <div class="inner-tab">
+            <button type="button" data-selector="inner-tab1" class="active">체결</button>
+            <button type="button" data-selector="inner-tab2">일별</button>
+          </div>
+          <div class="tab-cont active" data-target="inner-tab1">
+            <div class="quote-table">
+              <table>
+                <colgroup>
+                  <col style="width: 25%;" />
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>체결시간</th>
+                    <th>체결가격(KRW)</th>
+                    <th>체결량(BTC)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>19:39:55</td>
+                    <td class="up">11,381,000</td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>19:39:55</td>
+                    <td class="up">11,381,000</td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>19:39:55</td>
+                    <td class="up">11,381,000</td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>19:39:55</td>
+                    <td class="up">11,381,000</td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>19:39:55</td>
+                    <td class="up">11,381,000</td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-cont" data-target="inner-tab2">
+            <div class="quote-table">
+              <table>
+                <colgroup>
+                  <col style="width: 16%;" />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>일자</th>
+                    <th>체결가격(KRW)</th>
+                    <th>전일대비</th>
+                    <th>거래량(BTC)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>05.16</td>
+                    <td class="up">11,381,000</td>
+                    <td class="percent up">
+                      <p>+0.76%</p>
+                      <em>86,000</em>
+                    </td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>05.16</td>
+                    <td class="up">11,381,000</td>
+                    <td class="percent up">
+                      <p>+0.76%</p>
+                      <em>86,000</em>
+                    </td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>05.16</td>
+                    <td class="up">11,381,000</td>
+                    <td class="percent up">
+                      <p>+0.76%</p>
+                      <em>86,000</em>
+                    </td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>05.16</td>
+                    <td class="up">11,381,000</td>
+                    <td class="percent up">
+                      <p>+0.76%</p>
+                      <em>86,000</em>
+                    </td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>05.16</td>
+                    <td class="up">11,381,000</td>
+                    <td class="percent up">
+                      <p>+0.76%</p>
+                      <em>86,000</em>
+                    </td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>05.16</td>
+                    <td class="up">11,381,000</td>
+                    <td class="percent up">
+                      <p>+0.76%</p>
+                      <em>86,000</em>
+                    </td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                  <tr>
+                    <td>05.16</td>
+                    <td class="up">11,381,000</td>
+                    <td class="percent up">
+                      <p>+0.76%</p>
+                      <em>86,000</em>
+                    </td>
+                    <td class="down">0.000009180</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- /.tab-cont -->
+          <!-- /.tab-cont -->
+        </div>
+        <!-- /.tab-cont -->
       </div>
     </div>
     <script src="../resource/js/jquery-3.3.1.min.js"></script>
