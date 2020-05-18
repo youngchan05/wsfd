@@ -472,11 +472,23 @@ body {
 					}
 
 					.down {
+						display:inline-block;
+						padding-right:14px;
 						color: #638FF2;
+						@include bg(bg/bg_down01,$pos:right center);
+						&.ty1 {
+							@include bg(bg/bg_down02,$pos:right center);
+						}
 					}
 
 					.up {
+						display:inline-block;
+						padding-right:14px;
 						color: #C4291C;
+						@include bg(bg/bg_up01,$pos:right center);
+						&.ty1 {
+							@include bg(bg/bg_up02,$pos:right center);
+						}
 					}
 				}
 
