@@ -13,8 +13,11 @@ $(function () {
 		$(this).addClass('active').siblings().removeClass('active');
 		$("[data-target=" + $targetName + "]").addClass("active").siblings().removeClass('active');
 	});
-	$('.nav').on('click',function(){
+	$('.nav').on('click', function () {
 		$(this).toggleClass('active');
 		$('.nav-wrap').toggleClass('active');
 	})
+	$(window).on("load", function () {
+		$(".mCustomScrollbar").mCustomScrollbar();
+	});
 })
