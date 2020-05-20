@@ -815,6 +815,10 @@ body {
 	background-color: #fff;
 	box-shadow: 2px 2px 4px #dee1e7;
 
+	.tab-cont {
+		height: 100%;
+	}
+
 	.search-wrap {
 		display: flex;
 		border-bottom: 1px solid #E9EAED;
@@ -876,7 +880,7 @@ body {
 	}
 
 	.scroll-section {
-		height: calc(100% - 100px);
+		height: calc(100% - 137px);
 		overflow: auto;
 	}
 }

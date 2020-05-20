@@ -20,4 +20,21 @@ $(function () {
 	$(window).on("load", function () {
 		$(".mCustomScrollbar").mCustomScrollbar();
 	});
+	$(window).scroll(function () {
+		$scroll = $(this).scrollTop();
+		console.log($scroll)
+		if ($scroll > 100) {
+			$('.right-section').css('top', $scroll);
+			console.log($('.time-section').offset().top, $scroll)
+			if (600 < $scroll) {
+				console.log(1111);
+				$('.right-section').css({
+					'bottom': 55,
+					'top': 'auto'
+				});
+			}
+		} else {
+			$('.right-section').css('top', 90)
+		}
+	})
 })
