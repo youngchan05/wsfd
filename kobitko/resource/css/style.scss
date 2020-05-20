@@ -1,9 +1,5 @@
 //mixin
-@mixin bg($url,
-	$type: png,
-	$repeat: no-repeat,
-	$pos: center,
-	$color: transparent) {
+@mixin bg($url, $type: png, $repeat: no-repeat, $pos: center, $color: transparent) {
 	background: url("../images/#{$url}.#{$type}") $repeat $pos $color;
 }
 
@@ -64,14 +60,14 @@ body {
 				line-height: 18px;
 				color: rgba($color: $black, $alpha: 0.8);
 				font-weight: 500;
-
+				&.active,
 				&:hover {
 					color: $black;
 					font-weight: 700;
 				}
 			}
 
-			+li {
+			+ li {
 				margin-left: 30px;
 			}
 		}
@@ -88,13 +84,13 @@ body {
 				font-weight: 500;
 			}
 
-			+li {
+			+ li {
 				margin-left: 20px;
 			}
 		}
 
 		.language-box {
-			>button {
+			> button {
 				padding-right: 12px;
 				@include bg(btn/btn_lan, $pos: right center);
 				cursor: pointer;
@@ -107,7 +103,7 @@ body {
 	}
 }
 
-//visual 
+//visual
 .visual-wrap {
 	position: relative;
 	overflow: hidden;
@@ -162,9 +158,9 @@ body {
 				font-size: 16px;
 				line-height: 48px;
 				text-align: center;
-				background-color: #2960D7;
+				background-color: #2960d7;
 
-				+a {
+				+ a {
 					margin-left: 10px;
 					background-color: #173582;
 				}
@@ -178,16 +174,16 @@ body {
 	background-color: #525774;
 	text-align: center;
 
-	>span {
+	> span {
 		display: inline-block;
 		font-size: 20px;
 		line-height: 27px;
 		color: $white;
 		padding: 30px 0 30px 170px;
-		@include bg(bg/bg_banner, $pos :left center);
+		@include bg(bg/bg_banner, $pos: left center);
 
 		span {
-			color: #6B9DDF;
+			color: #6b9ddf;
 		}
 	}
 }
@@ -201,7 +197,7 @@ body {
 	.chart {
 		width: calc(33.333% - 24.666666px);
 
-		+.chart {
+		+ .chart {
 			margin-left: 74px;
 		}
 	}
@@ -217,24 +213,24 @@ body {
 				margin-bottom: 10px;
 				font-size: 28px;
 				line-height: 34px;
-				color: #2B2B2B;
+				color: #2b2b2b;
 			}
 
 			.eng {
 				font-size: 16px;
 				line-height: 19px;
-				color: #2B2B2B;
+				color: #2b2b2b;
 			}
 		}
 
 		.right {
 			text-align: right;
-			$obj: (up :#C4291C,
-					down :#638FF2,
-				);
+			$obj: (
+				up: #c4291c,
+				down: #638ff2,
+			);
 
-			@each $condi,
-			$color in $obj {
+			@each $condi, $color in $obj {
 				&.#{$condi} {
 					.price {
 						color: $color;
@@ -242,9 +238,8 @@ body {
 
 					.condition {
 						padding-left: 20px;
-						@include bg(bg/bg_#{$condi}, $pos :left center);
+						@include bg(bg/bg_#{$condi}, $pos: left center);
 						color: $color;
-
 					}
 				}
 			}
@@ -252,7 +247,6 @@ body {
 			.price {
 				font-size: 28px;
 				line-height: 34px;
-
 			}
 
 			.condition {
@@ -280,16 +274,15 @@ body {
 			padding-left: 20px;
 			font-size: 12px;
 			line-height: 14px;
-			color: #2B2B2B;
+			color: #2b2b2b;
 
-			@each $obj in today,
-			ago {
+			@each $obj in today, ago {
 				&.#{$obj} {
-					@include bg(bg/bg_#{$obj}, $pos :left center);
+					@include bg(bg/bg_#{$obj}, $pos: left center);
 				}
 			}
 
-			+span {
+			+ span {
 				margin-left: 22px;
 			}
 		}
@@ -311,7 +304,7 @@ body {
 	.tab {
 		display: flex;
 		margin-bottom: 22px;
-		border-bottom: 1px solid #F2F2F2;
+		border-bottom: 1px solid #f2f2f2;
 
 		button {
 			position: relative;
@@ -323,7 +316,7 @@ body {
 
 			&.active {
 				font-weight: 700;
-				color: #F3A068;
+				color: #f3a068;
 
 				&::after {
 					display: block;
@@ -332,21 +325,21 @@ body {
 					bottom: 0;
 					width: 100%;
 					height: 2px;
-					background-color: #F3A068;
+					background-color: #f3a068;
 					content: "";
 				}
 			}
 
-			+button {
+			+ button {
 				margin-left: 17px;
 			}
 
 			&.like {
 				padding-left: 20px;
-				@include bg(bg/bg_star, $pos :left bottom 5px);
+				@include bg(bg/bg_star, $pos: left bottom 5px);
 
 				&.active {
-					@include bg(bg/bg_star_on, $pos :left bottom 5px);
+					@include bg(bg/bg_star_on, $pos: left bottom 5px);
 				}
 			}
 		}
@@ -355,7 +348,7 @@ body {
 	.filter {
 		display: flex;
 
-		>div {
+		> div {
 			position: relative;
 			display: block;
 
@@ -369,7 +362,7 @@ body {
 				cursor: pointer;
 
 				&:checked {
-					+span {
+					+ span {
 						background-color: #616161;
 						color: $white;
 						font-weight: 400;
@@ -377,24 +370,24 @@ body {
 				}
 			}
 
-			>span {
+			> span {
 				display: inline-block;
 				width: 92px;
 				height: 32px;
 				line-height: 32px;
 				border-radius: 100px;
-				border: 1px solid #A4A4A4;
+				border: 1px solid #a4a4a4;
 				text-align: center;
 			}
 
-			+div {
+			+ div {
 				margin-left: 4px;
 			}
 
 			&.danger {
 				span {
 					width: 124px;
-					@include bg(bg/bg_danger, $pos :left 10px center);
+					@include bg(bg/bg_danger, $pos: left 10px center);
 				}
 			}
 		}
@@ -412,7 +405,7 @@ body {
 				color: #616161;
 				font-weight: 400;
 
-				>div {
+				> div {
 					position: relative;
 					display: inline-block;
 					padding-right: 16px;
@@ -425,8 +418,7 @@ body {
 						top: 50%;
 						transform: translateY(-50%);
 
-						@each $obj in up,
-						down {
+						@each $obj in up, down {
 							button.#{$obj} {
 								cursor: pointer;
 								width: 8px;
@@ -440,7 +432,7 @@ body {
 						}
 
 						button {
-							+button {
+							+ button {
 								margin-top: 2px;
 							}
 						}
@@ -464,21 +456,18 @@ body {
 					font-size: 14px;
 					line-height: 14px;
 					color: #616161;
-					border-top: 1px solid #F2F2F2;
+					border-top: 1px solid #f2f2f2;
 
 					.name {
 						display: inline-block;
 						padding-left: 24px;
-						@include bg(bg/bg_star, $pos :left center);
+						@include bg(bg/bg_star, $pos: left center);
 					}
 
 					button {
 						cursor: pointer;
 
-						@each $obj in deposit,
-						withdraw,
-						chart,
-						deal {
+						@each $obj in deposit, withdraw, chart, deal {
 							&.#{$obj} {
 								width: 100%;
 								height: 17px;
@@ -490,29 +479,29 @@ body {
 					.down {
 						display: inline-block;
 						padding-right: 14px;
-						color: #638FF2;
-						@include bg(bg/bg_down01, $pos:right center);
+						color: #638ff2;
+						@include bg(bg/bg_down01, $pos: right center);
 
 						&.ty1 {
-							@include bg(bg/bg_down02, $pos:right center);
+							@include bg(bg/bg_down02, $pos: right center);
 						}
 					}
 
 					.up {
 						display: inline-block;
 						padding-right: 14px;
-						color: #C4291C;
-						@include bg(bg/bg_up01, $pos:right center);
+						color: #c4291c;
+						@include bg(bg/bg_up01, $pos: right center);
 
 						&.ty1 {
-							@include bg(bg/bg_up02, $pos:right center);
+							@include bg(bg/bg_up02, $pos: right center);
 						}
 					}
 				}
 
 				&:last-child {
 					td {
-						border-bottom: 1px solid #F2F2F2;
+						border-bottom: 1px solid #f2f2f2;
 					}
 				}
 			}
@@ -546,15 +535,10 @@ body {
 	display: flex;
 	justify-content: center;
 	padding: 100px 0 70px 0;
-	background-color: #F7F9FB;
+	background-color: #f7f9fb;
 
 	div {
-
-		@each $obj in info01,
-		info02,
-		info03,
-		info04,
-		info05 {
+		@each $obj in info01, info02, info03, info04, info05 {
 			&.#{$obj} {
 				.title {
 					@include bg(bg/bg_#{$obj}, $pos: center top);
@@ -567,7 +551,7 @@ body {
 			padding-top: 52px;
 			font-size: 16px;
 			line-height: 19px;
-			color: #2B2B2B;
+			color: #2b2b2b;
 			font-weight: 700;
 			text-align: center;
 		}
@@ -581,13 +565,13 @@ body {
 			font-weight: 300;
 		}
 
-		+div {
+		+ div {
 			margin-left: 96px;
 		}
 	}
 }
 
-//footer 
+//footer
 .footer {
 	padding: 0 196px;
 	background-color: #fff;
@@ -611,10 +595,10 @@ body {
 		.desc {
 			font-size: 16px;
 			line-height: 19px;
-			color: #2B2B2B;
+			color: #2b2b2b;
 			font-weight: 500;
 
-			+.desc {
+			+ .desc {
 				margin-top: 17px;
 			}
 		}
@@ -627,22 +611,22 @@ body {
 			margin-bottom: 26px;
 			font-size: 22px;
 			line-height: 51px;
-			color: #2B2B2B;
+			color: #2b2b2b;
 			font-weight: 700;
-			@include bg(bg/bg_call, $pos:left center);
+			@include bg(bg/bg_call, $pos: left center);
 		}
 
 		p {
 			margin-bottom: 22px;
 			font-size: 32px;
 			line-height: 38px;
-			color: #2B2B2B;
+			color: #2b2b2b;
 
 			span {
 				margin-left: 18px;
 				font-size: 16px;
 				line-height: 19px;
-				color: #2B2B2B;
+				color: #2b2b2b;
 			}
 		}
 
@@ -651,9 +635,9 @@ body {
 			padding: 10px 10px 10px 40px;
 			font-size: 16px;
 			line-height: 20px;
-			color: #2B2B2B;
-			border: 1px solid #E5E5E5;
-			@include bg(bg/bg_kakao, $pos :left 10px center);
+			color: #2b2b2b;
+			border: 1px solid #e5e5e5;
+			@include bg(bg/bg_kakao, $pos: left 10px center);
 		}
 	}
 }
@@ -664,7 +648,398 @@ body {
 	max-width: 1400px;
 	margin: 0 auto;
 	padding: 90px 410px 55px 0;
-
+	&.type01 {
+		padding: 90px 0 55px 216px;
+		min-height: calc(100vh - 90px);
+	}
+	&.type02 {
+		padding: 90px 0 55px 0px;
+		min-height: calc(100vh - 90px);
+	}
+	.notice {
+		padding: 22px 24px;
+		background-color: #fff;
+		box-shadow: 2px 2px 4px #dee1e7;
+		p {
+			padding-left: 42px;
+			font-size: 16px;
+			line-height: 28px;
+			color: #000000;
+			@include bg(bg/bg_notice, $pos: left center);
+		}
+	}
+	.box-list {
+		display: flex;
+		margin-top: 10px;
+		.right-section {
+			position: static;
+		}
+	}
+	.side-menu {
+		position: absolute;
+		left: 0;
+		top: 90px;
+		width: 192px;
+		height: calc(100vh - 236px);
+		background-color: $white;
+		.title {
+			padding: 30px 22px;
+			background-color: #535f6e;
+			strong {
+				color: $white;
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		ul {
+			padding: 16px 0;
+			li {
+				padding: 8px 16px;
+				a {
+					display: inline-block;
+					color: #333;
+					font-size: 16px;
+					line-height: 20px;
+					font-weight: 700;
+					&.new {
+						padding-right: 30px;
+						@include bg(icon/icon_new, $pos: right center);
+					}
+				}
+				&.active {
+					background-color: #f5f6fa;
+					a {
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+	.login {
+		height: calc(100vh - 236px);
+		.login-box {
+			display: flex;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+			.inner {
+				width: 486px;
+				text-align: center;
+				.tit {
+					display: inline-block;
+					margin-bottom: 62px;
+					font-size: 60px;
+					line-height: 62px;
+					color: #2f3982;
+					font-weight: 700;
+				}
+				input {
+					width: 100%;
+					height: 48px;
+					border: 1px solid #a0a0a0;
+					color: #333;
+					padding: 0 17px;
+					background-color: #f3f6ff;
+					+ input {
+						margin-top: 8px;
+					}
+				}
+				button {
+					width: 100%;
+					height: 48px;
+					margin-top: 43px;
+					background-color: #2f3982;
+					font-size: 16px;
+					line-height: 48px;
+					color: #fff;
+					text-align: center;
+					font-weight: 700;
+				}
+				.link {
+					display: flex;
+					margin-top: 44px;
+					a {
+						display: block;
+						width: 33.33%;
+						text-align: center;
+						font-size: 16px;
+						line-height: 18px;
+						color: #333;
+						font-weight: 700;
+						+ a {
+							border-left: 1px solid #707070;
+						}
+					}
+				}
+			}
+		}
+	}
+	.sub-section {
+		padding: 25px 46px;
+		background-color: #fff;
+		box-shadow: 2px 2px 4px #dee1e7;
+		.sub-title {
+			display: flex;
+			align-items: center;
+			margin-bottom: 16px;
+			strong {
+				font-size: 26px;
+				line-height: 34px;
+				color: #000;
+			}
+			.search-wrap {
+				position: relative;
+				padding-right: 90px;
+				margin-left: auto;
+				input {
+					width: 270px;
+					height: 38px;
+					padding: 0 10px;
+					border: 1px solid #dddee1;
+					color: #333;
+					font-size: 14px;
+					font-weight: 500;
+					&::placeholder {
+						color: #aeaeae;
+					}
+				}
+				button {
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 80px;
+					height: 38px;
+					font-size: 14px;
+					line-height: 38px;
+					color: #fff;
+					background-color: #0362df;
+				}
+			}
+		}
+	}
+	.borad-wrap {
+		table {
+			.text-left {
+				text-align: left;
+			}
+			.notice {
+				padding: 0 20px;
+				background-color: #e9eef3;
+				p {
+					height: 50px;
+					padding-left: 40px;
+					font-size: 16px;
+					line-height: 50px;
+					color: $black;
+					text-align: left;
+					@include bg(bg/bg_notice, $pos: left center);
+					span {
+						color: $blue;
+					}
+				}
+			}
+			tr {
+				th {
+					height: 45px;
+					font-size: 16px;
+					line-height: 16px;
+					color: #000000;
+					border-top: 1px solid #707070;
+					border-bottom: 1px solid #707070;
+					background-color: #f9fafc;
+				}
+				td {
+					height: 50px;
+					padding: 0 20px;
+					font-size: 16px;
+					line-height: 18px;
+					color: #000;
+					text-align: center;
+					border-bottom: 1px solid #e8e8ec;
+				}
+			}
+		}
+	}
+	.row-table {
+		.table-title {
+			margin-bottom: 14px;
+			font-size: 16px;
+			line-height: 22px;
+			color: #000;
+			font-weight: 700;
+		}
+		.text-center {
+			text-align: center;
+		}
+		table {
+			thead {
+				tr {
+					&:first-child {
+						th {
+							&:first-child {
+								border-left: none;
+							}
+						}
+					}
+					th {
+						border-left: 1px solid #ededf0;
+						text-align: center;
+					}
+				}
+			}
+			tr {
+				&:first-child {
+					th,
+					td {
+						border-top: 1px solid #ededf0;
+					}
+				}
+				th {
+					padding: 12px 0 12px 22px;
+					text-align: left;
+					font-size: 14px;
+					line-height: 20px;
+					background-color: #f8faff;
+					color: #828483;
+					border-bottom: 1px solid #ededf0;
+				}
+				td {
+					padding: 0 20px;
+					border-bottom: 1px solid #ededf0;
+					> span {
+						font-size: 12px;
+						color: #333;
+						font-weight: 700;
+					}
+					&.receipt {
+						span {
+							position: relative;
+							font-size: 12px;
+							font-weight: 700;
+							color: #b2b2b2;
+							padding-right: 42px;
+							button {
+								position: absolute;
+								right: 0;
+								top: 50%;
+								width: 36px;
+								height: 22px;
+								transform: translateY(-50%);
+								font-size: 12px;
+								line-height: 16px;
+								border: 1px solid #dddee1;
+							}
+						}
+					}
+					.desc {
+						position: relative;
+						padding-right: 110px;
+						font-size: 14px;
+						line-height: 20px;
+						color: #828483;
+						button {
+							position: absolute;
+							right: 0;
+							top: 50%;
+							width: 100px;
+							height: 32px;
+							transform: translateY(-50%);
+							font-size: 14px;
+							line-height: 32px;
+							color: #fff;
+							background-color: #083687;
+						}
+					}
+				}
+			}
+		}
+		.no-text {
+			font-size: 14px;
+			line-height: 16px;
+			padding: 50px 0;
+			color: #5d5d5d;
+			font-weight: 700;
+			text-align: center;
+		}
+		.event {
+			padding: 20px 0;
+			p {
+				margin-top: 10px;
+				font-size: 14px;
+				color: #5d5d5d;
+				font-weight: 700;
+			}
+		}
+		.noti-list {
+			margin-top: 14px;
+			li {
+				font-size: 14px;
+				line-height: 26px;
+				color: #999;
+				font-weight: 700;
+			}
+		}
+		.name {
+			padding: 12px 0;
+			.desc {
+				margin-top: 8px;
+				font-size: 12px;
+				line-height: 14px;
+				color: #b2b2b2;
+				font-weight: 700;
+			}
+		}
+		.input-set {
+			position: relative;
+			display: inline-block;
+			padding-right: 110px;
+			input {
+				width: 280px;
+				height: 32px;
+				padding: 0 10px;
+				border: 1px solid #eeefef;
+				color: #333;
+				font-size: 14px;
+				font-weight: 500;
+				&::placeholder {
+					color: #aeaeae;
+				}
+				&:disabled {
+					font-weight: 700;
+					border: none;
+				}
+			}
+			button {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 100px;
+				height: 32px;
+				font-size: 14px;
+				line-height: 32px;
+				color: #fff;
+				background-color: #083687;
+			}
+		}
+		.btn-wrap {
+			display: flex;
+			margin-top: 36px;
+			button {
+				width: 100px;
+				height: 32px;
+				font-size: 14px;
+				line-height: 32px;
+				color: #fff;
+				background-color: #083687;
+				&.right {
+					margin-left: auto;
+				}
+			}
+		}
+		+ .row-table {
+			margin-top: 94px;
+		}
+	}
 	.check-wrap {
 		display: block;
 
@@ -683,7 +1058,7 @@ body {
 				opacity: 0;
 
 				&:checked {
-					+label {
+					+ label {
 						@include bg(btn/btn_radio_on, $pos: left center);
 						background-size: 16px auto;
 					}
@@ -821,7 +1196,7 @@ body {
 
 	.search-wrap {
 		display: flex;
-		border-bottom: 1px solid #E9EAED;
+		border-bottom: 1px solid #e9eaed;
 
 		.search {
 			position: relative;
@@ -845,18 +1220,17 @@ body {
 				color: #333;
 
 				&::placeholder {
-					color: rgba($color: #333, $alpha: .8);
+					color: rgba($color: #333, $alpha: 0.8);
 				}
 			}
 		}
 
-		>button {
-			border-left: 1px solid #E9EAED;
+		> button {
+			border-left: 1px solid #e9eaed;
 			width: 46px;
 			height: 46px;
 
-			@each $obj in star,
-			settomg {
+			@each $obj in star, settomg {
 				&.#{$obj} {
 					@include bg(btn/btn_#{$obj});
 				}
@@ -891,7 +1265,7 @@ body {
 	padding: 18px 20px 14px;
 
 	.left {
-		>div {
+		> div {
 			display: flex;
 
 			&.top {
@@ -933,7 +1307,7 @@ body {
 				}
 			}
 
-			>strong {
+			> strong {
 				display: inline-block;
 				font-size: 36px;
 				font-weight: 700;
@@ -1002,14 +1376,14 @@ body {
 					}
 				}
 
-				+li {
+				+ li {
 					border-top: 1px solid #e3e5eb;
 					margin-top: 6px;
 					padding-top: 6px;
 				}
 			}
 
-			+ul {
+			+ ul {
 				margin-left: 20px;
 			}
 		}
@@ -1021,7 +1395,7 @@ body {
 	padding: 8px 30px;
 	background-color: #f9fafc;
 
-	>div {
+	> div {
 		width: 33.33%;
 		display: flex;
 
@@ -1054,13 +1428,13 @@ body {
 .coinDeal-section {
 	overflow: hidden;
 
-	>.left {
+	> .left {
 		background-color: #fff;
 		box-shadow: 2px 2px 4px #dee1e7;
 	}
 
-	>.left,
-	>.right {
+	> .left,
+	> .right {
 		float: left;
 		width: calc(50% - 5px);
 	}
@@ -1101,7 +1475,7 @@ body {
 			}
 		}
 
-		+.table-wrap {
+		+ .table-wrap {
 			padding-bottom: 0;
 		}
 	}
@@ -1139,13 +1513,13 @@ body {
 
 					button {
 						width: 25%;
-						border: 1px solid #F5F6FA;
+						border: 1px solid #f5f6fa;
 						font-size: 12px;
 						line-height: 30px;
 						height: 30px;
 						color: #333;
 
-						+button {
+						+ button {
 							margin-left: 10px;
 						}
 					}
@@ -1170,7 +1544,7 @@ body {
 			bottom: 0;
 			width: 100%;
 
-			>div {
+			> div {
 				width: 33.33%;
 				flex: 1 1 auto;
 				height: 46px;
@@ -1178,7 +1552,7 @@ body {
 				line-height: 46px;
 				text-align: center;
 
-				+div {
+				+ div {
 					border-left: 1px solid #f2f3f6;
 				}
 
@@ -1186,7 +1560,7 @@ body {
 					a {
 						display: inline-block;
 						padding-right: 16px;
-						@include bg(bg/bg_btc2, $pos:right center);
+						@include bg(bg/bg_btc2, $pos: right center);
 					}
 				}
 
@@ -1244,7 +1618,7 @@ body {
 						}
 					}
 
-					+dl {
+					+ dl {
 						border-top: 1px solid #dedede;
 						margin-top: 18px;
 						padding-top: 18px;
@@ -1357,7 +1731,7 @@ body {
 						}
 					}
 
-					+dl {
+					+ dl {
 						border-top: 1px solid #dedede;
 						margin-top: 18px;
 						padding-top: 18px;
@@ -1479,12 +1853,11 @@ body {
 				}
 
 				&.box {
-
 					&:hover {
 						background-color: rgba($color: $blue, $alpha: 0.2);
 					}
 
-					>div {
+					> div {
 						position: relative;
 						display: flex;
 						height: 42px;
@@ -1503,7 +1876,7 @@ body {
 								content: "";
 								display: block;
 								border: 1px solid #000;
-								@include bg(bg/bg_selected, $pos:left -1px center);
+								@include bg(bg/bg_selected, $pos: left -1px center);
 							}
 						}
 					}
@@ -1562,7 +1935,7 @@ body {
 					}
 				}
 
-				+dl {
+				+ dl {
 					border-top: 1px solid #dedede;
 					margin-top: 18px;
 					padding-top: 18px;
@@ -1615,7 +1988,7 @@ body {
 					}
 				}
 
-				+dl {
+				+ dl {
 					border-top: 1px solid #dedede;
 					margin-top: 18px;
 					padding-top: 18px;
@@ -1836,7 +2209,7 @@ body {
 
 					padding: 0 10px;
 					text-align: right;
-					border: 1px solid #F5F6FA;
+					border: 1px solid #f5f6fa;
 					font-size: 16px;
 					color: #333;
 					font-weight: 700;
@@ -1845,8 +2218,8 @@ body {
 				a {
 					width: 34px;
 					height: 34px;
-					background-color: #F5F6FA;
-					border: 1px solid #F5F6FA;
+					background-color: #f5f6fa;
+					border: 1px solid #f5f6fa;
 					font-size: 20px;
 					line-height: 34px;
 					text-align: center;
@@ -1855,7 +2228,7 @@ body {
 				}
 			}
 
-			>span {
+			> span {
 				display: inline-block;
 				position: absolute;
 				left: 0;
@@ -1865,7 +2238,6 @@ body {
 				line-height: 36px;
 			}
 
-
 			.input-set {
 				.btn-group {
 					display: flex;
@@ -1873,12 +2245,12 @@ body {
 
 					button {
 						width: 25%;
-						border: 1px solid #F5F6FA;
+						border: 1px solid #f5f6fa;
 						font-size: 12px;
 						line-height: 30px;
 						color: #333;
 
-						+button {
+						+ button {
 							margin-left: 10px;
 						}
 					}
@@ -1890,14 +2262,14 @@ body {
 
 					padding: 0 10px;
 					text-align: right;
-					border: 1px solid #F5F6FA;
+					border: 1px solid #f5f6fa;
 					font-size: 16px;
 					color: #333;
 					font-weight: 700;
 				}
 			}
 
-			+li {
+			+ li {
 				margin-top: 10px;
 			}
 		}
@@ -1918,7 +2290,7 @@ body {
 			color: #fff;
 			font-weight: 700;
 
-			+a {
+			+ a {
 				margin-left: 10px;
 			}
 
@@ -1933,7 +2305,6 @@ body {
 			&.sell {
 				background-color: $blue;
 			}
-
 		}
 	}
 }
@@ -1955,8 +2326,7 @@ body {
 		}
 	}
 
-	tr+tr {
-
+	tr + tr {
 		th,
 		td {
 			border-bottom: 1px solid #cbcbcb;
@@ -1970,7 +2340,7 @@ body {
 		color: #656565;
 		border-bottom: 1px solid #cbcbcb;
 
-		+th {
+		+ th {
 			border-left: 1px solid #cbcbcb;
 		}
 	}
@@ -1983,7 +2353,7 @@ body {
 		font-weight: 700;
 		vertical-align: middle;
 
-		+td {
+		+ td {
 			border-left: 1px solid #cbcbcb;
 		}
 
@@ -2006,14 +2376,12 @@ body {
 	.down {
 		color: $blue;
 	}
-
 }
 
 //table
 .table-base {
 	width: 100%;
 	background-color: #fff;
-
 
 	thead {
 		height: 28px;
@@ -2043,11 +2411,9 @@ body {
 				a {
 					@include bg(btn/btn_sort, $pos: right center);
 
-					@each $obj in up,
-					down {
+					@each $obj in up, down {
 						&.#{$obj} {
 							@include bg(btn/btn_sort_#{$obj}, $pos: right center);
-
 						}
 					}
 				}
@@ -2073,11 +2439,15 @@ body {
 			text-align: center;
 
 			button {
+				cursor: pointer;
 				width: 12px;
 				height: 12px;
-				@include bg(bg/bg_star_on);
+				@include bg(btn/btn_star);
 				background-size: cover;
-
+				&.active {
+					@include bg(btn/btn_star_on);
+					background-size: cover;
+				}
 			}
 		}
 
@@ -2147,7 +2517,6 @@ body {
 
 				span {
 					color: #999;
-
 				}
 			}
 		}
