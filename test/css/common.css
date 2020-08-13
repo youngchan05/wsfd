@@ -1,0 +1,337 @@
+/* common */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+    font-family: "Noto Sans KR", sans-serif !important;
+}
+
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background: rgba(255, 188, 0, 0.8);
+    z-index: 4;
+    border-bottom: 1px solid #c79508;
+    border: 1px solid rgba(199, 149, 8, .3);
+}
+
+.h_inner {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#m_nav {
+    display: none;
+}
+
+.pc_contact .nav_list {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #373737;
+    float: right;
+    margin: 17px 0px;
+}
+
+/* @media only screen and (max-width: 1200px) {
+  header .inner {padding:0 20px}
+} */
+#logo, #logo2 {
+    padding: 16px 0;
+    float: left;
+}
+
+#logo img, #logo2 img {
+    width: 100px;
+}
+
+#m_nav, #m_nav2 {
+    padding: 19px 0;
+    float: right;
+}
+
+#m_nav img, #m_nav2 img {
+    width: 24px
+}
+
+/* mobile nav */
+#cd-cart {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+    right: -100%;
+    background: #FFF;
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    transition: right 0.3s;
+}
+
+#cd-cart.speed-in {
+    right: 0;
+}
+
+#cd-cart .cd-cart-items {
+    position: absolute;
+    top: 50%;
+    transform: translate(50px, -50%);
+}
+
+#cd-cart .cd-cart-items li {
+    position: relative;
+}
+
+#cd-cart .cd-cart-items li a {
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.59px;
+    color: #222;
+}
+
+#cd-cart .cp_wrap {
+    position: absolute;
+    bottom: 34px;
+    width: 100%;
+}
+
+#cd-cart .cp_logo {
+    float: left;
+}
+
+#cd-cart .cp_logo img {
+    width: 43px
+}
+
+#cd-cart .cp_title {
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: right;
+    color: #2b2b2b;
+}
+
+/* mobile nav */
+/* //header */
+.content {
+    overflow: hidden;
+}
+
+/* 공통 컨텐츠 타이틀 */
+.ct_title {
+    padding: 90px 0 30px;
+    background: #ffbc00;
+    height: 269px;
+    z-index: 3;
+    width: 100%;
+    position: relative;
+}
+
+.ct_title_inner {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0
+}
+
+.ct_title h3 {
+    font-size: 30px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.93;
+    letter-spacing: 0.44px;
+    color: #262626;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.ct_title p {
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    color: #303030;
+    margin-left: 10px;
+}
+
+.ct_title p br:nth-child(2) {
+    display: none;
+}
+
+.pc_menu_wrap {
+    overflow: hidden;
+    width: 440px;
+    float: right;
+}
+
+.pc_menu_wrap .pc_menu {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: #ffe193;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: normal;
+    color: #222;
+    border-radius: 20px;
+    float: left;
+    margin-left: 10px;
+}
+
+.pc_menu_wrap .pc_menu a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* 공통 컨텐츠 inner */
+.ct_inner {
+    padding: 40px 20px
+}
+
+/* footer */
+footer {
+    background: #222;
+}
+
+footer .f_logo {
+    width: 100px;
+    float: left;
+    padding: 45px 0;
+}
+
+footer .f_logo img {
+    width: 100px;
+}
+
+footer .f_title {
+    float: right;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 50px 0;
+}
+
+footer .f_title br {
+    display: none;
+}
+
+/* //footer */
+@media only screen and (max-width: 480px) {
+    #cd-cart .cd-cart-items li a {
+        font-size: 10vw;
+    }
+
+    footer .f_title {
+        font-size: 3.7vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .h_inner {
+        width: 100%;
+        padding: 0 20px;
+        overflow: hidden;
+    }
+
+    .pc_contact {
+        display: none;
+    }
+
+    #m_nav {
+        display: block;
+    }
+
+    footer .f_title br {
+        display: block;
+        ;
+    }
+
+    footer .f_title {
+        padding: 17px 0;
+    }
+
+    /* 공통 컨텐츠 타이틀 */
+    .ct_title {
+        padding: 80px 20px 70px;
+        background: #ffbc00;
+        height: 289px;
+        z-index: 3;
+        width: 100%;
+    }
+
+    .ct_title_inner {
+        width: 100%;
+        bottom: 44px;
+        left: auto;
+        right: auto;
+    }
+
+    .ct_title h3 {
+        font-size: 30px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.93;
+        letter-spacing: 0.44px;
+        color: #262626;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    .ct_title p {
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: #262626;
+        margin: 0;
+    }
+
+    .ct_title p br:nth-child(2) {
+        display: block;
+    }
+
+    .pc_menu_wrap {
+        display: none;
+    }
+
+    /* 공통 컨텐츠 inner */
+    .ct_inner {
+        padding: 40px 20px
+    }
+}

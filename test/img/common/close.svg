@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>88CC7970-4C06-4B7D-9EF7-64B43931027D</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Mobile-Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="m_03Work_상세01" transform="translate(-331.000000, -54.000000)">
+            <g filter="url(#filter-1)" id="x">
+                <g transform="translate(331.000000, 54.000000)">
+                    <g id="Group-2" transform="translate(4.000000, 4.000000)" fill="#222222">
+                        <g id="Group" transform="translate(8.000000, 8.000000) rotate(-45.000000) translate(-8.000000, -8.000000) translate(-2.400000, 7.200000)">
+                            <rect id="Rectangle-Copy" transform="translate(10.400000, 0.800000) rotate(-360.000000) translate(-10.400000, -0.800000) " x="0" y="0" width="20.8" height="1.6" rx="0.8"></rect>
+                        </g>
+                        <g id="Group" transform="translate(8.000000, 8.000000) rotate(-315.000000) translate(-8.000000, -8.000000) translate(-2.400000, 7.200000)">
+                            <rect id="Rectangle-Copy" transform="translate(10.400000, 0.800000) rotate(-360.000000) translate(-10.400000, -0.800000) " x="0" y="0" width="20.8" height="1.6" rx="0.8"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
