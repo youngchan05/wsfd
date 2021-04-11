@@ -1,0 +1,202 @@
+
+.footer {
+    padding:90px 0 86px 0;
+    .inner {
+        position: relative;
+        width: 1098px;
+        margin:0 auto;
+        padding-left:354px;
+    }
+    background-color: #3a3a3a;
+    .logo {
+        position: absolute;
+        left:0;
+        top:10px;
+    }
+    p {
+        font-size:18px;
+        line-height: 28px;
+        color:#dbdbdb;
+        font-family: 'Noto Sans KR';
+        font-weight: 300;
+        white-space: pre-line;
+    }
+}
+.wrapper {
+    margin:0 auto;
+    width:100%;
+    max-width: 1920px;
+    min-width: 1200px;
+    overflow: hidden;
+    .top-spot {
+        display: flex;
+        align-items: flex-start;
+        padding-top:30px;
+        width:1180px;
+        margin:0 auto;
+        margin-bottom:70px;
+        .call {
+            margin-left:auto;
+        }
+    }
+}
+.main-visual {
+    position: relative;
+    width:100%;
+    background-color: #f2f2f2;
+    .inner {
+        width:1098px;
+        margin:0 auto;
+        padding-bottom:90px;
+        background:url(../img//img_mainBg.png) no-repeat right bottom;
+    }
+    .text-wrap {
+        .top {
+            p {
+                font-size:55px;
+                line-height:70px;
+                color:#000;
+                white-space: pre-line;
+                strong {
+                    color:#e3434a;
+                    font-family: GmarketSansBold;
+                }
+            }
+        }
+        .bottom {
+            margin-top:40px;
+            margin-bottom:50px;
+            >span {
+                font-size:24px;
+                color:#000;
+            }
+            p {
+                font-family: GmarketSansBold;
+                margin-top:14px;
+                font-size:40px;
+                color:#373737;
+                line-height:42px;
+                span {
+                    font-family: GmarketSansBold;
+                    color:#e3434a;
+
+                }
+            }
+        }
+        .link-box {
+            a {
+                display:block;
+                + a {
+                    margin-top:20px;
+                }
+            }
+        }
+    }
+}
+.section {
+    width:1098px;
+    margin: 0 auto;
+    .section-tit {
+        display: block;
+        padding:65px 0 50px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.product-list {
+    display:flex;
+    flex-wrap: wrap;
+    margin:-20px 0 0 -33px;
+    li {
+        width:calc(50% - 33px);
+        margin:20px 0 0 33px;
+        border-radius:20px;
+        border: 1px solid #d7d7d7;
+        padding: 30px 32px;
+        @each $obj in item01 ,item02,item03,item04 {
+            &.product-#{$obj}{
+                background:url('../img/icon_#{$obj}.png') no-repeat right 24px center;
+            }
+        }
+        strong {
+            display:inline-block;
+            margin-bottom:14px;
+            font-size:28px;
+            color:#bc391a;
+            font-family: GmarketSansBold;
+        }
+        p {
+            color:#373737;
+            font-size:24px;
+            line-height:33px;
+            white-space: pre-line;
+        }
+        span {
+            font-size:20px;
+            color:#373737;
+        }
+        + li {
+            margin-top:2rem;
+        }
+    }
+}
+.notice-list {
+    margin-bottom:90px;
+    border-bottom:1px solid #81272b;
+    li {
+        padding:34px 40px;
+        border-top:1px solid #81272b;
+        strong {
+            display:inline-block;
+            margin-bottom:20px;
+            font-size:28px;
+            color:#bc391a;
+            font-family: GmarketSansBold;
+        }
+        p {
+            color:#373737;
+            font-size:24px;
+            line-height:35px;
+            white-space: pre-line;
+        }
+        span {
+            font-size:20px;
+            color:#373737;
+            line-height:35px;
+            color:#373737;
+        }
+    }
+}
+.notice-wrap {
+    padding:90px 0 90px 134px;
+    background-color: #f2f2f2;
+    strong {
+        display:inline-block;
+        margin-bottom:40px;
+        font-size:28px;
+        color:#373737;
+        font-family:GmarketSansBold;
+    }
+    p {
+        position: relative;
+        padding-left:20px;
+        white-space: pre-line;
+        font-size:20px;
+        line-height:28px;
+        color:#373737;
+        font-family: 'Noto Sans KR';
+        font-weight: 300;
+        &::after {
+            display: block;
+            position: absolute;
+            left:0;
+            top:0;
+            content: 'ㆍ';
+            font-size:20px;
+            line-height:28px;
+        }
+        + p {
+            margin-top:25px;
+        }
+    }
+}
