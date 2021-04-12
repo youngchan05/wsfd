@@ -93,6 +93,14 @@
   color: #373737;
   line-height: 42px;
 }
+.main-visual .text-wrap .bottom p i {
+  font-family: GmarketSansBold;
+  margin-top: 14px;
+  font-size: 40px;
+  color: #373737;
+  line-height: 42px;
+  font-style: italic;
+}
 
 .main-visual .text-wrap .bottom p span {
   font-family: GmarketSansBold;
@@ -102,7 +110,9 @@
 .main-visual .text-wrap .link-box a {
   display: block;
 }
-
+.main-visual .text-wrap .link-box a  img {
+  border-radius: 100px;
+}
 .main-visual .text-wrap .link-box a + a {
   margin-top: 20px;
 }
