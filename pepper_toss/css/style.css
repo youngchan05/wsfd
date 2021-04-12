@@ -1,83 +1,258 @@
 @charset "UTF-8";
-html { font-size: 9.5px; }
+html {
+  font-size: 9.5px;
+}
 
-.footer { padding: 8rem 0 25rem 10rem; background-color: #3a3a3a; }
+.footer {
+  padding: 8rem 0 25rem 10rem;
+  background-color: #3a3a3a;
+}
 
-.footer .logo { width: 50.7%; margin-bottom: 4rem; }
+.footer .logo {
+  width: 50.7%;
+  margin-bottom: 4rem;
+}
 
-.footer p { font-size: 2.5rem; line-height: 3.5rem; color: #9d9d9d; font-family: 'Noto Sans KR'; font-weight: 300; white-space: pre-line; }
+.footer p {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #9d9d9d;
+  font-family: 'Noto Sans KR';
+  font-weight: 300;
+  white-space: pre-line;
+}
 
-.fix-btn { position: fixed; left: 50%; bottom: -100%; display: block; width: 100%; max-width: 768px; -webkit-transform: translateX(-50%); transform: translateX(-50%); -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out; }
+.fix-btn {
+  position: fixed;
+  left: 50%;
+  bottom: -100%;
+  display: block;
+  width: 100%;
+  max-width: 768px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
 
-.fix-btn img { width: 100%; }
+.fix-btn img {
+  width: 100%;
+}
 
-.fix-btn.active { bottom: 0; }
+.fix-btn.active {
+  bottom: 0;
+}
 
-.wrapper { margin: 0 auto; max-width: 768px; overflow: hidden; }
+.wrapper {
+  margin: 0 auto;
+  max-width: 768px;
+  overflow: hidden;
+}
 
-.wrapper .top-spot { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; position: absolute; left: 0; top: 0; padding: 4.1%; width: 100%; }
+.wrapper .top-spot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4.1%;
+  width: 100%;
+}
 
-.wrapper .top-spot .logo { width: 33%; }
+.wrapper .top-spot .logo {
+  width: 33%;
+}
 
-.wrapper .top-spot .call { width: 21%; margin-left: auto; }
+.wrapper .top-spot .call {
+  width: 21%;
+  margin-left: auto;
+}
 
-.section .section-tit img { width: 100%; }
+.section .section-tit img {
+  width: 100%;
+}
 
-.section01 { position: relative; }
+.section01 {
+  position: relative;
+}
 
-.section01 > img { width: 100%; }
+.section01 > img {
+  width: 100%;
+}
 
-.section01 .link { position: absolute; left: 4%; bottom: 6.7%; width: 92%; height: 11%; display: block; border-radius: 50px; }
+.section01 .link {
+  position: absolute;
+  left: 4%;
+  bottom: 6.7%;
+  width: 92%;
+  height: 11%;
+  display: block;
+  border-radius: 50px;
+}
 
-.section03 { padding: 0 3rem; }
+.section03 {
+  padding: 0 3rem;
+}
 
-.product-list { padding: 0 6rem; }
+.product-list {
+  padding: 0 6rem;
+}
 
-.product-list li { padding: 4rem 14.8rem 4rem 4rem; border-radius: 2rem; }
+.product-list li {
+  padding: 4rem 14.8rem 4rem 4rem;
+  border-radius: 2rem;
+}
 
-.product-list li.product-item01 { background: url("../img/icon_item01.png") no-repeat right 2.8rem center; background-color: #f2f2f2; background-size: 12rem auto; }
+.product-list li.product-item01 {
+  background: url("../img/icon_item01.png") no-repeat right 2.8rem center;
+  background-color: #f2f2f2;
+  background-size: 12rem auto;
+}
 
-.product-list li.product-item02 { background: url("../img/icon_item02.png") no-repeat right 2.8rem center; background-color: #f2f2f2; background-size: 12rem auto; }
+.product-list li.product-item02 {
+  background: url("../img/icon_item02.png") no-repeat right 2.8rem center;
+  background-color: #f2f2f2;
+  background-size: 12rem auto;
+}
 
-.product-list li.product-item03 { background: url("../img/icon_item03.png") no-repeat right 2.8rem center; background-color: #f2f2f2; background-size: 12rem auto; }
+.product-list li.product-item03 {
+  background: url("../img/icon_item03.png") no-repeat right 2.8rem center;
+  background-color: #f2f2f2;
+  background-size: 12rem auto;
+}
 
-.product-list li.product-item04 { background: url("../img/icon_item04.png") no-repeat right 2.8rem center; background-color: #f2f2f2; background-size: 12rem auto; }
+.product-list li.product-item04 {
+  background: url("../img/icon_item04.png") no-repeat right 2.8rem center;
+  background-color: #f2f2f2;
+  background-size: 12rem auto;
+}
 
-.product-list li strong { display: inline-block; margin-bottom: 2rem; font-size: 3.5rem; color: #bc391a; font-family: GmarketSansBold; }
+.product-list li strong {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  color: #bc391a;
+  font-family: GmarketSansBold;
+}
 
-.product-list li p { color: #373737; font-size: 3rem; line-height: 4rem; white-space: pre-line; }
+.product-list li p {
+  color: #373737;
+  font-size: 3rem;
+  line-height: 4rem;
+  white-space: pre-line;
+}
 
-.product-list li span { font-size: 2.5rem; color: #373737; }
+.product-list li span {
+  font-size: 2.5rem;
+  color: #373737;
+}
 
-.product-list li + li { margin-top: 2rem; }
+.product-list li + li {
+  margin-top: 2rem;
+}
 
-.notice-list { margin-bottom: 8rem; border-bottom: 1px solid #81272b; }
+.notice-list {
+  margin-bottom: 8rem;
+  border-bottom: 1px solid #81272b;
+}
 
-.notice-list li { padding: 3.7rem 5rem; border-top: 1px solid #81272b; }
+.notice-list li {
+  padding: 3.7rem 5rem;
+  border-top: 1px solid #81272b;
+}
 
-.notice-list li strong { display: inline-block; margin-bottom: 2rem; font-size: 3.5rem; color: #bc391a; font-family: GmarketSansBold; }
+.notice-list li strong {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  color: #bc391a;
+  font-family: GmarketSansBold;
+}
 
-.notice-list li p { color: #373737; font-size: 3rem; line-height: 4rem; white-space: pre-line; }
+.notice-list li p {
+  color: #373737;
+  font-size: 3rem;
+  line-height: 4rem;
+  white-space: pre-line;
+}
 
-.notice-list li span { font-size: 2.5rem; color: #373737; line-height: 4rem; color: #373737; white-space: pre-line; }
+.notice-list li span {
+  font-size: 2.5rem;
+  color: #373737;
+  line-height: 4rem;
+  color: #373737;
+  white-space: pre-line;
+}
 
-.notice-wrap { padding: 8rem 0 8rem 10rem; background-color: #f2f2f2; }
+.notice-wrap {
+  padding: 8rem 0 8rem 10rem;
+  background-color: #f2f2f2;
+}
 
-.notice-wrap strong { display: inline-block; margin-bottom: 4rem; font-size: 3.5rem; color: #373737; font-family: GmarketSansBold; }
+.notice-wrap strong {
+  display: inline-block;
+  margin-bottom: 4rem;
+  font-size: 3.5rem;
+  color: #373737;
+  font-family: GmarketSansBold;
+}
 
-.notice-wrap p { position: relative; padding-left: 2.5rem; white-space: pre-line; font-size: 2.5rem; line-height: 3.5rem; color: #373737; font-family: 'Noto Sans KR'; font-weight: 300; }
+.notice-wrap p {
+  position: relative;
+  padding-left: 2.5rem;
+  white-space: pre-line;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #373737;
+  font-family: sans-serif;
+  font-weight: 300;
+}
 
-.notice-wrap p::after { display: block; position: absolute; left: 0; top: 0; content: 'ㆍ'; font-size: 2.5rem; line-height: 3.5rem; }
+.notice-wrap p::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: 'ㆍ';
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
 
-.notice-wrap p + p { margin-top: 2rem; }
+.notice-wrap p + p {
+  margin-top: 2rem;
+}
 
-@media screen and (max-width: 684px) { html { font-size: 8px; } }
+@media screen and (max-width: 684px) {
+  html {
+    font-size: 8px;
+  }
+}
 
-@media screen and (max-width: 590px) { html { font-size: 6.6px; } }
+@media screen and (max-width: 590px) {
+  html {
+    font-size: 6.6px;
+  }
+}
 
-@media screen and (max-width: 500px) { html { font-size: 6px; } }
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
 
-@media screen and (max-width: 450px) { html { font-size: 5px; } }
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 5px;
+  }
+}
 
-@media screen and (max-width: 384px) { html { font-size: 4px; } }
+@media screen and (max-width: 384px) {
+  html {
+    font-size: 4px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
