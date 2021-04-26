@@ -3,6 +3,18 @@
    License: none (public domain)
 */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+@font-face {
+    font-family:'OneShinhanLight';
+    src:url("../fonts/OneShinhanLight.otf") format("opentype"),
+	url('../font/OneShinhanLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'OneShinhanBold';
+    src:url("../fonts/OneShinhanBold.otf") format("opentype"),
+	url('../font/OneShinhanBold.ttf') format('truetype');
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +35,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
     box-sizing: border-box;
-	font-family: "OneShinhanLight";
+	font-family:'OneShinhanLight', sans-serif;
 	font-weight: 600;
 }
 /* HTML5 display-role reset for older browsers */
@@ -54,18 +66,4 @@ table {
 }
 img {
 	width:100%;
-}
-
-@font-face {
-    font-family: 'OneShinhanLight';
-    src: url('../font/OneShinhanLight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OneShinhanBold';
-    src: url('../font/OneShinhanBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }

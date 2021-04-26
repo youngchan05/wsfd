@@ -19,6 +19,28 @@ html {
     color:#9d9d9d;
     background:#333;
 }
+.section02 {
+    .section-tit {
+        padding:6.3rem 0 10rem 0;
+        text-align: center;
+        font-size:4rem;
+        line-height:5.6rem;
+        color:#333;
+        strong{
+            color:#00358e;
+            font-size:4.6rem;
+        }
+    }
+}
+.section03 {
+    .desc {
+        padding:4rem 0;
+        text-align: center;
+        font-size:3rem;
+        line-height:4rem;
+        color:#222;
+    }
+}
 .section01 {
     position: relative;
     >img {
@@ -137,23 +159,27 @@ html {
         }
         .notice {
             margin-top:4.4rem;
-            padding:0 5rem;
-            font-size:2.4rem;
+            padding:0 7.6rem;
+            font-size: 2.8rem;
             line-height:3.6rem;
             color:#555555;
             white-space: pre-line;
+            font-weight: normal;
             .desc {
                 position: relative;
                 padding-left:7rem;
                 white-space: initial;
+                font-weight: normal;
                 .title {
                     position: absolute;
                     left:0;
                     top:0;
+                    font-weight: normal;
                 }
                 >p {
                     position: relative;
                     padding-left:2rem;
+                    font-weight: normal;
                     &::after {
                         position: absolute;
                         left:0;
@@ -174,44 +200,45 @@ html {
     }
 }
 .notice-wrap {
-    padding:5.6rem 5rem 7rem 5.6rem;
+    padding:5.6rem 5rem 7rem 5rem;
     background-color:#eaeaea;
     .tit {
         display: block;
         width:100%;
         margin-bottom:2.2rem;
-        font-size:2.6rem;
-        line-height:3.4rem;
+        font-size:3rem;
+        line-height:4rem;
+        letter-spacing: -1px;
         color:$black;
         font-weight: bold;
-        font-family: 'Nanum Gothic', sans-serif;
-        font-weight: 700;
+        font-family: 'Nanum Gothic';
     }
     .sub-tit{
         display:inline-block;
         margin-bottom:1.2rem;
         margin-top:2.8rem;
-        font-size:2.2rem;
+        font-size:2.8rem;
         line-height:2.4rem;
         color:#666666;
         font-weight: bold;
-        font-family: 'Nanum Gothic', sans-serif;
-        font-weight: 400;
+        font-family: 'Nanum Gothic';
+        font-weight: 600;
     }
     .bullet {
         position: relative;
-        padding-left:1.6rem;
+        padding-left:2.2rem;
         color:#666;
-        font-size:2.2rem;
+        font-size:2.8rem;
         line-height:4.2rem;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Nanum Gothic';
         font-weight: 400;
+        letter-spacing: -1px;
         &::after {
             display:block;
             position: absolute;
             left:0;
             top:0;
-            font-size:2.2rem;
+            font-size:2.8rem;
             line-height:4.2rem;
             content: "•";
             
@@ -219,28 +246,21 @@ html {
         + .bullet {
             margin-top:.8rem;
         }
-        &.star {
-            &::after {
-                content: "*";
-                font-family: none;
-                
-            }
-        }
     }
     .desc {
         color:#666;
-        font-size:2.2rem;
+        font-size:2.8rem;
         line-height:4.2rem;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Nanum Gothic';
         font-weight: 400;
+        letter-spacing: -1px;
         &.type01 {
             margin:3.3rem 0;
         }
         span {
-            font-family: 'Nanum Gothic', sans-serif;
+            font-family: 'Nanum Gothic';
             font-weight: 400;
             color:$blue;
-            font-weight: 400;
         }
     }
 }
@@ -278,13 +298,13 @@ html {
 }
 @media screen and (max-width: 512px) {
     html {
-        font-size:7.5px;
+        font-size:5.5px;
     }
 }
 
 @media screen and (max-width: 384px) {
     html {
-        font-size:5px;
+        font-size:4px;
     }
 }
 
