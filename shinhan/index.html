@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/bxslider.css">
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>신한저축은행</title>
 </head>
@@ -13,17 +13,6 @@
     <div class="wrapper">
         <div class="section section01">
             <img src="./img/img_visual.png" alt="당신 곁에 함께하는 따뜻한 신한금융 저소득 ,저신용자를 위한 온라인 햇살론 1:연7%대 ,2:모바일 간편신청,3:당일송금(영업일 18시내 모든 절차 완료시)">
-            <!-- <div class="item item01">
-                연 7%대<br>금리
-            </div>
-            <div class="item item01">
-                모바일<br>간편신청
-            </div>
-            <div class="item item01">
-                당일 송금 가능<br>
-                (영업일 18시 내<br>
-                모든 절차 완료 시)
-            </div> -->
             <div class="btn-img">
                 <img src="./img/btn_visual.png" alt="">
                 <a href="https://m.shinhansavings.com/optimal_goods?code=L2" title="안심한도조회" class="link"></a>
@@ -35,36 +24,37 @@
                 신한저축은행의 <strong>다양한 상품</strong>을<br>
                     <strong>한번에</strong> 조회해보세요.
                 </p>
-                <ul class="product-list">
-                    <!--slide 01-->
-                    <li class="product-item">
-                        <p class="tit">햇살론/온라인햇살론</p>
-                        <div class="item-box">
-                            <div class="item01 item">
-                                <strong>최대한도</strong>
-                                <p>1,500만원</p>
+                <div class="swiper-container">
+                    <ul class="swiper-wrapper product-list">
+                      <!--slide 01-->
+                        <li class="product-item swiper-slide">
+                            <p class="tit">햇살론/온라인햇살론</p>
+                            <div class="item-box">
+                                <div class="item01 item">
+                                    <strong>최대한도</strong>
+                                    <p>1,500만원</p>
+                                </div>
+                                <div class="item02 item">
+                                    <strong>금리</strong>
+                                    <p>연 7~8%대</p>
+                                </div>
+                                <div class="item03 item">
+                                    <strong>기간</strong>
+                                    <p>3년 또는 5년</p>
+                                </div>
                             </div>
-                            <div class="item02 item">
-                                <strong>금리</strong>
-                                <p>연 7~8%대</p>
+                            <div class="notice">
+                                기타사항
+                                <div class="desc"><span class="title">대상 :</span><p>현 직장 3개월 이상 근속중인 직장인</p>
+                                        <p>연소득 3,500만원 이하 또는 연소득 4,500만원 이하이면서 1개사 이상의 개인신용평가사가 산정한 개인신용평점 하위 20/100에 해당하는 자</p>
+                                        <p>‘21년 기준 NICE744점, KCB 700점 이하</p>
+                                </div>중도상환수수료: 없음, 이자부과시기: 매월 납입일에 후취,
+                                부대비용: 보증료 연2%이내, 연체이율: 대출금리+연3%(연12%이내)
+                                상환방식: 원금균등분할상환
                             </div>
-                            <div class="item03 item">
-                                <strong>기간</strong>
-                                <p>3년 또는 5년</p>
-                            </div>
-                        </div>
-                        <div class="notice">
-                            기타사항
-                            <div class="desc"><span class="title">대상 :</span><p>현 직장 3개월 이상 근속중인 직장인</p>
-                                    <p>연소득 3,500만원 이하 또는 연소득 4,500만원 이하이면서 1개사 이상의 개인신용평가사가 산정한 개인신용평점 하위 20/100에 해당하는 자</p>
-                                    <p>‘21년 기준 NICE744점, KCB 700점 이하</p>
-                            </div>중도상환수수료: 없음, 이자부과시기: 매월 납입일에 후취,
-                            부대비용: 보증료 연2%이내, 연체이율: 대출금리+연3%(연12%이내)
-                            상환방식: 원금균등분할상환
-                        </div>
-                    </li>
+                        </li>
 
-                    <li class="product-item">
+                    <li class="product-item swiper-slide">
                         <p class="tit">참신한중금리(전화)</p>
                         <div class="item-box">
                             <div class="item01 item">
@@ -91,7 +81,7 @@
                         </div>
                     </li>
                     <!--slide 02-->
-                    <li class="product-item">
+                    <li class="product-item swiper-slide">
                         <p class="tit">사잇돌2대출</p>
                         <div class="item-box">
                             <div class="item01 item">
@@ -119,7 +109,7 @@
                         </div>
                     </li>
                     <!--slide 03-->
-                    <li class="product-item">
+                    <li class="product-item swiper-slide">
                         <p class="tit">참신한중금리(자동)</p>
                         <div class="item-box">
                             <div class="item01 item">
@@ -145,7 +135,13 @@
                         </div>
                     </li>
                     <!--slide 04-->
-                </ul>
+                    </ul>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+            </div>
         </div>
         <!--상품안내 end-->
         <div class="section section03">
@@ -206,7 +202,7 @@
     </div>
 </body>
 <script src="./js/jQuery.js"></script>
-<script src="./js/bxslider.js"></script>
+<script src="./js/swiper.js"></script>
 <script>
 $(window).on("scroll",function(){
     var ws = $(window).scrollTop();	
@@ -218,11 +214,14 @@ $(window).on("scroll",function(){
     }
 });
 $(document).ready(function(){
-    $('.product-list').bxSlider({
-        auto: false,
-        infiniteLoop: false,
-        hideControlOnEnd: true,
-        adaptiveHeight: true
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
     });
 });
 
