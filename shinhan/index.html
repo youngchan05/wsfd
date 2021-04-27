@@ -218,8 +218,99 @@ $(window).on("scroll",function(){
     }
 });
 $(document).ready(function(){
-    $('.product-list').bxSlider();
+    $('.product-list').bxSlider({
+        auto: false,
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        adaptiveHeight: true
+    });
 });
 
+
+
+// var mainSectH = $('.main-section').height() - $('.main-section__btn-group').height();
+// 		var scrollVal = $(window).scrollTop();
+// 		//모바일 REM 반응
+// 		function fontResize(){
+// 			var resolution=720, font=12;
+// 			var width = $('html').width();
+// 			var fontSize = font * (width/resolution);
+// 			$('html').css('font-size', fontSize);
+// 		}
+		 
+// 		//REM 반응형 함수
+// 		fontResize();
+  		
+// 		$(document).ready(function(){
+// 			$('.prod-intro__slide ul').bxSlider({
+// 				auto: false,
+// 				infiniteLoop: false,
+//   			hideControlOnEnd: true,
+// 				adaptiveHeight: true
+// 			});
+// 		});
+
+// 		$(window).scroll(function () { 
+// 			scrollVal = $(window).scrollTop();
+// 			if(scrollVal > mainSectH){
+// 				$('.fbnn,.fbtn-group').show();
+// 			}else{
+// 				$('.fbnn,.fbtn-group').hide();
+// 			}
+// 		});
+		
+// 		$(window).resize(function() {
+// 			fontResize();
+// 			mainSectH = $('.main-section').height() - $('.main-section__btn-group').height();
+// 		});
+		
+		
+// 		// 류예샘D 광고 트레킹 - 한도조회 버튼
+// 		function clickLimitBtn() {
+// 			chkAdTrackingCookie('shsb.adgather');
+// 			setAdTrackingCookie('shsb.adgather', '', 1);
+// 			smartHttpsConv('M_charm_limit1', '');
+		
+// 			convCall('Mo', 'main_charm_limit','https://m.shinhansavings.com/optimal_goods?code=L3');
+// 			gtag('event', 'M_상단_한도조회_참신한', {'event_category': 'main_charmloan_limit', 'event_action': 'click', 'event_label': 'charmloan' });
+// 		}
+		
+// 		// 류예샘D 광고 트레킹 - 대출신청 버튼
+// 		function clickApplyBtn() {
+// 			chkAdTrackingCookie('shsb.adgather');
+// 			setAdTrackingCookie('shsb.adgather', '', 1);
+// 			smartHttpsConv('M_charm_apply', '');
+		
+// 			convCall('Mo', 'main_charm_loan','https://m.shinhansavings.com/optimal_goods?code');
+// 			gtag('event', 'M_상단_대출신청_참신한', {'event_category': 'main_charmloan_loan', 'event_action': 'click', 'event_label': 'charmloan' });		
+// 		}
+		
+// 		// 류예샘D 광고 트레킹 - 플로팅 전화 버튼
+// 		function clickFloatingCallBtn() {
+// 			smartHttpsConv('M_charm_call', '');
+			
+// 			convCall('Mo', 'charm_floating_call','tel:1800-3651');
+// 			gtag('event', 'M_플로팅_전화연결_참신한', {'event_category': 'charmloan_floating_call', 'event_action': 'click', 'event_label': 'charmloan' });		
+// 		}
+		
+// 		// 류예샘D 광고 트레킹 - 전화상담예약 버튼
+// 		function clickReserveBtn() {
+// 			smartHttpsConv('M_charm_reservation', '');
+			
+// 			convCall('Mo', 'charm_floating_call_reservation','https://m.shinhansavings.com/reservation');
+// 			gtag('event', 'M_푸터_전화상담예약_참신한', {'event_category': 'charmloan_floating_call_reseration', 'event_action': 'click', 'event_label': 'charmloan' });
+// 		}
+		
+// 		// 류예샘D 광고 트레킹 - 모든상품 통합조회 버튼
+// 		function clickAllProductBtn() {
+// 			chkAdTrackingCookie('shsb.adgather');
+// 			setAdTrackingCookie('shsb.adgather', '', 1);
+// 			smartHttpsConv('M_charm_limit2', '');
+			
+// 			convCall('Mo', 'charm_floating_limit','https://m.shinhansavings.com/optimal_goods?code=L3');
+// 			gtag('event', 'M_플로팅_한도조회_참신한', {'event_category': 'charmloan_floating_limit', 'event_action': 'click', 'event_label': 'charmloan' });
+// 		}
+		
+	
 </script>
 </html>
