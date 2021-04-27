@@ -247,7 +247,7 @@ html {
   margin-bottom: 2.2rem;
   font-size: 3.2rem;
   line-height: 4rem;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
   color: #000;
   font-weight: bold;
   font-family: 'Nanum Gothic';
@@ -320,6 +320,7 @@ html {
           transform: translateX(-50%);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  z-index: 100;
 }
 
 .fix-btn a {

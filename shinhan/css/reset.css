@@ -4,16 +4,28 @@
 */
 
 @font-face {
-    font-family:'OneShinhanLight';
-    src:url("../fonts/OneShinhanLight.otf") format("opentype"),
-	url('../font/OneShinhanLight.ttf') format('truetype');
-}
-
-@font-face {
-    font-family:'OneShinhanBold';
-    src:url("../fonts/OneShinhanBold.otf") format("opentype"),
-	url('../font/OneShinhanBold.ttf') format('truetype');
-}
+	font-family: 'OneShinhanLight';
+	src: url("../font/OneShinhanLight.eot?#iefix") format("embedded-opentype"), 
+		   url("../font/OneShinhanLight.otf") format("opentype"), 
+		   url("../font/OneShinhanLight.woff") format("woff"), 
+		   url("../font/OneShinhanLight.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: 'OneShinhanMedium';
+	src: url("../font/OneShinhanMedium.eot?#iefix") format("embedded-opentype"), 
+		   url("../font/OneShinhanMedium.otf") format("opentype"), 
+		   url("../font/OneShinhanMedium.woff") format("woff"), 
+		   url("../font/OneShinhanMedium.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: 'OneShinhanBold';
+	src: url("../font/OneShinhanBold.eot?#iefix") format("embedded-opentype"), 
+		   url("../font/OneShinhanBold.otf") format("opentype"), 
+		   url("../font/OneShinhanBold.woff") format("woff"), 
+		   url("../font/OneShinhanBold.ttf") format("truetype");
+  }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -35,7 +47,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
     box-sizing: border-box;
 	font-family:'OneShinhanLight', sans-serif;
-	font-weight: 600;
+	letter-spacing: -1px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
