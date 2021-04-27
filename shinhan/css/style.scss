@@ -56,38 +56,41 @@ html {
         border-radius: 50px;
     }
 }
-.bx-wrapper {
-    .bx-controls-direction {
-        display: flex;
+.swiper-container {
+    .swiper-button-next{
         position: absolute;
-        left:0;
+        left:auto;
+        right:2.6rem;
         top:30%;
-        padding:0 2.6rem;
-        width:100%;
-        a {
-            display: block;
-            position: static;
-            width:2.4rem;
-            height:4.2rem;
-            background: url(../img/btn_prev.png) no-repeat center / 100%;
-            + a {
-                margin-left:auto;
-                background: url(../img/btn_next.png) no-repeat center / 100%;
-            }
+        width:2.4rem;
+        height:4.2rem;
+        background: url(../img/btn_next.png) no-repeat center / 100%;
+        &::after {
+            display:none;
         }
     }
-    .bx-pager  {
-        .bx-pager-item {
-            a {
-                width:1.6rem;
-                height:1.6rem;
-                margin:0;
-                background: #ccc;
-                &.active {
-                    background-color:#7f7f7f;
-                }
+    .swiper-button-prev{
+        position: absolute;
+        right:2.6rem;
+        top:30%;
+        width:2.4rem;
+        height:4.2rem;
+        background: url(../img/btn_prev.png) no-repeat center / 100%;
+        &::after {
+            display:none;
+        }
+    }
+    .swiper-pagination  {
+        .swiper-pagination-bullet{
+            width:1.6rem;
+            height:1.6rem;
+            margin:0;
+            background: #ccc;
+            opacity: 1;
+            &.swiper-pagination-bullet-active {
+                background-color:#7f7f7f;
             }
-            & + .bx-pager-item {
+            & + .swiper-pagination-bullet{
                 margin-left:2.2rem;
             }
         }
@@ -160,6 +163,7 @@ html {
         .notice {
             margin-top:4.4rem;
             padding:0 7.6rem;
+            padding-bottom: 10rem;
             font-size: 2.8rem;
             line-height:3.6rem;
             color:#555555;
