@@ -2,12 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="title" content="신한저축은행">						
+    <meta name="description" content="당신 곁에 함께하는 따뜻한 신한금융 저소득 ,저신용자를 위한 온라인 햇살론">						
+    <meta name="keywords" content="신한저축은행">						
+    <meta name="format-detection" content="telephone=no" />						
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>신한저축은행</title>
+    <title>신한저축은행 모바일 대출</title>
+    <!-- Facebook Pixel Code -->									
+    <script>									
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?									
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;									
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;									
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,									
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');									
+                                            
+        fbq('init', '1506565902984467');									
+        fbq('track', "PageView");
+    </script>									
+    <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1506565902984467&ev=PageView&noscript=1"/></noscript>									
+    <!-- End Facebook Pixel Code -->									
+    <!-- GA 태그매니저 시작 -->								
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75972612-4"></script>								
+    <!-- GA 태그매니저 끝 -->
+    <!-- Emforce ROI General Tag Start-->							
+    <script src = "js/general_gd.js"></script>							
+    <!-- Emforce ROI General Tag End-->							
+                                
+    <!-- 마케팅 스크립트 호출 시작 -->							
+    <script src = "js/marketing/marketing.js"></script>							
+    <!-- 마케팅 스크립트 호출 끝 -->							
+                                
+    <!-- 마케팅 스크립트 영역(끝) 190107 스크립트제거// -->							
+    <!-- 카카오 -->							
+    <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>							
+    <script type="text/javascript">							
+    kakaoPixel('5633034918225162332').pageView();							
+    </script>							
+    <!-- 카카오 끝 -->													
+    <!--[if lt IE 9]> 							
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script> 							
+    <![endif]-->							
+                                
+    <!-- 류예샘D 애드게더 트레킹 추가 -->							
+    <script type="text/javascript" src="/resources/js/adgather_tracking.js"></script>															
 </head>
 <body>
     <div class="wrapper">
@@ -15,7 +57,7 @@
             <img src="./img/img_visual.png" alt="당신 곁에 함께하는 따뜻한 신한금융 저소득 ,저신용자를 위한 온라인 햇살론 1:연7%대 ,2:모바일 간편신청,3:당일송금(영업일 18시내 모든 절차 완료시)">
             <div class="btn-img">
                 <img src="./img/btn_visual.png" alt="">
-                <a href="https://m.shinhansavings.com/optimal_goods?code=L2" title="안심한도조회" class="link"></a>
+                <a href="#" onclick="clickOnlineSunshineLimitBtn();" title="안심한도조회" class="link"></a>
             </div>
         </div>
         <!--메인 비주얼 end-->
@@ -196,120 +238,50 @@
         </div>
         <div class="fix-btn">
             <img src="./img/img_fixBtn.png" alt="대출신청 , 모든상품 통합조회">
-            <a href="https://m.shinhansavings.com/optimal_goods?code" title="대출신청"></a>
-            <a href="https://m.shinhansavings.com/optimal_goods?code=L3" title="모든 상품 통합 조회"></a>
+            <a href="#" onclick="clickApplyBtn();" title="대출신청"></a>
+            <a href="#" onclick="clickOnlineSunshineLimitBtn();" title="모든 상품 통합 조회"></a>
         </div>
     </div>
 </body>
 <script src="./js/jQuery.js"></script>
 <script src="./js/swiper.js"></script>
 <script>
-$(window).on("scroll",function(){
-    var ws = $(window).scrollTop();	
-    var visualHeight = $('.section01').innerHeight();
-    if(ws > visualHeight){
-        $(".fix-btn").addClass("active");
-    }else{
-        $(".fix-btn").removeClass("active");
-    }
-});
-$(document).ready(function(){
-    var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination'
-      },
+    $(window).on("scroll",function(){
+        var ws = $(window).scrollTop();	
+        var visualHeight = $('.section01').innerHeight();
+        if(ws > visualHeight){
+            $(".fix-btn").addClass("active");
+        }else{
+            $(".fix-btn").removeClass("active");
+        }
     });
-});
+    $(document).ready(function(){
+        var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination'
+        },
+        });
+    });		
+    function clickOnlineSunshineLimitBtn() {				
+        chkAdTrackingCookie('shsb.adgather');				
+        setAdTrackingCookie('shsb.adgather', '', 1);				
+        smartHttpsConv('M_sun_limit1', '');				
+                        
+        convCall('Mototal', 'onlinesun_Limit');				
+        gtag('event', 'M_안심한도조회_온라인햇살', {'event_category': 'limit', 'event_action': 'click', 'event_label': '한도조회하기' });
+    }
+    function clickApplyBtn() {								
+        chkAdTrackingCookie('shsb.adgather');								
+        setAdTrackingCookie('shsb.adgather', '', 1);								
+        smartHttpsConv('M_sun_apply', '');								
+                                        
+        convCall('Mototal', 'sun_apply');								
+        gtag('event', 'M_대출신청_온라인햇살', {'event_category': 'apply', 'event_action': 'click', 'event_label': '대출신청' });								
+    }
 
-
-
-// var mainSectH = $('.main-section').height() - $('.main-section__btn-group').height();
-// 		var scrollVal = $(window).scrollTop();
-// 		//모바일 REM 반응
-// 		function fontResize(){
-// 			var resolution=720, font=12;
-// 			var width = $('html').width();
-// 			var fontSize = font * (width/resolution);
-// 			$('html').css('font-size', fontSize);
-// 		}
-		 
-// 		//REM 반응형 함수
-// 		fontResize();
-  		
-// 		$(document).ready(function(){
-// 			$('.prod-intro__slide ul').bxSlider({
-// 				auto: false,
-// 				infiniteLoop: false,
-//   			hideControlOnEnd: true,
-// 				adaptiveHeight: true
-// 			});
-// 		});
-
-// 		$(window).scroll(function () { 
-// 			scrollVal = $(window).scrollTop();
-// 			if(scrollVal > mainSectH){
-// 				$('.fbnn,.fbtn-group').show();
-// 			}else{
-// 				$('.fbnn,.fbtn-group').hide();
-// 			}
-// 		});
-		
-// 		$(window).resize(function() {
-// 			fontResize();
-// 			mainSectH = $('.main-section').height() - $('.main-section__btn-group').height();
-// 		});
-		
-		
-// 		// 류예샘D 광고 트레킹 - 한도조회 버튼
-// 		function clickLimitBtn() {
-// 			chkAdTrackingCookie('shsb.adgather');
-// 			setAdTrackingCookie('shsb.adgather', '', 1);
-// 			smartHttpsConv('M_charm_limit1', '');
-		
-// 			convCall('Mo', 'main_charm_limit','https://m.shinhansavings.com/optimal_goods?code=L3');
-// 			gtag('event', 'M_상단_한도조회_참신한', {'event_category': 'main_charmloan_limit', 'event_action': 'click', 'event_label': 'charmloan' });
-// 		}
-		
-// 		// 류예샘D 광고 트레킹 - 대출신청 버튼
-// 		function clickApplyBtn() {
-// 			chkAdTrackingCookie('shsb.adgather');
-// 			setAdTrackingCookie('shsb.adgather', '', 1);
-// 			smartHttpsConv('M_charm_apply', '');
-		
-// 			convCall('Mo', 'main_charm_loan','https://m.shinhansavings.com/optimal_goods?code');
-// 			gtag('event', 'M_상단_대출신청_참신한', {'event_category': 'main_charmloan_loan', 'event_action': 'click', 'event_label': 'charmloan' });		
-// 		}
-		
-// 		// 류예샘D 광고 트레킹 - 플로팅 전화 버튼
-// 		function clickFloatingCallBtn() {
-// 			smartHttpsConv('M_charm_call', '');
-			
-// 			convCall('Mo', 'charm_floating_call','tel:1800-3651');
-// 			gtag('event', 'M_플로팅_전화연결_참신한', {'event_category': 'charmloan_floating_call', 'event_action': 'click', 'event_label': 'charmloan' });		
-// 		}
-		
-// 		// 류예샘D 광고 트레킹 - 전화상담예약 버튼
-// 		function clickReserveBtn() {
-// 			smartHttpsConv('M_charm_reservation', '');
-			
-// 			convCall('Mo', 'charm_floating_call_reservation','https://m.shinhansavings.com/reservation');
-// 			gtag('event', 'M_푸터_전화상담예약_참신한', {'event_category': 'charmloan_floating_call_reseration', 'event_action': 'click', 'event_label': 'charmloan' });
-// 		}
-		
-// 		// 류예샘D 광고 트레킹 - 모든상품 통합조회 버튼
-// 		function clickAllProductBtn() {
-// 			chkAdTrackingCookie('shsb.adgather');
-// 			setAdTrackingCookie('shsb.adgather', '', 1);
-// 			smartHttpsConv('M_charm_limit2', '');
-			
-// 			convCall('Mo', 'charm_floating_limit','https://m.shinhansavings.com/optimal_goods?code=L3');
-// 			gtag('event', 'M_플로팅_한도조회_참신한', {'event_category': 'charmloan_floating_limit', 'event_action': 'click', 'event_label': 'charmloan' });
-// 		}
-		
-	
 </script>
 </html>
