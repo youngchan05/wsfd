@@ -9,10 +9,10 @@ html {
     margin:0 auto;
     max-width:768px;
     overflow: hidden;
-    padding-bottom:13.2rem;
 }
 .footer {
     padding:4.4rem;
+    padding-bottom:20.7rem;
     font-size:2rem;
     line-height:2.2rem;
     text-align: center;
@@ -170,6 +170,8 @@ html {
                 padding-left:7rem;
                 white-space: initial;
                 font-weight: normal;
+                font-size: 2.8rem;
+                line-height:3.6rem;
                 .title {
                     position: absolute;
                     left:0;
@@ -208,7 +210,7 @@ html {
         margin-bottom:2.2rem;
         font-size:3.2rem;
         line-height:4rem;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         color:$black;
         font-weight: bold;
         font-family: 'Nanum Gothic';
@@ -296,7 +298,17 @@ html {
         font-size:10px;
     }
 }
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 704px) {
+    html {
+        font-size:6.6666px;
+    }
+}
+@media screen and (max-width: 640px) {
+    html {
+        font-size:5px;
+    }
+}
+@media screen and (max-width: 576px) {
     html {
         font-size:5.5px;
     }
@@ -304,7 +316,7 @@ html {
 
 @media screen and (max-width: 384px) {
     html {
-        font-size:4px;
+        font-size:4.125px;
     }
 }
 
