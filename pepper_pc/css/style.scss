@@ -52,10 +52,30 @@
     }
     .text-wrap {
         .top {
+            i {
+                    font-size:40px;
+                    line-height: 42.5px;
+                    font-family: GmarketSansBold;
+                    font-style: italic;
+            }
+            .txt-title {
+                    font-size:40px;
+                    line-height: 42.5px;
+                    font-family: GmarketSansBold;
+                    color:#373737;
+                div {
+                    font-size:80px;
+                    line-height:98.5px;
+                }
+                span {
+                    color:#e3434a;
+                    font-family: GmarketSansBold;
+                }
+            }
             p {
                 font-size:55px;
                 line-height:70px;
-                color:#000;
+                color:#373737;
                 white-space: pre-line;
                 strong {
                     color:#e3434a;
@@ -80,6 +100,14 @@
                     font-family: GmarketSansBold;
                     color:#e3434a;
 
+                }
+                i {
+                    font-family: GmarketSansBold;
+                    margin-top: 14px;
+                    font-size: 40px;
+                    color: #373737;
+                    line-height: 42px;
+                    font-style: italic;
                 }
             }
         }
@@ -171,8 +199,8 @@
     background-color: #f2f2f2;
     .inner {
         margin:0 auto;
-        max-width: 1920px;
-        padding:90px 0 90px 134px;
+        max-width: 1098px;
+        padding:90px 0 90px 34px;
     }
     strong {
         display:inline-block;
@@ -190,6 +218,7 @@
         color:#373737;
         font-family: 'Noto Sans KR';
         font-weight: 300;
+        letter-spacing: -1px;
         &::after {
             display: block;
             position: absolute;
