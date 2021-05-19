@@ -43,9 +43,9 @@ html { font-size: 9.5px; }
 
 .product-list li.product-item04 { background: url("../img/icon_item04.png") no-repeat right 2.8rem center; background-color: #f2f2f2; background-size: 12rem auto; }
 
-.product-list li strong { display: inline-block; margin-bottom: 2rem; font-size: 3.5rem; color: #bc391a; font-family: GmarketSansBold; }
+.product-list li strong { display: inline-block; margin-bottom: 1.5rem; font-size: 3.5rem; color: #bc391a; font-family: GmarketSansBold; }
 
-.product-list li p { color: #373737; font-size: 3rem; line-height: 4rem; white-space: pre-line; }
+.product-list li p { color: #373737; font-size: 3rem; line-height: 3.8rem; white-space: pre-line; }
 
 .product-list li span { font-size: 2.5rem; color: #373737; }
 
@@ -55,17 +55,17 @@ html { font-size: 9.5px; }
 
 .notice-list li { padding: 3.7rem 5rem; border-top: 1px solid #81272b; }
 
-.notice-list li strong { display: inline-block; margin-bottom: 2rem; font-size: 3.5rem; color: #bc391a; font-family: GmarketSansBold; }
+.notice-list li strong { display: inline-block; margin-bottom: 1.5rem; font-size: 3.5rem; color: #bc391a; font-family: GmarketSansBold; }
 
-.notice-list li p { color: #373737; font-size: 3rem; line-height: 4rem; white-space: pre-line; }
+.notice-list li p { color: #373737; font-size: 3rem; line-height: 3.4rem; white-space: pre-line; }
 
-.notice-list li span { font-size: 2.5rem; color: #373737; line-height: 4rem; color: #373737; white-space: pre-line; }
+.notice-list li span { font-size: 2.5rem; color: #373737; line-height: 3.5rem; color: #373737; white-space: pre-line; }
 
 .notice-wrap { padding: 8rem 0 8rem 10rem; background-color: #f2f2f2; }
 
 .notice-wrap strong { display: inline-block; margin-bottom: 4rem; font-size: 3.5rem; color: #373737; font-family: GmarketSansBold; }
 
-.notice-wrap p { position: relative; padding-left: 2.5rem; white-space: pre-line; font-size: 2.5rem; line-height: 3.5rem; color: #373737; font-family: 'Noto Sans KR'; font-weight: 300; }
+.notice-wrap p { position: relative; padding-left: 2.5rem; white-space: pre-line; font-size: 2.5rem; line-height: 3.2rem; color: #373737; font-family: 'Noto Sans KR'; font-weight: 300; }
 
 .notice-wrap p::after { display: block; position: absolute; left: 0; top: 0; content: 'ㆍ'; font-size: 2.5rem; line-height: 3.5rem; }
 
