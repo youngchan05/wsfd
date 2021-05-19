@@ -25,6 +25,7 @@ time, mark, audio, video {
     box-sizing: border-box;
 	letter-spacing: -2px;
     font-family:'GmarketSansMedium';
+	letter-spacing: -0.1rem;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
