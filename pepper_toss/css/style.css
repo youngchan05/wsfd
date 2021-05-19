@@ -69,7 +69,7 @@ html { font-size: 9.5px; }
 
 .notice-wrap p::after { display: block; position: absolute; left: 0; top: 0; content: 'ㆍ'; font-size: 2.5rem; line-height: 3.5rem; }
 
-.notice-wrap p + p { margin-top: 2rem; }
+.notice-wrap p + p { margin-top: 1.5rem; }
 
 @media screen and (max-width: 684px) { html { font-size: 8px; } }
 
