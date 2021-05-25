@@ -48,5 +48,27 @@ html { font-size: 10px; }
 
 @media screen and (max-width: 768px) { html { font-size: 10px; } }
 
-@media screen and (max-width: 512px) { html { font-size: 5px; } }
+@media screen and (max-width: 726px) { html { font-size: 9px; } }
+
+@media screen and (max-width: 680px) { html { font-size: 8.5px; } }
+
+@media screen and (max-width: 615px) { html { font-size: 8px; } }
+
+@media screen and (max-width: 580px) { html { font-size: 7.5px; } }
+
+@media screen and (max-width: 540px) { html { font-size: 7px; } }
+
+@media screen and (max-width: 500px) { html { font-size: 6.5px; } }
+
+@media screen and (max-width: 470px) { html { font-size: 6.3px; } }
+
+@media screen and (max-width: 450px) { html { font-size: 6px; } }
+
+@media screen and (max-width: 430px) { html { font-size: 5.5px; } }
+
+@media screen and (max-width: 400px) { html { font-size: 5.3px; } }
+
+@media screen and (max-width: 380px) { html { font-size: 5px; } }
+
+@media screen and (max-width: 360px) { html { font-size: 4.6px; } }
 /*# sourceMappingURL=style.css.map */
