@@ -22,6 +22,10 @@ html {
   white-space: pre-line;
 }
 
+.footer p a {
+  color: #9d9d9d;
+}
+
 .fix-btn {
   position: fixed;
   left: 50%;
