@@ -60,6 +60,14 @@ html {
             width: 21%;
             margin-left:auto;
         }
+        a {
+            display: block;
+            width:21%;
+            margin-left: auto;
+            .call {
+                width:100%;
+            }
+        }
     }
 }
 .section {

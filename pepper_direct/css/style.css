@@ -81,6 +81,16 @@ html {
   margin-left: auto;
 }
 
+.wrapper .top-spot a {
+  display: block;
+  width: 21%;
+  margin-left: auto;
+}
+
+.wrapper .top-spot a .call {
+  width: 100%;
+}
+
 .section .section-tit img {
   width: 100%;
 }
