@@ -1,0 +1,69 @@
+//color
+$white: #fff;
+$block:#000;
+$blue :#004097;
+/*layout*/
+
+@mixin bg ($url:url ,$repeat :no-repeat ,$pos:center, $size:auto, $type:svg){
+  background:url('../img/#{$url}.#{$type}') $repeat $pos / $size;
+}
+
+@mixin btns($size:size,$type:type , $mobile:'false') {
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+  @if  $mobile == 'true' {
+    width: 140px; 
+    height: 45px;
+    font-size: 15px;
+    line-height: 45px;
+  }@else {
+    @if $size == small {
+      width: 80px;
+      height: 34px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      border-radius: 2px;
+    }@else if $size == medium {
+      width: 150px;
+      height: 40px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+    }@else {
+      border-radius: 5px;
+      width: 200px;
+      height: 60px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 60px;
+      background: $blue;
+      border: 1px solid $blue;
+      color:$white;
+    }
+  }
+  @if $type == blue {
+    background: $white;
+    border: 1px solid $blue;
+    color: $blue;
+  }@else if $type == white {
+    background: $white;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    color: #333333;
+  }@else {
+    background: $blue;
+    border: 1px solid $blue;
+    color:$white;
+  }
+}
+html,body {
+  height:100%;
+}
+.wrapper {
+  position: relative;
+  min-height:100%;
+  overflow: hidden;
+
+}
