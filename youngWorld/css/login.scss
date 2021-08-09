@@ -1,0 +1,223 @@
+<<<<<<< HEAD
+@import 'mixin';
+@import 'common';
+@import 'layout';
+
+.login {
+  &-title {
+    margin-bottom: 48px;
+    span {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 20px;
+      color:#606060;
+      font-weight: 500;
+    }
+    strong {
+      font-size: 24px;
+      line-height: 37px;
+      font-weight: 700;
+      color:#000;
+    }
+  }
+  &-type-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 52px;
+    > span {
+      display: inline-block;
+      position: relative;
+      input{
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        opacity:0;
+      }
+      label {
+        display: inline-block;
+        width:72px;
+        height:40px;
+        border-radius: 30px;
+        font-size: 14px;
+        line-height: 38px;
+        text-align: center;
+        font-weight: 400;
+      }
+      $colors-data: (
+        user: #004097,
+        seller: #e01c67,
+        officer: #f4b322,
+        Official: #139e89
+      );
+      @each $order, $color in $colors-data {
+        &.#{$order}{
+          label {
+            background-color: $white;
+            border:1px solid $color;
+            color:$color;
+          }
+        }
+      }
+      @each $order, $color in $colors-data {
+        &.#{$order}{
+          input {
+            &:checked + label {
+              background-color: $color;
+              color:$white;
+            }
+          }
+        }
+      }
+      + span {
+        margin-left: 8px;
+      }
+    }
+  }
+  .checkbox {
+    margin-top:27px;
+  }
+  .link-box {
+    display: flex;
+    justify-content: center;
+    margin-top:76px;
+    a {
+      display: inline-block;
+      font-size:14px;
+      line-height: 20px;
+      color:#606060;
+      + a {
+        position: relative;
+        margin-left:14px;
+        padding-left:14px;
+        &::after {
+          display: block;
+          position: absolute;
+          left:0;
+          top:50%;
+          transform: translateY(-50%);
+          content: "";
+          height:20px;
+          width:2px;
+          background-color:#e0e0e0;
+          
+        }
+      }
+    }
+  }
+}
+=======
+@import 'mixin';
+@import 'common';
+@import 'layout';
+
+.login {
+  &-title {
+    margin-bottom: 48px;
+    span {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 20px;
+      color:#606060;
+      font-weight: 500;
+    }
+    strong {
+      font-size: 24px;
+      line-height: 37px;
+      font-weight: 700;
+      color:#000;
+    }
+  }
+  &-type-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 52px;
+    > span {
+      display: inline-block;
+      position: relative;
+      input{
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        opacity:0;
+      }
+      label {
+        display: inline-block;
+        width:72px;
+        height:40px;
+        border-radius: 30px;
+        font-size: 14px;
+        line-height: 38px;
+        text-align: center;
+        font-weight: 400;
+      }
+      $colors-data: (
+        user: #004097,
+        seller: #e01c67,
+        officer: #f4b322,
+        Official: #139e89
+      );
+      @each $order, $color in $colors-data {
+        &.#{$order}{
+          label {
+            background-color: $white;
+            border:1px solid $color;
+            color:$color;
+          }
+        }
+      }
+      @each $order, $color in $colors-data {
+        &.#{$order}{
+          input {
+            &:checked + label {
+              background-color: $color;
+              color:$white;
+            }
+          }
+        }
+      }
+      + span {
+        margin-left: 8px;
+      }
+    }
+  }
+  .checkbox {
+    margin-top:27px;
+  }
+  .link-box {
+    display: flex;
+    justify-content: center;
+    margin-top:76px;
+    a {
+      display: inline-block;
+      font-size:14px;
+      line-height: 20px;
+      color:#606060;
+      + a {
+        position: relative;
+        margin-left:14px;
+        padding-left:14px;
+        &::after {
+          display: block;
+          position: absolute;
+          left:0;
+          top:50%;
+          transform: translateY(-50%);
+          content: "";
+          height:20px;
+          width:2px;
+          background-color:#e0e0e0;
+          
+        }
+      }
+    }
+  }
+}
+>>>>>>> c1bbc2ee951c9e275b5496cd79a64dfc24f14e74

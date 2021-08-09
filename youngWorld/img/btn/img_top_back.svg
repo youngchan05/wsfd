@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <filter id="z25wiwwksa" color-interpolation-filters="auto">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.188235 0 0 0 0 0.188235 0 0 0 0 0.188235 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g>
+            <g filter="url(#z25wiwwksa)" transform="translate(-16.000000, -36.000000) translate(16.000000, 36.000000)">
+                <g stroke="#000" stroke-width="1.5">
+                    <path d="M9.71 0L.71 9.4 9.71 18M19.71 9.38L.71 9.45" transform="translate(6.000000, 6.000000)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
