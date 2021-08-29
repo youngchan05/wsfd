@@ -36,6 +36,8 @@ html { font-size: 10px; }
 
 .section02 .desc p { font-size: 2.6rem; line-height: 3.6rem; white-space: pre-line; color: #444; }
 
+.section02 .desc p.buellt { font-size: 2.6rem; line-height: 3.6rem; }
+
 .section02 .desc + .desc { margin-top: 3.6rem; }
 
 .section02 .sub-text { margin-top: 5rem; }
