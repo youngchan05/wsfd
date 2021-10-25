@@ -288,7 +288,7 @@ html {
   position: relative;
   padding-left: 2.2rem;
   color: #666;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   line-height: 4.2rem;
   font-family: 'Nanum Gothic';
   font-weight: 400;
@@ -312,7 +312,7 @@ html {
 
 .notice-wrap .desc {
   color: #666;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   line-height: 4.2rem;
   font-family: 'Nanum Gothic';
   font-weight: 400;
@@ -396,7 +396,7 @@ html {
 
 @media screen and (max-width: 384px) {
   html {
-    font-size: 4.3px;
+    font-size: 4.125px;
   }
 }
 /*# sourceMappingURL=style.css.map */
