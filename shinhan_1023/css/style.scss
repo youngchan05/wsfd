@@ -18,6 +18,7 @@ html {
         line-height: 3.3rem;
         color:#999;
         white-space: pre-line;
+        letter-spacing: 0px;
     }
     strong{
         display:inline-block;
@@ -26,12 +27,14 @@ html {
         font-size:3rem;
         line-height: 3.2rem;
         font-weight: bold;
+        letter-spacing: 0px;
     }
     .copy {
         margin-top:4.4rem;
-        font-size:2.4rem;
+        font-size:2rem;
         line-height: 3.3rem;
         color:#999;
+        letter-spacing: 0px;
     }
 
 }
@@ -183,7 +186,7 @@ html {
         .notice {
             margin-top:4.4rem;
             padding:0 7.6rem;
-            font-size: 2.7rem;
+            font-size: 2.6rem;
             line-height:3.6rem;
             color:#555555;
             white-space: pre-line;
@@ -193,7 +196,7 @@ html {
                 padding-left:7rem;
                 white-space: initial;
                 font-weight: normal;
-                font-size: 2.7rem;
+                font-size: 2.6rem;
                 line-height:3.6rem;
                 .title {
                     position: absolute;
@@ -253,7 +256,7 @@ html {
         position: relative;
         padding-left:2.2rem;
         color:#666;
-        font-size:2.6rem;
+        font-size:2.7rem;
         line-height:4.2rem;
         font-family: 'Nanum Gothic';
         font-weight: 400;
@@ -275,7 +278,7 @@ html {
     }
     .desc {
         color:#666;
-        font-size:2.6rem;
+        font-size:2.7rem;
         line-height:4.2rem;
         font-family: 'Nanum Gothic';
         font-weight: 400;
