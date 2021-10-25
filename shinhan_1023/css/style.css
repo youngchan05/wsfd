@@ -103,6 +103,11 @@ html {
   display: none;
 }
 
+.swiper-container .swiper-pagination {
+  position: static;
+  padding-bottom: 10rem;
+}
+
 .swiper-container .swiper-pagination .swiper-pagination-bullet {
   width: 1.6rem;
   height: 1.6rem;
@@ -129,6 +134,10 @@ html {
 
 .app-link a + a {
   margin-left: 2rem;
+}
+
+.product-list {
+  padding-bottom: 2rem;
 }
 
 .product-list .product-item .item-box {
@@ -209,7 +218,6 @@ html {
 .product-list .product-item .notice {
   margin-top: 4.4rem;
   padding: 0 7.6rem;
-  padding-bottom: 10rem;
   font-size: 2.6rem;
   line-height: 3.6rem;
   color: #555555;
