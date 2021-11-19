@@ -26,9 +26,9 @@
       }
     }
   
-    function _createClass(Constructor, protoProps, wsfd/staticProps) {
+    function _createClass(Constructor, protoProps, staticProps) {
       if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-      if (wsfd/staticProps) _defineProperties(Constructor, wsfd/staticProps);
+      if (staticProps) _defineProperties(Constructor, staticProps);
       return Constructor;
     }
   
