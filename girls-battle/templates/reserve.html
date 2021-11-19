@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/reset.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <script src="/static/js/jQuery.js"></script>
+    <script src="/static/js/common.js"></script>
+    <title>소녀배틀 사전예약</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="/static/main.html">
+                        <img src="/static/images/img_logo.png" alt="소녀배틀">
+                    </a>
+                </h1>
+                <div class="gnb">
+                    <ul>
+                        <li>
+                            <a href="/static/reserve.html">사전예약</a>
+                        </li>
+                        <li>
+                            <a href="/static/birth.html">탄생 is</a>
+                        </li>
+                        <li>
+                            <a href="/static/anima.html">아니마 is</a>
+                        </li>
+                        <li>
+                            <a href="/static/cafe.html">공식카페</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- :: end header-->
+        <div class="contents">
+            <div class="content-img">
+                <img  class="bg_img" src="/static/images/img_reserve2.jpg" alt="">
+                <div class="inner-content">
+                    <strong class="title">
+                        <img src="/static/images/img_title_reserve.png" alt="">
+                    </strong>
+                    <div class="input-section">
+                        <form action="" id="form">
+                            <div class="input-set">
+                                <input type="number" id="phoneNumber" name="phoneNumber" maxlength="11" placeholder="- 없이 휴대폰 번호 입력">
+                                <button type="button" class="btn_result" onclick="dataValidation()">예약완료</button>
+                            </div>
+                            <div class="bottom-wrap">
+                                <div class="platform">
+                                    <span class="box">
+                                        <input type="radio" name="platform" value="1">
+                                        <span><i><img src="/static/images/icon_apple.png" alt=""></i>IOS</span>
+                                    </span>
+                                    <span class="box">
+                                        <input type="radio"  name="platform"  value="0">
+                                        <span><i><img src="/static/images/icon_android.png" alt=""></i>ANDROID</span>
+                                    </span>
+                                </div>
+                                <div class="agree-wrap">
+                                    <div class="box">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="privacyAgree" name="privacyAgree" value="1">
+                                            <label for="privacyAgree">
+                                                <span>개인정보 수집 및 이용동의</span>
+                                            </label>
+                                        </p>
+                                        <button type="button" onclick="popUtils.show('privacy')">▶ 자세히보기 ◀</button>
+                                    </div>
+                                    <div class="box">
+                                        <p class="checkbox">
+                                            <input type="checkbox" id="noticeAgree" name="noticeAgree" value="1">
+                                            <label for="noticeAgree">
+                                                <span>이벤트 프로모션 알림 수신동의</span>
+                                            </label>
+                                        </p>
+                                        <button type="button" onclick=" popUtils.show('event')">▶ 자세히보기 ◀</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pack-wrap">
+                        <img src="/static/images/img_pack.png" alt="사전예약 pack">
+                    </div>
+                </div>
+            </div>
+            <div class="pop-wrap">
+                <div data-os>
+                    <img src="/static/images/img_pop_os.png" alt="">
+                    <button type="button" class="pop_close">닫기버튼</button>
+                </div>
+                <div data-phone>
+                    <img src="/static/images/img_pop_phone.png" alt="">
+                    <button type="button" class="pop_close">닫기버튼</button>
+                </div>
+                <div data-agree>
+                    <img src="/static/images/img_pop_agree.png" alt="">
+                    <button type="button" class="pop_close">닫기버튼</button>
+                </div>
+                <div data-result>
+                    <img src="/static/images/img_pop_result.png" alt="">
+                    <button type="button" class="pop_close">닫기버튼</button>
+                </div>
+                <div data-privacy>
+                    <img src="/static/images/img_pop_privacy.png" alt="">
+                    <button type="button" class="pop_close privacy">닫기버튼</button>
+                </div>
+                <div data-event>
+                    <img src="/static/images/img_pop_event.png" alt="">
+                    <button type="button" class="pop_close event">닫기버튼</button>
+                </div>
+            </div>
+        </div>
+        <!-- :: end contents-->
+        <footer class="footer">
+            <div class="inner">
+                ©2021 ITOXI, INC. 모든 권리는 ㈜아이톡시에 있습니다.
+            </div>
+        </footer>
+        <!-- :: end footer-->
+    </div>
+</body>
+</html>
