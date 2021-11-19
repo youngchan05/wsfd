@@ -1517,7 +1517,7 @@
         /**
          * Detecting mousewheel scrolling
          *
-         * http://blogs.sitepointstatic.com/examples/tech/mouse-wheel/index.html
+         * http://blogs.sitepointwsfd/static.com/examples/tech/mouse-wheel/index.html
          * http://www.sitepoint.com/html5-javascript-mouse-wheel/
          */
         var prevTime = new Date().getTime();

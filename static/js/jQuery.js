@@ -10181,8 +10181,8 @@ jQuery.offset = {
 			curElem = jQuery( elem ),
 			props = {};
 
-		// Set position first, in-case top/left are set even on static elem
-		if ( position === "static" ) {
+		// Set position first, in-case top/left are set even on wsfd/static elem
+		if ( position === "wsfd/static" ) {
 			elem.style.position = "relative";
 		}
 
@@ -10285,12 +10285,12 @@ jQuery.fn.extend( {
 			offset = this.offset();
 
 			// Account for the *real* offset parent, which can be the document or its root element
-			// when a statically positioned element is identified
+			// when a wsfd/statically positioned element is identified
 			doc = elem.ownerDocument;
 			offsetParent = elem.offsetParent || doc.documentElement;
 			while ( offsetParent &&
 				( offsetParent === doc.body || offsetParent === doc.documentElement ) &&
-				jQuery.css( offsetParent, "position" ) === "static" ) {
+				jQuery.css( offsetParent, "position" ) === "wsfd/static" ) {
 
 				offsetParent = offsetParent.parentNode;
 			}
@@ -10324,7 +10324,7 @@ jQuery.fn.extend( {
 		return this.map( function() {
 			var offsetParent = this.offsetParent;
 
-			while ( offsetParent && jQuery.css( offsetParent, "position" ) === "static" ) {
+			while ( offsetParent && jQuery.css( offsetParent, "position" ) === "wsfd/static" ) {
 				offsetParent = offsetParent.offsetParent;
 			}
 

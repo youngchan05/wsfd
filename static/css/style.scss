@@ -2,7 +2,7 @@ html,body {
 	height:100%;
 }
 body {
-	background:url(/static/images/bg_body.png) repeat-x left top/ auto 100%;
+	background:url(/wsfd/static/images/bg_body.png) repeat-x left top/ auto 100%;
 	&.active {
 		overflow: hidden;
 	}
@@ -65,7 +65,7 @@ body {
 	left:0;
 	top:0;
 	width: 100%;
-	background: url(/static/images/bg_header.png) repeat-x top left;
+	background: url(/wsfd/static/images/bg_header.png) repeat-x top left;
 	background-size:auto 100%;
 	box-shadow: 0px 9px 12px -8px #000;
 	z-index: 1000;
@@ -75,7 +75,7 @@ body {
 		max-width: 1020px;
 		margin:0 auto;
 		.logo {
-			padding-top: 12px;
+			padding:6px 0;
 			margin:0 auto 0 20px;
 		}
 	}
@@ -136,7 +136,7 @@ body {
 		content: '';
 		width:576px;
 		height:528px;
-		background:url(/static/images/bg_slide.png) no-repeat left center;
+		background:url(/wsfd/static/images/bg_slide.png) no-repeat left center;
 		z-index: 100;
 	}
 	.swiper-wrapper {
@@ -223,7 +223,7 @@ body {
 	max-width: 680px;
 	margin: 0 auto;
 	padding:36px 42px 45px 14px ;
-	background:url(/static/images/bg_reserve.png) no-repeat left top;
+	background:url(/wsfd/static/images/bg_reserve.png) no-repeat left top;
 	.input-set {
 		position: relative;
 		padding-right: 186px;
@@ -262,7 +262,7 @@ body {
 			color:#1c1c1c;
 			padding:16px 0 16px 14px;
 			-moz-background-inline-policy: 14px;
-			background:url(/static/images/bg_reserve_btn.png) repeat-x left top;
+			background:url(/wsfd/static/images/bg_reserve_btn.png) repeat-x left top;
 			&::after {
 				display: block;
 				content: "";
@@ -271,7 +271,7 @@ body {
 				top:0;
 				width: 13px;
 				height:52px;
-				background:url(/static/images/bg_btn_right.png) no-repeat center;
+				background:url(/wsfd/static/images/bg_btn_right.png) no-repeat center;
 				
 			}
 		}
@@ -296,7 +296,7 @@ body {
 				&:checked + span {
 					background-color:#d4bcff;
 					&::after{
-						background:url(/static/images/bg_checkbox_on.png) no-repeat center;
+						background:url(/wsfd/static/images/bg_checkbox_on.png) no-repeat center;
 					}
 				}
 			}
@@ -320,7 +320,7 @@ body {
 					width: 38px;
 					height: 34px;
 					content: '';
-					background:url(/static/images/bg_checkbox.png) no-repeat center;
+					background:url(/wsfd/static/images/bg_checkbox.png) no-repeat center;
 				}
 			}
 			+ .box {
@@ -359,14 +359,14 @@ body {
 				margin:0;
 				cursor: pointer;
 				&:checked + label {
-					background:url(/static/images/btn_checkbox_on.png) no-repeat left center;
+					background:url(/wsfd/static/images/btn_checkbox_on.png) no-repeat left center;
 				}
 			}
 			label {
 				display: inline-block;
 				padding-left: 30px;
 				line-height:22px;
-				background:url(/static/images/btn_checkbox.png) no-repeat left center;
+				background:url(/wsfd/static/images/btn_checkbox.png) no-repeat left center;
 				span {
 					display: inline-block;
 					font-size:14px;
@@ -743,7 +743,7 @@ body {
 				height: 19%;
 				input {
 					&:checked + span {
-						background:url(/static/images/btn_ios_on.png) no-repeat left center / 100%;
+						background:url(/wsfd/static/images/btn_ios_on.png) no-repeat left center / 100%;
 					}
 				}
 				+ .box {
@@ -752,11 +752,11 @@ body {
 					top:43%;
 					input {
 						&:checked + span {
-							background:url(/static/images/btn_android_on.png) no-repeat left center / 100%;
+							background:url(/wsfd/static/images/btn_android_on.png) no-repeat left center / 100%;
 						}
 					}
 					span {
-						background:url(/static/images/btn_android.png) no-repeat left center / 100%;
+						background:url(/wsfd/static/images/btn_android.png) no-repeat left center / 100%;
 					}
 				}
 				span {
@@ -765,7 +765,7 @@ body {
 					margin:0;
 					align-items: center;
 					font-size:0;
-					background:url(/static/images/btn_ios.png) no-repeat left center / 100%;
+					background:url(/wsfd/static/images/btn_ios.png) no-repeat left center / 100%;
 					i {
 						display: none;;
 					}
@@ -789,13 +789,13 @@ body {
 				}
 				input {
 					&:checked + label {
-						background:url(/static/images/img_agree01_on.png) no-repeat center / 100%;
+						background:url(/wsfd/static/images/img_agree01_on.png) no-repeat center / 100%;
 					}
 				}
 				label {
 					width:100%;
 					height:100%;
-					background:url(/static/images/img_agree01.png) no-repeat center / 100%;
+					background:url(/wsfd/static/images/img_agree01.png) no-repeat center / 100%;
 					span {
 						font-size:0;
 						line-height:0;
@@ -817,11 +817,11 @@ body {
 					right:8%;
 					input {
 						&:checked + label {
-							background:url(/static/images/img_agree02_on.png) no-repeat center / 100%;
+							background:url(/wsfd/static/images/img_agree02_on.png) no-repeat center / 100%;
 						}
 					}
 					label {
-						background:url(/static/images/img_agree02.png) no-repeat center / 100%;
+						background:url(/wsfd/static/images/img_agree02.png) no-repeat center / 100%;
 					}
 				}
 			}
