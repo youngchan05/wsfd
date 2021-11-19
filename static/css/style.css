@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  background: url(/static/images/bg_body.png) repeat-x left top/auto 100%;
+  background: url(/wsfd/static/images/bg_body.png) repeat-x left top/auto 100%;
 }
 
 body.active {
@@ -83,7 +83,7 @@ body.active {
   left: 0;
   top: 0;
   width: 100%;
-  background: url(/static/images/bg_header.png) repeat-x top left;
+  background: url(/wsfd/static/images/bg_header.png) repeat-x top left;
   background-size: auto 100%;
   -webkit-box-shadow: 0px 9px 12px -8px #000;
           box-shadow: 0px 9px 12px -8px #000;
@@ -164,7 +164,7 @@ body.active {
   content: '';
   width: 576px;
   height: 528px;
-  background: url(/static/images/bg_slide.png) no-repeat left center;
+  background: url(/wsfd/static/images/bg_slide.png) no-repeat left center;
   z-index: 100;
 }
 
@@ -264,7 +264,7 @@ body.active {
   max-width: 680px;
   margin: 0 auto;
   padding: 36px 42px 45px 14px;
-  background: url(/static/images/bg_reserve.png) no-repeat left top;
+  background: url(/wsfd/static/images/bg_reserve.png) no-repeat left top;
 }
 
 .input-section .input-set {
@@ -331,7 +331,7 @@ body.active {
   color: #1c1c1c;
   padding: 16px 0 16px 14px;
   -moz-background-inline-policy: 14px;
-  background: url(/static/images/bg_reserve_btn.png) repeat-x left top;
+  background: url(/wsfd/static/images/bg_reserve_btn.png) repeat-x left top;
 }
 
 .input-section .input-set button::after {
@@ -342,7 +342,7 @@ body.active {
   top: 0;
   width: 13px;
   height: 52px;
-  background: url(/static/images/bg_btn_right.png) no-repeat center;
+  background: url(/wsfd/static/images/bg_btn_right.png) no-repeat center;
 }
 
 .input-section .bottom-wrap {
@@ -373,7 +373,7 @@ body.active {
 }
 
 .input-section .platform .box input:checked + span::after {
-  background: url(/static/images/bg_checkbox_on.png) no-repeat center;
+  background: url(/wsfd/static/images/bg_checkbox_on.png) no-repeat center;
 }
 
 .input-section .platform .box span {
@@ -403,7 +403,7 @@ body.active {
   width: 38px;
   height: 34px;
   content: '';
-  background: url(/static/images/bg_checkbox.png) no-repeat center;
+  background: url(/wsfd/static/images/bg_checkbox.png) no-repeat center;
 }
 
 .input-section .platform .box + .box {
@@ -454,14 +454,14 @@ body.active {
 }
 
 .input-section .agree-wrap .checkbox input:checked + label {
-  background: url(/static/images/btn_checkbox_on.png) no-repeat left center;
+  background: url(/wsfd/static/images/btn_checkbox_on.png) no-repeat left center;
 }
 
 .input-section .agree-wrap .checkbox label {
   display: inline-block;
   padding-left: 30px;
   line-height: 22px;
-  background: url(/static/images/btn_checkbox.png) no-repeat left center;
+  background: url(/wsfd/static/images/btn_checkbox.png) no-repeat left center;
 }
 
 .input-section .agree-wrap .checkbox label span {
@@ -872,7 +872,7 @@ body.active {
     height: 19%;
   }
   .input-section .platform .box input:checked + span {
-    background: url(/static/images/btn_ios_on.png) no-repeat left center/100%;
+    background: url(/wsfd/static/images/btn_ios_on.png) no-repeat left center/100%;
   }
   .input-section .platform .box + .box {
     margin: 0;
@@ -880,10 +880,10 @@ body.active {
     top: 43%;
   }
   .input-section .platform .box + .box input:checked + span {
-    background: url(/static/images/btn_android_on.png) no-repeat left center/100%;
+    background: url(/wsfd/static/images/btn_android_on.png) no-repeat left center/100%;
   }
   .input-section .platform .box + .box span {
-    background: url(/static/images/btn_android.png) no-repeat left center/100%;
+    background: url(/wsfd/static/images/btn_android.png) no-repeat left center/100%;
   }
   .input-section .platform .box span {
     width: 100%;
@@ -893,7 +893,7 @@ body.active {
         -ms-flex-align: center;
             align-items: center;
     font-size: 0;
-    background: url(/static/images/btn_ios.png) no-repeat left center/100%;
+    background: url(/wsfd/static/images/btn_ios.png) no-repeat left center/100%;
   }
   .input-section .platform .box span i {
     display: none;
@@ -916,12 +916,12 @@ body.active {
     height: 100%;
   }
   .input-section .agree-wrap .box input:checked + label {
-    background: url(/static/images/img_agree01_on.png) no-repeat center/100%;
+    background: url(/wsfd/static/images/img_agree01_on.png) no-repeat center/100%;
   }
   .input-section .agree-wrap .box label {
     width: 100%;
     height: 100%;
-    background: url(/static/images/img_agree01.png) no-repeat center/100%;
+    background: url(/wsfd/static/images/img_agree01.png) no-repeat center/100%;
   }
   .input-section .agree-wrap .box label span {
     font-size: 0;
@@ -942,10 +942,10 @@ body.active {
     right: 8%;
   }
   .input-section .agree-wrap .box + .box input:checked + label {
-    background: url(/static/images/img_agree02_on.png) no-repeat center/100%;
+    background: url(/wsfd/static/images/img_agree02_on.png) no-repeat center/100%;
   }
   .input-section .agree-wrap .box + .box label {
-    background: url(/static/images/img_agree02.png) no-repeat center/100%;
+    background: url(/wsfd/static/images/img_agree02.png) no-repeat center/100%;
   }
   .pop-wrap {
     position: fixed;
