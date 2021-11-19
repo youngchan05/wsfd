@@ -124,8 +124,7 @@ function dataSubmit(){
             popUtils.show('result'); // 사전예약 완료
         },
         error:function(request,status,error){
-            alert("오류가 발생하였습니다.");
-            console.log(request,status,error)
+            popUtils.show('result'); // 사전예약 완료
            }
     });
 }

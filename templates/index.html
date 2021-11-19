@@ -89,7 +89,7 @@
             </div>
             <div class="inner">
                 <h1 class="logo">
-                    <a href="/wsfd/static/index.html">
+                    <a href="#firstPage">
                         <img src="/wsfd/static/images/img_logo.png" alt="소녀배틀">
                     </a>
                 </h1>
@@ -309,9 +309,14 @@
             <div data-result>
                 <img src="/wsfd/static/images/img_pop_result.png" alt="">
                 <button type="button" class="pop_close result">닫기버튼</button>
-                <a href="https://apps.apple.com/app/id1593198586" class="link link01"></a>
+                <!-- 링크 오픈전 
+                 <a href="https://apps.apple.com/app/id1593198586" class="link link01"></a>
                 <a href="https://play.google.com/store/apps/details?id=com.itoxi.girlsbattle" class="link link02"></a>
                 <a href="http://onesto.re/0000759170" class="link link03"></a>
+                 -->
+                <button onclick="notOpen()" class="link link01"></button>
+                <button onclick="notOpen()" class="link link02"></button>
+                <button onclick="notOpen()" class="link link03"></button>
             </div>
             <div data-privacy>
                 <img src="/wsfd/static/images/img_pop_privacy.png" alt="">
@@ -327,7 +332,7 @@
         </a>
         <footer class="footer">
             <div class="inner">
-                ©2021 ITOXI, INC. 모든 권리는 ㈜아이톡시에 있습니다.
+                Copyright ⓒ ITOXI 2021. ALL RIGHTS RESERVED
             </div>
         </footer>
         <!-- :: end footer-->
@@ -338,5 +343,10 @@
 <script src="/wsfd/static/js/jquery.fullPage.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/wsfd/static/js/common.js"></script>
+<script>
+    function notOpen (){
+        alert("“HEY~ 아직 오픈전이야, 조금만 기다려줘!”")
+    }
+</script>
 </html>
 
