@@ -107,7 +107,7 @@ function dataValidation(){
 function dataSubmit(){
     var param = {
         phoneNumber : $('#phoneNumber').val(),
-        platform : $('.platform').find("input[name=platform]").val(),
+        platform : $('.platform').find("input[name=platform]:checked").val(),
         privacyAgree :  $('#privacyAgree[name=privacyAgree]').val(),
         noticeAgree : $('#noticeAgree[name=noticeAgree]').is(':checked') ? "1" : "0",
 		channelUrl : document.referrer
@@ -124,6 +124,7 @@ function dataSubmit(){
             popUtils.show('result'); // 사전예약 완료
         },
         error:function(request,status,error){
+            popUtils.show('result'); // 사전예약 완료
             alert("오류가 발생하였습니다.");
             console.log(request,status,error)
            }
