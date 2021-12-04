@@ -6,7 +6,6 @@ $(function() {
 });
 var slide = {
     init : function(){
-        this.fullPage();
         this.setting();
         
     },
@@ -31,18 +30,6 @@ var slide = {
               },
         });
     },
-    fullPage : function(){
-        $('#fullpage').fullpage({
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage'],
-            menu: '#menu',
-            lazyLoad: true
-          });
-        // var myFullpage = new fullpage('#fullpage', {
-        //     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage'],
-        //     menu: '#menu',
-        //     lazyLoad: true
-        // });
-    }
 }
 
 var popUtils = {
@@ -92,16 +79,16 @@ var menu = {
 }
 
 function dataValidation(){
-        var phoneNumber = $('#phoneNumber').val();
-        var platform = $('.platform').find("input[name=platform]").is(':checked');
-        var privacyAgree =  $('#privacyAgree[name=privacyAgree]').is(':checked');
-        var noticeAgree =  $('#noticeAgree[name=noticeAgree]').is(':checked');
-        var regExp_ctn = /^(01[01670]{1}|02|0[3-9]{1}[0-9]{1})([0-9]{3,4})([0-9]{4})$/;
-        if(phoneNumber.length < 11 || !regExp_ctn.test(phoneNumber)) return  popUtils.show('phone'); // 핸드폰 번호 확인
-        if(!platform) return  popUtils.show('os'); // 핸드폰 기종 확인
-        if(!privacyAgree) return  popUtils.show('agree'); // 개인정보 번호 확인
-        if(!noticeAgree) return  popUtils.show('agree'); // 개인정보 번호 확인
-        dataSubmit();
+    var phoneNumber = $('#phoneNumber').val();
+    var platform = $('.platform').find("input[name=platform]").is(':checked');
+    var privacyAgree =  $('#privacyAgree[name=privacyAgree]').is(':checked');
+    var noticeAgree =  $('#noticeAgree[name=noticeAgree]').is(':checked');
+    var regExp_ctn = /^(01[01670]{1}|02|0[3-9]{1}[0-9]{1})([0-9]{3,4})([0-9]{4})$/;
+    if(phoneNumber.length < 11 || !regExp_ctn.test(phoneNumber)) return  popUtils.show('phone'); // 핸드폰 번호 확인
+    if(!platform) return  popUtils.show('os'); // 핸드폰 기종 확인
+    if(!privacyAgree) return  popUtils.show('agree'); // 개인정보 번호 확인
+    if(!noticeAgree) return  popUtils.show('agree'); // 개인정보 번호 확인
+    dataSubmit();
 }
 
 function dataSubmit(){
@@ -124,9 +111,10 @@ function dataSubmit(){
             popUtils.show('result'); // 사전예약 완료
         },
         error:function(request,status,error){
-            popUtils.show('result'); // 사전예약 완료
-            alert("오류가 발생하였습니다.");
-            console.log(request,status,error)
+            if(request != undefined && request.responseJSON != undefined && request.responseJSON.error== "DUPLICATE"){
+                alert("이미 사전예약된 번호입니다.");
+                return;
+            }
            }
     });
 }

@@ -74,6 +74,14 @@
         
     <title>소녀배틀:스위트 하트</title>
 </head>
+<style>
+    @media (max-width: 764px) { 
+        #section0 .title { left:6%}
+        .mobile-menu a.menu2 {top:38%}
+        .mobile-menu a.menu3 {top:48%}
+        .mobile-menu a.menu4 {top:58%}
+    }
+</style>
 <body>
     <div class="wrap">
         <header class="header">
@@ -81,9 +89,8 @@
                 <img src="/wsfd/static/images/btn_menu.png" alt="">
             </button>
             <div class="mobile-menu is_mobile">
-                <img src="/wsfd/static/images/img_mobile_menu.png" alt="">
+                <img src="/wsfd/static/images/img_mobile_menu2.png" alt="">
                 <button type="button" class="close_menu"></button>
-                <a href="#secondPage" class="menu1">사전예약</a>
                 <a href="#3rdPage" class="menu2">탄생 is</a>
                 <a href="#4thpage" class="menu3">아니마 is</a>
                 <a href="#5thpage" class="menu4">공식카페</a>
@@ -96,12 +103,6 @@
                 </h1>
                 <div class="gnb" id="menu">
                     <ul>
-                        <li data-menuanchor="secondPage">
-                            <a href="#secondPage">
-                                <img src="/wsfd/static/images/img_menu01.png" alt="사전예약">
-                                <img src="/wsfd/static/images/img_menu01_on.png" class="on" alt="사전예약">
-                            </a>
-                        </li>
                         <li data-menuanchor="3rdPage">
                             <a href="#3rdPage">
                                 <img src="/wsfd/static/images/img_menu02.png" alt="탄생is">
@@ -131,78 +132,16 @@
                     <img src="/wsfd/static/images/img_section01_bg.png" class="bg_img is_pc" alt="아니마들의 달콤살벌한 전투가시작된다!">
                     <img src="/wsfd/static/images/img_reserve_m.jpg" class="bg_img is_mobile" alt="아니마들의 달콤살벌한 전투가시작된다!">
                     <div class="content-img">
-                        <img src="/wsfd/static/images/img_section01_title.png" data-aos="fade-right" data-aos-duration="2000" alt="" class="title">
+                        <img src="/wsfd/static/images/img_section01_title2.png" data-aos="fade-right" data-aos-duration="2000" alt="" class="title">
+                        <a href="https://apps.apple.com/kr/app/id1593198586" class="link01 link"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.itoxi.girlsbattle" class="link02 link"></a>
+                        <a href="https://onesto.re/_1rCOKq6" class="link03 link"></a>
                         <div class="is_pc inner">
                             <img src="/wsfd/static/images/img_section01_visual.png" data-aos="fade-left" data-aos-duration="2000" alt="" class="visual">
                         </div>
                         <div class="is_mobile inner">
                             <img src="/wsfd/static/images/img_section01_visual_m.png" data-aos="fade-left" data-aos-duration="2000" alt="" class="visual">
                             <img src="/wsfd/static/images/img_section01_logo_m.png"  class="logo" alt="logo"/>
-                        </div>
-                        <a href="#secondPage" class="btn_reserve is_pc">
-                            사전예약
-                            <img src="/wsfd/static/images/btn_reserve.png" alt="사전예약 바로가기">
-                        </a>
-                        <a href="#secondPage" class="btn_reserve is_mobile">
-                            사전예약
-                            <img src="/wsfd/static/images/btn_reserve_m.png" alt="사전예약 바로가기">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="section1" name="section1">
-                <div class="contents">
-                    <img  class="bg_img is_pc" src="/wsfd/static/images/img_reserve2.jpg" alt="">
-                    <img  class="bg_img is_mobile" src="/wsfd/static/images/img_reserve2_m.jpg" alt="">
-                    <div class="content-img">
-                        <div class="inner-content">
-                            <strong class="title-img" data-aos="fade-right" data-aos-duration="2000">
-                                <img src="/wsfd/static/images/img_title_reserve.png" alt="">
-                            </strong>
-                            <div class="input-section" data-aos="fade-left" data-aos-duration="2000">
-                                <form action="" id="form">
-                                    <img src="/wsfd/static/images/bg_reserve_m.png" alt="" class="is_mobile">
-                                    <div class="input-set">
-                                        <input type="tel" id="phoneNumber" name="phoneNumber" maxlength="11" placeholder="- 없이 휴대폰 번호 입력">
-                                        <button type="button" class="btn_result" onclick="endAlert()">예약완료</button>
-                                    </div>
-                                    <div class="bottom-wrap">
-                                        <div class="platform">
-                                            <span class="box">
-                                                <input type="radio" name="platform" value="1">
-                                                <span><i><img src="/wsfd/static/images/icon_apple.png" alt=""></i>IOS</span>
-                                            </span>
-                                            <span class="box">
-                                                <input type="radio"  name="platform"  value="0">
-                                                <span><i><img src="/wsfd/static/images/icon_android.png" alt=""></i>ANDROID</span>
-                                            </span>
-                                        </div>
-                                        <div class="agree-wrap">
-                                            <div class="box">
-                                                <p class="checkbox">
-                                                    <input type="checkbox" id="privacyAgree" name="privacyAgree" value="1">
-                                                    <label for="privacyAgree">
-                                                        <span>개인정보 수집 및 이용동의</span>
-                                                    </label>
-                                                </p>
-                                                <button type="button" onclick="popUtils.show('privacy')">▶ 자세히보기 ◀</button>
-                                            </div>
-                                            <div class="box">
-                                                <p class="checkbox">
-                                                    <input type="checkbox" id="noticeAgree" name="noticeAgree" value="1">
-                                                    <label for="noticeAgree">
-                                                        <span>이벤트 프로모션 알림 수신동의</span>
-                                                    </label>
-                                                </p>
-                                                <button type="button" onclick=" popUtils.show('event')">▶ 자세히보기 ◀</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="pack-wrap" data-aos="fade-right" data-aos-duration="2000">
-                                <img src="/wsfd/static/images/img_pack.png" alt="사전예약 pack">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,8 +220,8 @@
             </div>
             <div class="section" id="section4" name="section4">
                 <div class="contents">
-                    <img src="/wsfd/static/images/img_cafe.jpg" class="bg_img is_pc" alt="아니마들의 달콤살벌한 전투가시작된다!">
-                    <img src="/wsfd/static/images/img_cafe_m.jpg" class="bg_img is_mobile" alt="아니마들의 달콤살벌한 전투가시작된다!">
+                    <img src="/wsfd/static/images/img_cafe2.jpg" class="bg_img is_pc" alt="아니마들의 달콤살벌한 전투가시작된다!">
+                    <img src="/wsfd/static/images/img_cafe_m2.jpg" class="bg_img is_mobile" alt="아니마들의 달콤살벌한 전투가시작된다!">
                     <div class="content-img">
                         <a href="https://www.facebook.com/girlsbattleM/" class="btn_reserve">
                             공식페이스북
@@ -294,40 +233,6 @@
             </div>
         </div>
         <!-- :: end contents-->
-        <div class="pop-wrap">
-            <div data-os>
-                <img src="/wsfd/static/images/img_pop_os.png" alt="">
-                <button type="button" class="pop_close">닫기버튼</button>
-            </div>
-            <div data-phone>
-                <img src="/wsfd/static/images/img_pop_phone.png" alt="">
-                <button type="button" class="pop_close">닫기버튼</button>
-            </div>
-            <div data-agree>
-                <img src="/wsfd/static/images/img_pop_agree.png" alt="">
-                <button type="button" class="pop_close">닫기버튼</button>
-            </div>
-            <div data-result>
-                <img src="/wsfd/static/images/img_pop_result.png" alt="">
-                <button type="button" class="pop_close result">닫기버튼</button>
-                <a href="https://apps.apple.com/kr/app/id1593198586" class="link link01"></a>
-                <a href="https://play.google.com/store/apps/details?id=com.itoxi.girlsbattle" class="link link02"></a>
-                <!-- 링크 오픈전 
-                <a href="http://onesto.re/0000759170" class="link link03"></a>
-                 -->
-                <!-- <button onclick="notOpen()" class="link link01"></button>
-                <button onclick="notOpen()" class="link link02"></button> -->
-                <button onclick="notOpen()" class="link link03"></button>
-            </div>
-            <div data-privacy>
-                <img src="/wsfd/static/images/img_pop_privacy.png" alt="">
-                <button type="button" class="pop_close privacy">닫기버튼</button>
-            </div>
-            <div data-event>
-                <img src="/wsfd/static/images/img_pop_event.png" alt="">
-                <button type="button" class="pop_close event">닫기버튼</button>
-            </div>
-        </div>
         <a href="#firstPage" class="top-btn is_mobile">
             <img src="/wsfd/static/images/btn_top.png" alt="">
         </a>
@@ -345,11 +250,8 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/wsfd/static/js/common.js"></script>
 <script>
-    function endAlert (){
-        alert("사전예약 이벤트가 종료되었습니다.12/7(화)에 다운로드 받으세요!")
-    }
-            $('#fullpage').fullpage({
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage'],
+        $('#fullpage').fullpage({
+            anchors: ['firstPage', '3rdPage', '4thpage','5thpage'],
             menu: '#menu',
             lazyLoad: true
           });

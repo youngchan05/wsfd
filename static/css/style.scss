@@ -472,6 +472,22 @@ body {
 		top:240px;
 		width:645px;
 	}
+	.link {
+		position: absolute;
+		width:19%;
+		height:6%;
+		bottom:31%;
+		z-index: 20;
+		&.link01 {
+			left:-3%;
+		}
+		&.link02 {
+			left:17%;
+		}
+		&.link03 {
+			left:38%;
+		}
+	}
 }
 #section2 {
 	.text {
@@ -857,6 +873,23 @@ body {
 			left:-2%;
 			top:8%;
 			width:60%;
+		}
+		.link {
+			position: absolute;
+			width:19%;
+			height:3%;
+			bottom:auto;
+			top:28%;
+			z-index: 20;
+			&.link01 {
+				left:8%;
+			}
+			&.link02 {
+				left:28%;
+			}
+			&.link03 {
+				left:48%;
+			}
 		}
 	}
 	#section2 {
