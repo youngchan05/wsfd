@@ -266,12 +266,13 @@ body.active { overflow: hidden; }
   .pop-wrap { position: fixed; padding: 0 10%; }
   .pop-wrap > div { position: relative; top: 0; }
   #section0 .logo { position: absolute; left: 50%; width: 50%; height: auto; bottom: 25%; z-index: 30; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+  #section0 .sns { position: absolute; left: 50%; width: 30%; height: auto; bottom: 10%; z-index: 30; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
   #section0 .visual { right: 0; bottom: 0; width: 100%; z-index: 1; }
   #section0 .title { left: -2%; top: 8%; width: 60%; }
-  #section0 .link { position: absolute; width: 19%; height: 3%; bottom: auto; top: 28%; z-index: 20; }
-  #section0 .link.link01 { left: 8%; }
-  #section0 .link.link02 { left: 28%; }
-  #section0 .link.link03 { left: 48%; }
+  #section0 .link { position: absolute; width: 29%; height: 5%; left: 35%; z-index: 50; }
+  #section0 .link.link01 { bottom: 21%; left: 35%; }
+  #section0 .link.link02 { bottom: 16%; left: 35%; }
+  #section0 .link.link03 { bottom: 10%; left: 35%; }
   #section2 .text { position: absolute; width: 90%; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); bottom: auto; top: 38%; }
   #section2 .visual { width: 80%; right: -33px; top: 22%; bottom: auto; max-width: 600px; width: 94%; }
   #section3 .inner-content .title-img { margin-bottom: 5%; } }
