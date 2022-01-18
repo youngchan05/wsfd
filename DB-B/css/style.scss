@@ -162,6 +162,16 @@ html {
             background:url(../img/calcul-left.png)  no-repeat center;
         }
     }
+    &.remove {
+        .text-box {
+            strong {
+                font-size: 70px;
+            }
+        }
+        a {
+            font-size: 17px;
+        }
+    }
 }
 .slide-section {
     display: none;
@@ -245,6 +255,7 @@ html {
         background-color: #ddece1;
         padding:320px 0 0 24px;
         .item-wrap {
+            padding:50px 0 50px 156px;
             width:654px;
             
         }

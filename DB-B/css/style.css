@@ -52,6 +52,10 @@ html { font-size: 10px; }
 
 .section a:after { display: block; position: absolute; left: 0; bottom: 12px; width: 60px; height: 80px; content: ""; background: url(../img/calcul-left.png) no-repeat center; }
 
+.section.remove .text-box strong { font-size: 70px; }
+
+.section.remove a { font-size: 17px; }
+
 .slide-section { display: none; position: absolute; right: -670px; top: 0; width: 670px; height: 100%; padding-top: 320px; background-color: #add6b7; z-index: 1; padding-right: 24px; }
 
 .slide-section.active { display: -webkit-box; display: -ms-flexbox; display: flex; }
@@ -98,5 +102,5 @@ html { font-size: 10px; }
 
 .right-section .slide-section { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; right: auto; left: -670px; background-color: #ddece1; padding: 320px 0 0 24px; }
 
-.right-section .slide-section .item-wrap { width: 654px; }
+.right-section .slide-section .item-wrap { padding: 50px 0 50px 156px; width: 654px; }
 /*# sourceMappingURL=style.css.map */
