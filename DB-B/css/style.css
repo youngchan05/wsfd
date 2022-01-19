@@ -15,7 +15,7 @@ body {
   position: absolute;
   left: 50%;
   top: 0;
-  width: 1800px;
+  width: 1920px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 1;
