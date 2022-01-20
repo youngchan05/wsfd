@@ -18,7 +18,7 @@
             </h1>
         </div>
         <div class="section01">
-            <div class="left-section section">
+            <div class="left-section section show">
                 <div class="text-box">
                     <strong class="title">
                         자동차<br>보험도!
@@ -124,20 +124,20 @@
                 </div>
             </div>
         </div>
-        <div style="position: absolute; left:0;top:0; opacity: .2;">
-            <img src="./center.jpg" alt="">
+        <div style="position: absolute; left:0;top:0; opacity: .2; z-index: 200;">
+            <img src="./left.jpg" alt="">
         </div>
     </div>
     <script src="./js/jQuery.js"></script>
     <script>
-        $('.section').on('mouseenter',function(){
-            $(this).addClass('show');
-            $(this).siblings().addClass('remove');
-        })
-        $('.section').on('mouseleave',function(){
-            $(this).removeClass('show');
-            $(this).siblings().removeClass('remove');
-        })
+        // $('.section').on('mouseenter',function(){
+        //     $(this).addClass('show');
+        //     $(this).siblings().addClass('remove');
+        // })
+        // $('.section').on('mouseleave',function(){
+        //     $(this).removeClass('show');
+        //     $(this).siblings().removeClass('remove');
+        // })
     </script>
 </body>
 </html>
