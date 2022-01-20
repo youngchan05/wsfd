@@ -19,7 +19,7 @@
         </div>
         <div class="section01">
             <div class="text-wrap">
-                <div class="inner">
+                <div class="inner left">
                     <img src="./img/left_visual.png" alt="왼쪽 비주얼이미지">
                     <div class="text-box">
                         <strong class="title">
@@ -48,7 +48,7 @@
                             <div class="item item03">
                                 <p>Baby in Car<br>
                                     특약할인 <strong>17%</strong></p>
-                                <span>임심중(태아)</span>
+                                <span>임신중(태아)</span>
                             </div>
                         </div>
                         <div class="item-wrap">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="inner">
+                <div class="inner right">
                     <img src="./img/right_visual.png" alt="오른쪽 비주얼이미지">
                     <div class="text-box">
                         <strong class="title">
@@ -107,7 +107,7 @@
             <div class="inner">
                 <div class="top">
                     <strong class="title">꼭 알아두실 사항</strong>
-                    <span>준법감시인확인필_제2022-1043호 (2022.01.05~2023.01.04)</span>
+                    <span class="number"></span>
                 </div>
                 <p class="dot">보험계약 체결 전 반드시 상품설명서 및 약관을 읽어보시기 바랍니다.</p>
                 <p class="dot">보험계약자가 기존에 체결했던 보험계약을 해지하고 다른 보험계약을 체결하면 보험계약이 거절될 수 있으며, 보험료가 인상되거나 보장내용이 달라질 수 있습니다. </p>
@@ -135,8 +135,14 @@
         $('.inner').on('mouseenter',function(){
             $(this).addClass('show');
             $(this).siblings().addClass('remove');
+            if($(this).hasClass('left')){
+                $('.number').text('준법감시인확인필_제2022-1041호 (2022.01.05~2023.01.04)');
+            }else {
+                $('.number').text('준법감시인확인필_제2022-1042호 (2022.01.05~2023.01.04)');
+            }
         })
         $('.inner').on('mouseleave',function(){
+            $('.number').text('');
             $(this).removeClass('show');
             $(this).siblings().removeClass('remove');
         })
