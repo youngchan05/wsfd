@@ -14,9 +14,9 @@ body {
     position: absolute;
     left:50%;
     top:0;
-    width:1920px;
+    width:1300px;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 100;
     .logo {
         display: block;
         width:100%;
@@ -111,22 +111,30 @@ body {
 }
 .section {
     position: relative;
+    width:50%;
+    .inner {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
     .text-box {
         position: absolute;
-        left:54px;
-        top:320px;
+        right: 0;
+        top: 0;
+        width: 650px;
+        text-align: left;
+        padding: 240px 0 0 14px;
         strong {
-            font-weight: 800;
-            font-size:98px;
-            line-height:96px;
+            font-weight: 900;
+            font-size:67px;
+            line-height: 84px;
             color:#204a38;
             text-shadow: 4px 6px 3px #92b99b;
         }
         p {
             position: relative;
-            margin:36px 0 200px 0;
-            font-size:27px;
-            line-height:36px ;
+            margin: 6px 0 136px 0;
+            font-size: 21px;
+            line-height: 28px;
             color:#484e4c;
             span {
                 position: relative;
@@ -138,7 +146,7 @@ body {
                 position: absolute;
                 left:-6px;
                 bottom:-2px;
-                width:260px;
+                width:200px;
                 height:24px;
                 background-color:#83cf96;
                 content: "";
@@ -148,14 +156,15 @@ body {
     a {
         position: relative;
         display: inline-block;
-        width:368px;
-        height:82px;
-        padding-left:74px;
-        color:$white;
-        font-size:25px;
-        line-height: 86px;
+        width: 258px;
+        height: 55px;
+        padding-left: 52px;
+        color: #fff;
+        font-size: 19px;
+        line-height: 60px;
+        background: url(../img/arrow.png) no-repeat right 10px center #064429;
+        background-size: 10px auto;
         text-decoration: none;
-        background: url(../img/arrow.png) no-repeat right 20px center #064429;
         span {
             font-weight: 600;
         }
@@ -164,10 +173,10 @@ body {
             position: absolute;
             left:0;
             bottom:12px;
-            width:60px;
-            height:80px;
+            width: 45px;
+            height: 60px;
             content: "";
-            background:url(../img/calcul-left.png)  no-repeat center;
+            background:url(../img/calcul-left.png)  no-repeat center / cover;
         }
     }
     &.remove {
@@ -264,6 +273,9 @@ body {
     }
 }
 .left-section {
+    padding:155px 30px 0 0 ;
+    text-align: right;
+    background-color: #add6b7;
     .slide-section {
         .item-wrap {
             + .item-wrap {
@@ -278,9 +290,11 @@ body {
     }
 }
 .right-section {
+    padding:160px 0 0 30px;
+    background-color: #ddece1;
     .text-box {
-        left:auto;
-        right:54px;
+        right:auto;
+        left:0;
         text-align: right;
         strong {
             color:#262626;
@@ -299,7 +313,7 @@ body {
         text-align: left;
         background-color:#00854a ;
         &::after {
-            background:url(../img/calcul-right.png) no-repeat center;
+            background:url(../img/calcul-right.png) no-repeat center / cover;
         }
     }
     .slide-section {
