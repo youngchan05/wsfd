@@ -188,7 +188,7 @@ body { background-color: #f5f5f5; }
 
 .item-wrap + .item-wrap { margin-left: 10px; }
 
-.item-wrap .item { padding: 4px 0 4px 70px; text-align: left; }
+.item-wrap .item { padding: 4px 0 4px 64px; text-align: left; }
 
 .item-wrap .item.item01 { background: url(../img/item01.png) no-repeat left center; background-size: 50px auto; }
 
