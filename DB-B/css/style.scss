@@ -399,6 +399,7 @@ body {
                     }
                 }
                 a {
+                    margin-left: auto;
                     text-align: left;
                     background-color:#00854a ;
                     &::after {
@@ -522,7 +523,8 @@ body {
         a {
             position: relative;
             z-index: 10;
-            display: inline-block;
+            display: flex;
+            align-items: center;
             width: 258px;
             height: 55px;
             padding-left: 52px;
