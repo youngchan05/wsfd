@@ -146,6 +146,7 @@ html {
         text-align: center;
         background-color: #098664;
         box-shadow: 5px 2px 6px 3px #97d8c4;
+        border:1px solid #098664;
         + .text-box {
             margin-left:28px;
         }
@@ -189,7 +190,6 @@ html {
             padding:26px 10px 20px 10px;
             border-radius: 20px;
             border:1px solid #0cb389;
-            transition: all .2s;
             .desc {
                 margin-top:16px;
                 margin-bottom: 25px;
@@ -232,10 +232,10 @@ html {
             background: $white;
             background:url(../img/arrow-right.png) no-repeat right 10px  center #098664;
             z-index: 10;
+            
         }
         &:hover {
             background-color:$white;
-            border:1px solid #098664;
             .inner {
                 opacity: 0;
                 .icon,

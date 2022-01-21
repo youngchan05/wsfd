@@ -46,7 +46,7 @@ html { font-size: 10px; }
 
 .box-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.box-wrap .text-box { position: relative; width: 320px; height: 310px; padding: 10px; border-radius: 20px; text-align: center; background-color: #098664; -webkit-box-shadow: 5px 2px 6px 3px #97d8c4; box-shadow: 5px 2px 6px 3px #97d8c4; }
+.box-wrap .text-box { position: relative; width: 320px; height: 310px; padding: 10px; border-radius: 20px; text-align: center; background-color: #098664; -webkit-box-shadow: 5px 2px 6px 3px #97d8c4; box-shadow: 5px 2px 6px 3px #97d8c4; border: 1px solid #098664; }
 
 .box-wrap .text-box + .text-box { margin-left: 28px; }
 
@@ -62,7 +62,7 @@ html { font-size: 10px; }
 
 .box-wrap .text-box .hover-box .desc + .desc { margin-top: 20px; }
 
-.box-wrap .text-box .inner { width: 100%; height: 100%; padding: 26px 10px 20px 10px; border-radius: 20px; border: 1px solid #0cb389; -webkit-transition: all .2s; transition: all .2s; }
+.box-wrap .text-box .inner { width: 100%; height: 100%; padding: 26px 10px 20px 10px; border-radius: 20px; border: 1px solid #0cb389; }
 
 .box-wrap .text-box .inner .desc { margin-top: 16px; margin-bottom: 25px; font-size: 18px; line-height: 22px; color: #fff; }
 
@@ -76,7 +76,7 @@ html { font-size: 10px; }
 
 .box-wrap .text-box .link { position: absolute; left: 20px; bottom: 30px; display: inline-block; width: calc(100% - 40px); padding: 16px 0 12px 0; font-size: 27px; line-height: 28px; color: #fff; font-weight: 800; text-decoration: none; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius: 10px; background: #fff; background: url(../img/arrow-right.png) no-repeat right 10px center #098664; z-index: 10; }
 
-.box-wrap .text-box:hover { background-color: #fff; border: 1px solid #098664; }
+.box-wrap .text-box:hover { background-color: #fff; }
 
 .box-wrap .text-box:hover .inner { opacity: 0; }
 
