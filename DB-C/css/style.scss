@@ -230,8 +230,17 @@ html {
             text-shadow: 1px 2px 1px rgba(0,0,0, .2);
             border-radius: 10px;
             background: $white;
-            background:url(../img/arrow-right.png) no-repeat right 10px  center #098664;
+            background: #098664;
             z-index: 10;
+            span {
+                display: inline-block;
+                padding-right:30px;
+                font-size: 27px;
+                line-height:28px;
+                color:$white;
+                font-weight: 800;
+                background:url(../img/arrow-right.png) no-repeat right  top 2px;
+            }
             
         }
         &:hover {

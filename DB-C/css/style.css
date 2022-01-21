@@ -74,7 +74,9 @@ html { font-size: 10px; }
 
 .box-wrap .text-box .icon.bike { background: url("../img/icon_bike.png") no-repeat center #fff; }
 
-.box-wrap .text-box .link { position: absolute; left: 20px; bottom: 30px; display: inline-block; width: calc(100% - 40px); padding: 16px 0 12px 0; font-size: 27px; line-height: 28px; color: #fff; font-weight: 800; text-decoration: none; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius: 10px; background: #fff; background: url(../img/arrow-right.png) no-repeat right 10px center #098664; z-index: 10; }
+.box-wrap .text-box .link { position: absolute; left: 20px; bottom: 30px; display: inline-block; width: calc(100% - 40px); padding: 16px 0 12px 0; font-size: 27px; line-height: 28px; color: #fff; font-weight: 800; text-decoration: none; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius: 10px; background: #fff; background: #098664; z-index: 10; }
+
+.box-wrap .text-box .link span { display: inline-block; padding-right: 30px; font-size: 27px; line-height: 28px; color: #fff; font-weight: 800; background: url(../img/arrow-right.png) no-repeat right top 2px; }
 
 .box-wrap .text-box:hover { background-color: #fff; }
 
