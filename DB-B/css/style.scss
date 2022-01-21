@@ -442,6 +442,7 @@ body {
             .slide-section {
                 img {
                     width: 500px;
+                    transition: all .5s;
                 }
                 z-index: 10;
             }
@@ -558,7 +559,7 @@ body {
     z-index: -1;
     img {
         width: 0;
-        transition: all .5s;
+        // transition: all .5s;
     }
     &.right{
         right: 620px;

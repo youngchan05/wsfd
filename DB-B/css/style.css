@@ -152,7 +152,7 @@ body { background-color: #f5f5f5; }
 
 .text-wrap .inner.show .slide-section { z-index: 10; }
 
-.text-wrap .inner.show .slide-section img { width: 500px; }
+.text-wrap .inner.show .slide-section img { width: 500px; -webkit-transition: all .5s; transition: all .5s; }
 
 .text-wrap .inner.remove .slide-section { -webkit-transition-property: none; transition-property: none; }
 
@@ -174,7 +174,7 @@ body { background-color: #f5f5f5; }
 
 .slide-section { display: -webkit-box; display: -ms-flexbox; display: flex; width: auto; overflow: hidden; position: absolute; left: 620px; top: 0; height: 100%; z-index: -1; }
 
-.slide-section img { width: 0; -webkit-transition: all .5s; transition: all .5s; }
+.slide-section img { width: 0; }
 
 .slide-section.right { right: 620px; left: auto; height: 100%; }
 
