@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>다바바</title>
+</head>
+<body>
+    <div class="wrapper main">
+        <div class="top-logo">
+            <h1 class="logo">
+                <img src="./img/img_logo.png" alt="">
+            </h1>
+        </div>
+        <div class="search-wrap">
+            <input type="text">
+            <button type="button"></button>
+        </div>
+        <ul class="menu-list">
+            <li class="menu01">
+                <a href="#">
+                    <strong>부동산<br>임대</strong>
+                </a>
+            </li>
+            <li class="menu01">
+                <a href="#">
+                    <strong>부동산<br>매매</strong>
+                </a>
+            </li>
+            <li class="menu02">
+                <a href="#">
+                    <strong>시공<br>업체</strong>
+                </a>
+            </li>
+            <li class="menu03">
+                <a href="#">
+                    <strong>전문<br>업체</strong>
+                </a>
+            </li>
+            <li class="menu04">
+                <a href="#">
+                    <strong>분양<br>공고</strong>
+                </a>
+            </li>
+            <li class="menu05">
+                <a href="#">
+                    <strong>소원<br>잇다</strong>
+                </a>
+            </li>
+            <li class="menu06">
+                <a href="#">
+                    <strong>상담<br>문의</strong>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="./js/jQuery.js"></script>
+<script>
+    $list =  $('.menu-list li').length;
+    for(i=0; i< $list; i++){
+    (function(x){
+        setTimeout(function(){
+            $('.menu-list li').eq(x).addClass('active')
+        }, 500*x);
+    })(i);
+}
+</script>
+</html>
