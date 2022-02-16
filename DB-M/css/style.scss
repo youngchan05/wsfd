@@ -33,7 +33,7 @@ body {
     }
     .title {
         display: inline-block;
-        font-size: 5vw;
+        font-size: 4vw;
         margin-bottom: 2%;
         color:#333;
         font-family: 'Noto Sans KR';
@@ -42,7 +42,7 @@ body {
     .dot {
         position: relative;
         color:#64666c;
-        font-size: 3.5vw;
+        font-size: 3vw;
         line-height: 5vw;
         padding-left:4px;
         font-weight: 500;
@@ -73,14 +73,14 @@ body {
     .bottom {
         padding-top:35px;
        > strong {
-            font-size: 5vw;
+            font-size: 3.5vw;
             color:#555;
             font-family: 'Noto Sans KR';
             font-weight: 800;
         }
         p{
             margin-top: 6px;
-            font-size: 3.5vw;
+            font-size: 3vw;
             line-height: 4.5vw;
             color:#808080;
             font-family: 'Noto Sans KR';
@@ -90,7 +90,7 @@ body {
             margin-top:12px;
             span {
                 display: inline-block;
-                font-size: 3.5vw;
+                font-size: 3vw;
                 line-height: 3.5vw;
                 color:#808080;
                 font-family: 'Noto Sans KR';
