@@ -113,13 +113,15 @@ html {
     .section {
         .wrap {
             width:77%;
-            transition: all .5s;
-            flex-direction: row;
+            padding:6% 0 6% 25%;
             .title {
-                width:69%;
+                width:100%;
                 margin:0 0 0 3%;
             }
             .visual {
+                left:0;
+                top:50%;
+                transform: translateX(0) translateY(-50%);
                 width: 29.5%;
             }
         }
@@ -130,6 +132,7 @@ html {
     left:0;
     top:0;
     z-index:100;
+    transition: all .5s;
     img {
         width:100%;
     }
@@ -144,8 +147,14 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 45%;
+        position: relative;
     }
     .visual {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
         width: 39.5%;
         margin-bottom: 5%;
         transition: all .5s;
