@@ -110,6 +110,9 @@
                 siblings.find('.slide').slideToggle();
                 $(this).toggleClass('hide');
             }
+            if(!$('.visual').hasClass('active')){
+                num.text('');
+            }
         })
     </script>
 </body>
