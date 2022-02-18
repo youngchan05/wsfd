@@ -4,6 +4,7 @@ html {
     font-size: 10px;
 }
 .wrapper {
+    position: relative;
     background-color:#f2f6ff;
     &::after{
         display: block;
