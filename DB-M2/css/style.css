@@ -200,8 +200,8 @@ html {
           transform: translateX(-50%);
   width: 39.5%;
   margin-bottom: 5%;
-  -webkit-transition: top .5s;
-  transition: top .5s;
+  -webkit-transition: top,left, width .5s;
+  transition: top,left, width .5s;
 }
 
 .section .title {
