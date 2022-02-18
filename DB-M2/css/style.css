@@ -193,6 +193,7 @@ html {
   -webkit-transform: translateX(0) translateY(-50%);
           transform: translateX(0) translateY(-50%);
   width: 29.5%;
+  max-width: 30%;
 }
 
 .section .inner {
