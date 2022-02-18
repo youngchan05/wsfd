@@ -53,7 +53,7 @@
             <div class="inner">
                 <div class="top">
                     <strong class="title">꼭 알아두실 사항</strong>
-                    <!-- <span class="number">법감시인확인필_제2022-1042호(2022.01.05~2023.01.04)</span> -->
+                    <span class="number"></span>
                 </div>
                 <p class="dot">보험계약 체결 전 반드시 상품설명서 및 약관을 읽어보시기 바랍니다.</p>
                 <p class="dot">보험계약자가 기존에 체결했던 보험계약을 해지하고 다른 보험계약을 체결<br>
@@ -85,10 +85,12 @@
     <script>
         $('.visual').on('click',function(){
             var siblings = $(this).siblings();
+            var num = $('.number');
             $(this).find('.slide').slideToggle();
             $(this).toggleClass('active')
             siblings.toggleClass('hide');
             if($(this).hasClass('top')){
+                num.text('준법감시인확인필_제2022-1042호(2022.01.05~2023.01.04)');
                 if(siblings.hasClass('active')){
                     $(this).parent().addClass('top slide-show');
                 }else{
@@ -96,9 +98,8 @@
                 }
             }
             if($(this).hasClass('bottom')){
-                console.log(siblings,'siblings')
+                num.text('준법감시인확인필_제2022-1041호(2022.01.05~2023.01.04)');
                 if(siblings.hasClass('active')){
-                    console.log('boddom2222')
                     $(this).parent().addClass('bottom slide-show');
                 }else{
                     $(this).parent().toggleClass('bottom slide-show');
