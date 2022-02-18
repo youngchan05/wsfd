@@ -174,7 +174,12 @@ html {
 
 .section .wrap.active {
   width: 77%;
-  padding: 6% 0 6% 25%;
+  padding: 6% 0;
+}
+
+.section .wrap.active .inner {
+  position: relative;
+  padding-left: 25%;
 }
 
 .section .wrap.active .title {
@@ -188,6 +193,15 @@ html {
   -webkit-transform: translateX(0) translateY(-50%);
           transform: translateX(0) translateY(-50%);
   width: 29.5%;
+}
+
+.section .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section .visual {

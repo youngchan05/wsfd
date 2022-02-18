@@ -136,7 +136,11 @@ html {
         position: relative;
         &.active {
             width:77%;
-            padding:6% 0 6% 25%;
+            padding:6% 0;
+            .inner {
+                position: relative;
+                padding-left:25%;
+            }
             .title {
                 width:100%;
                 margin:0 0 0 3%;
@@ -148,6 +152,10 @@ html {
                 width: 29.5%;
             }
         }
+    }
+    .inner {
+        display: flex;
+        justify-content: center;
     }
     .visual {
         position: absolute;
