@@ -131,31 +131,11 @@ html {
   padding-top: 80%;
 }
 
-.wrapper.active .section .wrap {
-  width: 77%;
-  padding: 6% 0 6% 25%;
-}
-
-.wrapper.active .section .wrap .title {
-  width: 100%;
-  margin: 0 0 0 3%;
-}
-
-.wrapper.active .section .wrap .visual {
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateX(0) translateY(-50%);
-          transform: translateX(0) translateY(-50%);
-  width: 29.5%;
-}
-
 .section {
   position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
-  -webkit-transition: all .5s;
-  transition: all .5s;
 }
 
 .section img {
@@ -192,6 +172,24 @@ html {
   position: relative;
 }
 
+.section .wrap.active {
+  width: 77%;
+  padding: 6% 0 6% 25%;
+}
+
+.section .wrap.active .title {
+  width: 100%;
+  margin: 0 0 0 3%;
+}
+
+.section .wrap.active .visual {
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
+  width: 29.5%;
+}
+
 .section .visual {
   position: absolute;
   left: 50%;
@@ -200,8 +198,8 @@ html {
           transform: translateX(-50%);
   width: 39.5%;
   margin-bottom: 5%;
-  -webkit-transition: top,left, width .5s;
-  transition: top,left, width .5s;
+  -webkit-transition: top,left, width .1s;
+  transition: top,left, width .1s;
 }
 
 .section .title {

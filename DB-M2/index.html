@@ -71,6 +71,26 @@
             var scrollValue = $(this).scrollTop();
             var selector =  $('.wrapper');
             var link = $('.link');
+            var wrap = $('.wrap');
+            var visual = $('.visual');
+            if(scrollValue > 100){
+                wrap.addClass('active');
+            }else {
+                wrap.removeClass('active')
+            }
+            if(scrollValue < 190 && scrollValue < 100){
+                visual.css({
+                    width:39.5 - (scrollValue * 0.16 ) +'%'
+                })
+            }
+            if(scrollValue < 190){
+                wrap.css({
+                    paddingTop:45 - (scrollValue * 0.2 ) +'%'
+                })
+                selector.css({
+                    paddingTop:106 - (scrollValue * 0.2 ) +'%'
+                })
+            }
              if(scrollValue > 190){
                 selector.addClass('active');
                 link.attr('href','https://m.directdb.co.kr/product/at/pvuatarc/step1/formStepPre.do?src=image&kw=03D282&partner_code=C540&keyword=MND900001&utm_source=dual_m&utm_medium=cpc&utm_campaign=dt_d&utm_content=button2');
