@@ -158,6 +158,14 @@ body {
   top: 0;
 }
 
+.section .visual .dim {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .section .visual .main-visual {
   width: 100%;
 }
@@ -173,6 +181,10 @@ body {
 
 .section .visual.active {
   z-index: 100;
+}
+
+.section .visual.active .dim {
+  display: none;
 }
 
 .section .visual.hide .main-visual {
