@@ -29,14 +29,12 @@ html {
         padding: 6% 3%;
     }
     .title {
-        padding-left:20px;
         display: inline-block;
         font-size: 4vw;
         margin-bottom: 2%;
         color:#333;
         font-family: 'Noto Sans KR';
         font-weight: 800;
-        background:url(../img/img_dot.png) no-repeat left center / 15px auto;
     }
     .dot {
         position: relative;
@@ -63,7 +61,7 @@ html {
         display: flex;
         span {
             margin-left: auto;
-            font-size: 1.5vw;
+            font-size: 2.5vw;
             line-height: 4vw;
             color:#64666c;
             font-family: 'Noto Sans KR';
