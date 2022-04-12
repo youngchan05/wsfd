@@ -435,6 +435,9 @@
         }
     });
     $(document).ready(function(){
+        const urlQueryNo = new URLSearchParams(location.search).get('no');
+        $('.btn-wrap').find('.fix-btn').removeClass('on')
+        $('.btn-wrap').find('.fix-btn').eq(urlQueryNo).addClass('on')
         var tset1 = new Swiper('.product-container', {
         navigation: {
             nextEl: '.swiper-button-next',
@@ -444,9 +447,9 @@
             el: '.swiper-pagination'
         },
         });
-
         var visualSwiper = new Swiper('.visual-list', {
             navigation:false,
+            initialSlide:Number(urlQueryNo), //시작위치값
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: true
