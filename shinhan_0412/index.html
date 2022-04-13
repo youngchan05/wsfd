@@ -436,12 +436,21 @@
     });
     $(document).ready(function(){
         const urlQueryNo = new URLSearchParams(location.search).get('no');
+        let num = 0;
+        if(urlQueryNo == 0 || urlQueryNo == 1 || urlQueryNo == 7) num = 0;
+        if(urlQueryNo == 2) num = 1;
+        if(urlQueryNo == 3) num = 3;
+        if(urlQueryNo == 4) num = 2;
+        if(urlQueryNo == 5) num = 4;
+        if(urlQueryNo == 6) num = 5;
+        console.log(num ,'nu')
         $('.btn-wrap').find('.fix-btn').removeClass('on')
         $('.btn-wrap').find('.fix-btn').eq(urlQueryNo).addClass('on')
         var tset1 = new Swiper('.product-container', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            initialSlide:Number(num), //시작위치값
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
         },
         pagination: {
             el: '.swiper-pagination'
@@ -450,10 +459,6 @@
         var visualSwiper = new Swiper('.visual-list', {
             navigation:false,
             initialSlide:Number(urlQueryNo), //시작위치값
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: true
-            },
             loop: true
         });
         visualSwiper.on('transitionEnd', function() { 
