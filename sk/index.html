@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>sk 쉴더스</title>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="./img/img01.jpg" alt="">
+        <img src="./img/img02.jpg" alt="">
+        <img src="./img/img03.jpg" alt="">
+        <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/y4A61_A4f2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <img src="./img/img04.jpg" alt="">
+        <img src="./img/img_tit.jpg" alt="">
+        <div class="code-wrap">
+            <div class="box">
+                <input type="text" class="input" id="code" placeholder="혜택 코드를 입력해주세요">
+            </div>
+            <div class="box">
+                <input type="text" class="input" id="recommend" placeholder="추천인 코드를 입력해주세요">
+            </div>
+            <button type="button" id="result">
+                <img src="./img/img_btn.png" alt="">
+            </button>
+        </div>
+        <div class="pop active">
+            <div class="fail" data-target="fail">
+                <img src="./img/img_popFail.png" alt="">
+                <button type="button" class="top close"></button>
+                <button type="button" class="bottom close"></button>
+            </div>
+            <div class="success on" data-target="success">
+                <img src="./img/img_pop_success.png" alt="">
+                <button type="button" class="close"></button>
+                <div class="inner">
+                    <div class="input-wrap">
+                        <div>
+                            <input type="text" id="userName" placeholder="이름">
+                        </div>
+                        <div>
+                            <input type="text" id="usePhone" placeholder="전화번호">
+                        </div>
+                    </div>
+                    <div class="check-wrap">
+                        <div class="check-box">
+                            <input type="checkbox" id="test1">
+                            <label for="test1">(필수) 개인정보 수집 및 이용 동의</label>
+                        </div>
+                        <button type="button" class="privacy-view" data-target="privacy01">보기</button>
+                    </div>
+                    <div class="check-wrap">
+                        <div class="check-box">
+                            <input type="checkbox" id="test2">
+                            <label for="test2">(필수) 개인정보 제공 동의</label>
+                        </div>
+                        <button type="button" class="privacy-view" data-target="privacy02">보기</button>
+                    </div>
+                    <button type="button" class="apply">
+                        <img src="./img/img_btnApply.png" alt="">
+                    </button>
+                </div>
+                <div class="privacy-pop">
+                    <div data-selecter="privacy01">
+                        <img src="./img/img_privacy01.png" alt="">
+                        <button type="button"></button>
+                    </div>
+                    <div  data-selecter="privacy02">
+                        <img src="./img/img_privacy02.png" alt="">
+                        <button type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        (function(){
+            var codeNumber = '1111';
+            var recommendCode = 'test';
+
+            var code = $('#code');
+            var recommend = $('#recommend');
+
+            var resultBtn =  $('#result');
+
+            var btnClose = $('.close');
+            var popWrapper = $('.pop');
+
+            var showPop = function (name){
+                popWrapper.addClass('active');
+                $('.pop > div').each(function(){
+                    var target_selector = $(this).data('target');
+                    $(this).removeClass('on');
+                    if(target_selector === name) $(this).addClass('on')
+                });
+            }
+            
+            resultBtn.on('click',function(){
+                if(code.val().length === 0 ) return alert('해택 코드를 입력해주세요.')
+                if(recommend.val().length === 0 ) return alert('추천인을 입력해주세요.')
+                if(recommend.val() != recommendCode || codeNumber != code.val()){
+                    //코드, 추천인이 안맞을경우
+                    showPop('fail')
+                }else {
+                    //코드, 추천인이 맞을경우
+                    showPop('success')
+                }
+            })
+
+            $('.privacy-view').on('click',function(){
+                var pop =  $('.privacy-pop');
+                var target = $(this).data('target');
+                pop.addClass('active');
+                pop.find('div').each(function(){
+                    var target_selector = $(this).data('selecter');
+                    if(target_selector === target) $(this).addClass('on')
+                });
+            })
+
+            $('.privacy-pop button').on('click',function(){
+                $(this).parent().removeClass('on');
+                $('.privacy-pop').removeClass('active');
+            })
+            btnClose.on('click',function(){
+                popWrapper.removeClass('active')
+                $(this).parent().removeClass('on');
+            })
+
+        })();
+    </script>
+</body>
+</html>
