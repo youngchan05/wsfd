@@ -33,7 +33,7 @@
     width:100%;
     padding:0 2%;
     height:100%;
-    font-size: 1ex;
+    font-size: 16px;
     border:1px solid #c9c9c9;
     background-color: #fff;
     outline: none;
@@ -125,7 +125,7 @@
     background-color: #f4f4f4;
     border: 1px solid #d6d6d6;
     outline: none;
-    font-size: 1ex;
+    font-size: 16px;
 }
 .pop .success .input-wrap  input::placeholder {
     color:rgb(#000, #000, #000 , .5);
@@ -163,7 +163,7 @@
 .pop .success .check-box label {
     position: relative;
     padding-left:14px;
-    font-size:10px;
+    font-size:12px;
     line-height: 12px;
     color:#737373;
 }
