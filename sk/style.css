@@ -1,3 +1,8 @@
+.wrapper {
+    max-width: 640px;
+    margin:0 auto;
+}
+/* //0517 추가 */
 .wrapper img{ width:100%;}
 .video-wrap {
     position: relative;
