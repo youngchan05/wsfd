@@ -1,0 +1,101 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@font-face {
+	font-family: 'OneShinhanLight';
+	src: url("../font/OneShinhanLight.eot?#iefix") format("embedded-opentype"), 
+		   url("../font/OneShinhanLight.otf") format("opentype"), 
+		   url("../font/OneShinhanLight.woff") format("woff"), 
+		   url("../font/OneShinhanLight.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: 'OneShinhanMedium';
+	src: url("../font/OneShinhanMedium.eot?#iefix") format("embedded-opentype"), 
+		   url("../font/OneShinhanMedium.otf") format("opentype"), 
+		   url("../font/OneShinhanMedium.woff") format("woff"), 
+		   url("../font/OneShinhanMedium.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: 'OneShinhanBold';
+	src: url("../font/OneShinhanBold.eot?#iefix") format("embedded-opentype"), 
+		   url("../font/OneShinhanBold.otf") format("opentype"), 
+		   url("../font/OneShinhanBold.woff") format("woff"), 
+		   url("../font/OneShinhanBold.ttf") format("truetype");
+  }
+
+  @font-face {
+	font-family: 'GmarketSansLight';
+	src: url("../font/GmarketSansLight.eot?#iefix") format("embedded-opentype"), 
+		   url("../font/GmarketSansLight.otf") format("opentype"), 
+		   url("../font/GmarketSansLight.woff") format("woff"), 
+		   url("../font/GmarketSansLight.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: 'GmarketSansMedium';
+	src: url("../font/GmarketSansMedium.eot?#iefix") format("embedded-opentype"), 
+		   url("../font/GmarketSansMedium.otf") format("opentype"), 
+		   url("../font/GmarketSansMedium.woff") format("woff"), 
+		   url("../font/GmarketSansMedium.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: 'GmarketSansBold';
+	src: url("../font/GmarketSansBold.eot?#iefix") format("embedded-opentype"), 
+		   url("../font/GmarketSansBold.otf") format("opentype"), 
+		   url("../font/GmarketSansBold.woff") format("woff"), 
+		   url("../font/GmarketSansBold.ttf") format("truetype");
+  }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+	font-family:'OneShinhanLight', sans-serif;
+	letter-spacing: -1px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+img {
+	vertical-align: top;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
