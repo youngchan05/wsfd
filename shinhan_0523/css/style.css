@@ -75,9 +75,9 @@
 
 .product-info .right-box .link { margin-left: 10px; color: #112369; background: url(../img/img_right_arrow.png) no-repeat right 30px center #f9f307; }
 
-.product-info .link { display: inline-block; padding: 18px 0 16px 0; margin-top: 35px; width: calc(100% - 10px); text-align: center; font-size: 28px; line-height: 34px; text-decoration: none; border-radius: 20px; font-family: 'GmarketSansMedium'; color: #fff; background: url(../img/img_left_arrow.png) no-repeat right 30px center #106ddf; }
+.product-info .link { display: inline-block; padding: 18px 0 16px 0; margin-top: 35px; width: calc(100% - 10px); text-align: center; font-size: 28px; line-height: 34px; text-decoration: none; border-radius: 20px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; color: #fff; background: url(../img/img_left_arrow.png) no-repeat right 30px center #106ddf; }
 
-.product-info .link strong { font-size: 38px; line-height: 40px; font-family: "GmarketSansBold"; }
+.product-info .link strong { font-size: 38px; line-height: 40px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; font-weight: bold; }
 
 .notice-wrap { padding: 84px 0 88px 0; background-color: #f2f2f2; }
 
@@ -85,7 +85,7 @@
 
 .notice-wrap .inner-box > .box { width: 50%; padding: 44px 0 54px 36px; }
 
-.notice-wrap .inner-box > .box > strong { display: inline-block; margin-bottom: 32px; padding-bottom: 4px; font-size: 32px; font-family: "OneShinhanBold"; border-bottom: 2px solid; color: #027fff; border-color: #027fff; }
+.notice-wrap .inner-box > .box > strong { display: inline-block; margin-bottom: 32px; padding-bottom: 4px; font-size: 32px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; border-bottom: 2px solid; color: #027fff; border-color: #027fff; font-weight: bold; }
 
 .notice-wrap .inner-box > .box.right { position: relative; }
 
@@ -101,11 +101,11 @@
 
 .notice-wrap .inner-box .bottom { position: relative; width: 100%; padding: 50px 0 50px 36px; }
 
-.notice-wrap .inner-box .bottom strong { display: inline-block; margin-bottom: 6px; font-family: "OneShinhanBold"; width: 100%; font-size: 16px; line-height: 26px; color: #000; }
+.notice-wrap .inner-box .bottom strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; width: 100%; font-size: 16px; line-height: 26px; color: #000; }
 
-.notice-wrap .inner-box .bottom p { position: relative; padding-left: 8px; font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; }
+.notice-wrap .inner-box .bottom p { position: relative; padding-left: 8px; font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
 
-.notice-wrap .inner-box .bottom p::after { display: block; position: absolute; left: 0; top: 0px; content: "·"; font-size: 16px; line-height: 24px; color: #000; }
+.notice-wrap .inner-box .bottom p::after { display: block; position: absolute; left: 0; top: 0px; content: "·"; font-size: 16px; line-height: 24px; color: #000; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
 
 .notice-wrap .inner-box .bottom::after { display: block; position: absolute; left: 36px; top: 0px; width: calc(100% - 72px); height: 1px; content: ""; background-color: #b2b2b2; }
 
