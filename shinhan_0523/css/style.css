@@ -17,7 +17,7 @@
 
 .content-wrap .content-inner .title { text-align: center; }
 
-.content-wrap .content-inner .title strong { font-size: 60px; line-height: 80px; font-family: "OneShinhanMedium"; font-weight: bold; color: #fff; }
+.content-wrap .content-inner .title strong { font-size: 60px; line-height: 80px; font-family: "OneShinhanMedium"; color: #fff; }
 
 .content-wrap .content-inner .title span { color: #f9f307; font-family: "OneShinhanMedium"; font-weight: bold; }
 
@@ -93,9 +93,11 @@
 
 .notice-wrap .inner-box > .box.right::after { display: block; position: absolute; left: 0; top: 36px; width: 1px; height: calc(100% - 72px); content: ""; background-color: #b2b2b2; }
 
-.notice-wrap .inner-box .text-box { font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; letter-spacing: -2px; }
+.notice-wrap .inner-box .text-box { font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); }
 
-.notice-wrap .inner-box .text-box strong { display: inline-block; margin-bottom: 6px; font-family: "OneShinhanBold"; width: 100%; font-size: 16px; line-height: 26px; color: #000; }
+.notice-wrap .inner-box .text-box strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); font-weight: 600; width: 100%; font-size: 16px; line-height: 26px; color: #000; }
+
+.notice-wrap .inner-box .text-box p { font-size: 14px; line-height: 20px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); }
 
 .notice-wrap .inner-box .bottom { position: relative; width: 100%; padding: 50px 0 50px 36px; }
 

@@ -1,3 +1,4 @@
+@import "//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css";
 $blue : #0084d4;
 $black : #000;
 $white : #fff;
@@ -47,17 +48,14 @@ $white : #fff;
                 font-size:60px;
                 line-height: 80px;
                 font-family: "OneShinhanMedium";
-                font-weight: bold;
                 color:$white;
             }
             span {
                 color:#f9f307;
                 font-family: "OneShinhanMedium";
-                font-weight: bold;
                 i {
                     position: relative;
                     font-family: "OneShinhanMedium";
-                    font-weight: bold;
                     &::after {
                         display:block;
                         position: absolute;
@@ -263,15 +261,24 @@ $white : #fff;
             line-height: 24px;
             color: #000;
             white-space: pre-line;
-            letter-spacing: -2px;
+            font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+            transform: skew(-0.1deg);
             strong {
                 display: inline-block;
                 margin-bottom: 6px;
-                font-family: "OneShinhanBold";
+                font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+                transform: skew(-0.1deg);
+                font-weight: 600;
                 width: 100%;
                 font-size: 16px;
                 line-height:26px;
                 color:#000;
+            }
+            p {
+                font-size:14px;
+                line-height:20px;
+                font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+                transform: skew(-0.1deg);
             }
         }
         .bottom {
