@@ -32,7 +32,7 @@ $white : #fff;
         line-height:22px;
         color:#fff;
         white-space: pre-line;
-        font-weight: bold;
+        font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
     }
 }
 
@@ -131,6 +131,18 @@ $white : #fff;
                             white-space: pre-line;
                         }
                     }
+                    + li{
+                        position: relative;
+                        &::after {
+                            position: absolute;
+                            left: 0;
+                            top: 20px;
+                            width: 2px;
+                            height: 84px;
+                            content: "";
+                            background-color: #eaeaea;
+                        }
+                    }
                 }
             }
         }
@@ -209,10 +221,10 @@ $white : #fff;
         color:#fff;
         background: url(../img/img_left_arrow.png) no-repeat right 30px center #106ddf;
         strong {
-            font-weight: bold;
             font-size:38px;
             line-height: 40px;
-            font-family: 'GmarketSansMedium';
+            font-family: 'GmarketSansBold';
+            font-weight: bold;
         }
     }
 }
@@ -265,6 +277,9 @@ $white : #fff;
             white-space: pre-line;
             font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
             transform: skew(-0.1deg);
+            span {
+                font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+            }
             strong {
                 display: inline-block;
                 margin-bottom: 6px;

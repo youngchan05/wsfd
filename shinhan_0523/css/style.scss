@@ -283,6 +283,9 @@ $white : #fff;
             white-space: pre-line;
             font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
             transform: skew(-0.1deg);
+            span {
+                font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+            }
             strong {
                 display: inline-block;
                 margin-bottom: 6px;
