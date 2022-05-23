@@ -9,7 +9,7 @@
 
 .footer { padding: 40px 0; background-color: #9f9f9f; }
 
-.footer p { max-width: 800px; margin: 0 auto; font-size: 14px; line-height: 22px; color: #fff; white-space: pre-line; font-weight: bold; }
+.footer p { max-width: 800px; margin: 0 auto; font-size: 14px; line-height: 22px; color: #fff; white-space: pre-line; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
 
 .content-wrap { background: -webkit-gradient(linear, left top, left bottom, from(#004a8f), to(#08062a)); background: linear-gradient(to bottom, #004a8f, #08062a); }
 
@@ -19,9 +19,9 @@
 
 .content-wrap .content-inner .title strong { font-size: 60px; line-height: 80px; font-family: "OneShinhanMedium"; color: #fff; }
 
-.content-wrap .content-inner .title span { color: #f9f307; font-family: "OneShinhanMedium"; font-weight: bold; }
+.content-wrap .content-inner .title span { color: #f9f307; font-family: "OneShinhanMedium"; }
 
-.content-wrap .content-inner .title span i { position: relative; font-family: "OneShinhanMedium"; font-weight: bold; }
+.content-wrap .content-inner .title span i { position: relative; font-family: "OneShinhanMedium"; }
 
 .content-wrap .content-inner .title span i::after { display: block; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); top: -6px; width: 8px; height: 8px; background-color: #f9f307; content: ""; border-radius: 100%; }
 
@@ -44,6 +44,10 @@
 .product-info .box .inner ul li p strong { display: inline-block; width: 100%; margin-top: 4px; font-family: "GmarketSansBold"; font-size: 19px; line-height: 22px; white-space: pre-line; }
 
 .product-info .box .inner ul li p strong span { display: inline-block; font-size: 12px; line-height: 12px; font-family: 'GmarketSansMedium'; }
+
+.product-info .box .inner ul li + li { position: relative; }
+
+.product-info .box .inner ul li + li::after { position: absolute; left: 0; top: 20px; width: 2px; height: 84px; content: ""; background-color: #eaeaea; }
 
 .product-info .left-box { position: relative; }
 
@@ -77,7 +81,7 @@
 
 .product-info .link { display: inline-block; padding: 18px 0 16px 0; margin-top: 35px; width: calc(100% - 10px); text-align: center; font-size: 28px; line-height: 34px; text-decoration: none; border-radius: 20px; font-family: 'GmarketSansMedium'; color: #fff; background: url(../img/img_left_arrow.png) no-repeat right 30px center #106ddf; }
 
-.product-info .link strong { font-size: 38px; line-height: 40px; font-family: 'GmarketSansMedium'; font-weight: bold; }
+.product-info .link strong { font-size: 38px; line-height: 40px; font-family: 'GmarketSansBold'; font-weight: bold; }
 
 .notice-wrap { padding: 84px 0 88px 0; background-color: #f2f2f2; }
 
