@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.wrapper { min-width: 800px; margin: 0 auto; }
+
+.header-wrap { position: absolute; left: 0; top: 0; width: 100%; }
+
+.header-wrap .header { display: -webkit-box; display: -ms-flexbox; display: flex; max-width: 1040px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 auto; }
+
+.header-wrap .header .shingan-img { margin-left: auto; }
+
+.footer { padding: 40px 0; background-color: #9f9f9f; }
+
+.footer p { max-width: 800px; margin: 0 auto; font-size: 14px; line-height: 22px; color: #fff; white-space: pre-line; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
+
+.content-wrap { background: #fdecd4; }
+
+.content-wrap .content-inner { position: relative; max-width: 800px; padding-top: 142px; margin: 0 auto; }
+
+.content-wrap .content-inner::after { display: inline-block; position: absolute; bottom: 264px; left: -268px; width: 420px; height: 420px; content: ""; background: url(../img/img_sun.png) no-repeat center; }
+
+.content-wrap .content-inner .title { text-align: center; }
+
+.content-wrap .content-inner .title strong { font-size: 65px; line-height: 80px; font-family: "OneShinhanMedium"; color: #512810; }
+
+.content-wrap .content-inner .title span { color: #fb682d; font-family: "OneShinhanMedium"; }
+
+.content-wrap .content-inner .title span i { position: relative; font-family: "OneShinhanMedium"; }
+
+.content-wrap .content-inner .title span i::after { display: block; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); top: -6px; width: 8px; height: 8px; background-color: #f9f307; content: ""; border-radius: 100%; }
+
+.product-info { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 40px; padding-bottom: 84px; z-index: 10; }
+
+.product-info .tit { position: absolute; left: 0; top: 0; width: 100%; color: #fff; z-index: 10; text-align: center; border-radius: 15px 15px 0 0; background-color: #d7ac86; }
+
+.product-info .tit strong { display: inline-block; padding: 10px 54px; font-size: 32px; line-height: 48px; font-family: "OneShinhanBold"; background: url(../img/img_tit_sun.png) no-repeat left center; }
+
+.product-info .box { position: relative; width: 100%; }
+
+.product-info .box .inner { text-align: center; padding: 94px 0 24px 0; background-color: #fff; border-radius: 15px 15px; -webkit-box-shadow: 1px 5px 0px -1px #d6d6d6; box-shadow: 1px 5px 0px -1px #d6d6d6; }
+
+.product-info .box .inner .tit-text { display: inline-block; margin-bottom: 30px; padding-bottom: 5px; font-size: 35px; line-height: 44px; font-family: "OneShinhanBold"; border-bottom: 2px solid; }
+
+.product-info .box .inner ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.product-info .box .inner ul li { width: 33.33%; }
+
+.product-info .box .inner ul li p { padding-top: 94px; font-size: 27px; line-height: 22px; color: #333; font-family: 'GmarketSansBold'; }
+
+.product-info .box .inner ul li p span { display: inline-block; font-size: 13px; line-height: 18px; font-family: 'GmarketSansMedium'; color: #818181; }
+
+.product-info .box .inner ul li + li { position: relative; }
+
+.product-info .box .inner ul li + li::after { position: absolute; left: 0; top: 26px; width: 2px; height: 86px; content: ""; background-color: #eaeaea; }
+
+.product-info .box .inner ul li.icon01 p { background: url(../img/icon01.png) no-repeat center top; }
+
+.product-info .box .inner ul li.icon02 p { background: url(../img/icon02.png) no-repeat center top; }
+
+.product-info .box .inner ul li.icon03 p { background: url(../img/icon03.png) no-repeat center top; }
+
+.product-info .link-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 36px; }
+
+.product-info .link-wrap .link { display: inline-block; padding: 18px 0 16px 0; width: 50%; text-align: center; font-size: 28px; line-height: 34px; text-decoration: none; border-radius: 20px; font-family: 'GmarketSansMedium'; color: #fff; background: url(../img/img_left_arrow.png) no-repeat right 30px center #fb682d; }
+
+.product-info .link-wrap .link strong { font-size: 38px; line-height: 40px; font-family: 'GmarketSansBold'; font-weight: bold; }
+
+.product-info .link-wrap .link + .link { margin-left: 16px; background: url(../img/img_right_arrow.png) no-repeat right 30px center #fd9e08; }
+
+.notice-wrap { padding: 84px 0 88px 0; background-color: #f2f2f2; }
+
+.notice-wrap .inner-box { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; max-width: 800px; margin: 0 auto; background-color: #fff; border-radius: 20px; }
+
+.notice-wrap .inner-box > .box { width: 100%; padding: 44px 0 54px 36px; text-align: center; }
+
+.notice-wrap .inner-box > .box > strong { display: inline-block; margin-bottom: 32px; padding-bottom: 4px; font-size: 32px; font-family: "OneShinhanBold"; border-bottom: 2px solid; color: #f65c1f; border-color: #f65c1f; font-weight: bold; }
+
+.notice-wrap .inner-box .text-box { font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; text-align: left; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); letter-spacing: -2.5px; }
+
+.notice-wrap .inner-box .text-box span { font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
+
+.notice-wrap .inner-box .text-box strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); width: 100%; font-size: 16px; line-height: 26px; color: #f65c1f; font-weight: bold; }
+
+.notice-wrap .inner-box .text-box p { font-size: 14px; line-height: 20px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); }
+
+.notice-wrap .inner-box .bottom { position: relative; width: 100%; padding: 50px 0 50px 36px; }
+
+.notice-wrap .inner-box .bottom strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; width: 100%; font-size: 16px; line-height: 26px; color: #000; font-weight: bold; }
+
+.notice-wrap .inner-box .bottom p { position: relative; padding-left: 8px; font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
+
+.notice-wrap .inner-box .bottom p::after { display: block; position: absolute; left: 0; top: 0px; content: "·"; font-size: 16px; line-height: 24px; color: #000; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
+
+.notice-wrap .inner-box .bottom::after { display: block; position: absolute; left: 36px; top: 0px; width: calc(100% - 72px); height: 1px; content: ""; background-color: #b2b2b2; }
+
+.notice-wrap .inner-box .bottom .num { margin-top: 50px; }
+
+.notice-wrap .inner-box .bottom .num::after { display: none; }
+/*# sourceMappingURL=style.css.map */
