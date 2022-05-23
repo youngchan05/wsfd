@@ -32,6 +32,7 @@ $white : #fff;
         line-height:22px;
         color:#fff;
         white-space: pre-line;
+        font-weight: bold;
     }
 }
 
@@ -204,14 +205,14 @@ $white : #fff;
         line-height: 34px;
         text-decoration: none;
         border-radius: 20px;
-        font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+        font-family: 'GmarketSansMedium';
         color:#fff;
         background: url(../img/img_left_arrow.png) no-repeat right 30px center #106ddf;
         strong {
             font-weight: bold;
             font-size:38px;
             line-height: 40px;
-            font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+            font-family: 'GmarketSansMedium';
         }
     }
 }
@@ -233,7 +234,7 @@ $white : #fff;
                 margin-bottom: 32px;
                 padding-bottom: 4px;
                 font-size:32px;
-                font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+                font-family: "OneShinhanMedium";
                 border-bottom: 2px solid;
                 color:#027fff;
                 border-color:#027fff;
@@ -273,6 +274,7 @@ $white : #fff;
                 font-size: 16px;
                 line-height:26px;
                 color:#000;
+                font-weight: bold;
             }
             p {
                 font-size:14px;
@@ -293,6 +295,7 @@ $white : #fff;
                 font-size: 16px;
                 line-height:26px;
                 color:#000;
+                font-weight: bold;
             }
             p {
                 position: relative;

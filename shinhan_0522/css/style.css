@@ -9,7 +9,7 @@
 
 .footer { padding: 40px 0; background-color: #9f9f9f; }
 
-.footer p { max-width: 800px; margin: 0 auto; font-size: 14px; line-height: 22px; color: #fff; white-space: pre-line; }
+.footer p { max-width: 800px; margin: 0 auto; font-size: 14px; line-height: 22px; color: #fff; white-space: pre-line; font-weight: bold; }
 
 .content-wrap { background: -webkit-gradient(linear, left top, left bottom, from(#004a8f), to(#08062a)); background: linear-gradient(to bottom, #004a8f, #08062a); }
 
@@ -73,9 +73,9 @@
 
 .product-info .right-box .link { margin-left: 10px; color: #112369; background: url(../img/img_right_arrow.png) no-repeat right 30px center #f9f307; }
 
-.product-info .link { display: inline-block; padding: 18px 0 16px 0; margin-top: 35px; width: calc(100% - 10px); text-align: center; font-size: 28px; line-height: 34px; text-decoration: none; border-radius: 20px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; color: #fff; background: url(../img/img_left_arrow.png) no-repeat right 30px center #106ddf; }
+.product-info .link { display: inline-block; padding: 18px 0 16px 0; margin-top: 35px; width: calc(100% - 10px); text-align: center; font-size: 28px; line-height: 34px; text-decoration: none; border-radius: 20px; font-family: 'GmarketSansMedium'; color: #fff; background: url(../img/img_left_arrow.png) no-repeat right 30px center #106ddf; }
 
-.product-info .link strong { font-weight: bold; font-size: 38px; line-height: 40px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
+.product-info .link strong { font-weight: bold; font-size: 38px; line-height: 40px; font-family: 'GmarketSansMedium'; }
 
 .notice-wrap { padding: 84px 0 88px 0; background-color: #f2f2f2; }
 
@@ -83,7 +83,7 @@
 
 .notice-wrap .inner-box > .box { width: 50%; padding: 44px 0 54px 36px; }
 
-.notice-wrap .inner-box > .box > strong { display: inline-block; margin-bottom: 32px; padding-bottom: 4px; font-size: 32px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; border-bottom: 2px solid; color: #027fff; border-color: #027fff; font-weight: bold; }
+.notice-wrap .inner-box > .box > strong { display: inline-block; margin-bottom: 32px; padding-bottom: 4px; font-size: 32px; font-family: "OneShinhanMedium"; border-bottom: 2px solid; color: #027fff; border-color: #027fff; font-weight: bold; }
 
 .notice-wrap .inner-box > .box.right { position: relative; }
 
@@ -93,13 +93,13 @@
 
 .notice-wrap .inner-box .text-box { font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); }
 
-.notice-wrap .inner-box .text-box strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); width: 100%; font-size: 16px; line-height: 26px; color: #000; }
+.notice-wrap .inner-box .text-box strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); width: 100%; font-size: 16px; line-height: 26px; color: #000; font-weight: bold; }
 
 .notice-wrap .inner-box .text-box p { font-size: 14px; line-height: 20px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); }
 
 .notice-wrap .inner-box .bottom { position: relative; width: 100%; padding: 50px 0 50px 36px; }
 
-.notice-wrap .inner-box .bottom strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; width: 100%; font-size: 16px; line-height: 26px; color: #000; }
+.notice-wrap .inner-box .bottom strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; width: 100%; font-size: 16px; line-height: 26px; color: #000; font-weight: bold; }
 
 .notice-wrap .inner-box .bottom p { position: relative; padding-left: 8px; font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
 
