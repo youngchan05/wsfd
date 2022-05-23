@@ -95,7 +95,7 @@
 
 .notice-wrap .inner-box .text-box { font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); }
 
-.notice-wrap .inner-box .text-box strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); font-weight: 600; width: 100%; font-size: 16px; line-height: 26px; color: #000; }
+.notice-wrap .inner-box .text-box strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); width: 100%; font-size: 16px; line-height: 26px; color: #000; }
 
 .notice-wrap .inner-box .text-box p { font-size: 14px; line-height: 20px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); }
 
