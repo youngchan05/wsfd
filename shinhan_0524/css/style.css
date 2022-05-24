@@ -13,21 +13,21 @@
 
 .content-wrap { background: #fdecd4; }
 
-.content-wrap .content-inner { position: relative; max-width: 800px; padding-top: 142px; margin: 0 auto; }
+.content-wrap .content-inner { position: relative; padding-top: 142px; margin: 0 auto; }
 
 .content-wrap .content-inner::after { display: inline-block; position: absolute; bottom: 264px; left: -268px; width: 420px; height: 420px; content: ""; background: url(../img/img_sun.png) no-repeat center; }
 
 .content-wrap .content-inner .title { text-align: center; }
 
-.content-wrap .content-inner .title strong { font-size: 65px; line-height: 80px; font-family: "OneShinhanMedium"; color: #512810; }
+.content-wrap .content-inner .title strong { font-size: 65px; line-height: 80px; font-family: "OneShinhanBold"; color: #512810; letter-spacing: -1px; }
 
-.content-wrap .content-inner .title span { color: #fb682d; font-family: "OneShinhanMedium"; }
+.content-wrap .content-inner .title span { color: #fb682d; font-family: "OneShinhanBold"; }
 
 .content-wrap .content-inner .title span i { position: relative; font-family: "OneShinhanMedium"; }
 
 .content-wrap .content-inner .title span i::after { display: block; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); top: -6px; width: 8px; height: 8px; background-color: #f9f307; content: ""; border-radius: 100%; }
 
-.product-info { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 40px; padding-bottom: 84px; z-index: 10; }
+.product-info { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 40px; max-width: 800px; margin: 40px auto 0 auto; padding-bottom: 84px; z-index: 10; }
 
 .product-info .tit { position: absolute; left: 0; top: 0; width: 100%; color: #fff; z-index: 10; text-align: center; border-radius: 15px 15px 0 0; background-color: #d7ac86; }
 
@@ -69,17 +69,17 @@
 
 .notice-wrap .inner-box { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; max-width: 800px; margin: 0 auto; background-color: #fff; border-radius: 20px; }
 
-.notice-wrap .inner-box > .box { width: 100%; padding: 44px 0 54px 36px; text-align: center; }
+.notice-wrap .inner-box > .box { width: 100%; padding: 44px 36px 54px 36px; text-align: center; }
 
 .notice-wrap .inner-box > .box > strong { display: inline-block; margin-bottom: 32px; padding-bottom: 4px; font-size: 32px; font-family: "OneShinhanBold"; border-bottom: 2px solid; color: #f65c1f; border-color: #f65c1f; font-weight: bold; }
 
-.notice-wrap .inner-box .text-box { font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; text-align: left; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); letter-spacing: -2.5px; }
+.notice-wrap .inner-box .text-box { font-size: 16px; line-height: 24px; color: #000; white-space: pre-line; text-align: left; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); }
+
+.notice-wrap .inner-box .text-box .desc { font-size: 16px; line-height: 26px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); letter-spacing: -2.5px; }
 
 .notice-wrap .inner-box .text-box span { font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; }
 
 .notice-wrap .inner-box .text-box strong { display: inline-block; margin-bottom: 6px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); width: 100%; font-size: 16px; line-height: 26px; color: #f65c1f; font-weight: bold; }
-
-.notice-wrap .inner-box .text-box p { font-size: 14px; line-height: 20px; font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; -webkit-transform: skew(-0.1deg); transform: skew(-0.1deg); }
 
 .notice-wrap .inner-box .bottom { position: relative; width: 100%; padding: 50px 0 50px 36px; }
 
