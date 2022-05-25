@@ -27,6 +27,14 @@
 
 .content-wrap .content-inner .title span i::after { display: block; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); top: -6px; width: 8px; height: 8px; background-color: #f9f307; content: ""; border-radius: 100%; }
 
+.content-wrap .content-inner.type02 { position: relative; padding-bottom: 84px; text-align: center; }
+
+.content-wrap .content-inner.type02 img { position: relative; z-index: 10; }
+
+.content-wrap .content-inner.type02 .img-link { position: absolute; left: 0; bottom: 10.5%; width: 49%; height: 12%; border-radius: 15px; z-index: 20; }
+
+.content-wrap .content-inner.type02 .img-link.link2 { right: 0; left: auto; }
+
 .product-info { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 40px; margin-top: 40px; padding-bottom: 84px; z-index: 10; }
 
 .product-info .tit { position: absolute; left: 0; top: 0; width: 100%; color: #fff; z-index: 10; text-align: center; border-radius: 15px 15px 0 0; background-color: #d7ac86; }

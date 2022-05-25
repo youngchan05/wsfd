@@ -84,6 +84,28 @@ $white : #fff;
                 }
             }
         }
+        &.type02 {
+            position: relative;
+            padding-bottom:84px;
+            text-align: center;
+            img {
+                position: relative;
+                z-index: 10;
+            }
+            .img-link {
+                position: absolute;
+                left: 0;
+                bottom: 10.5%;
+                width: 49%;
+                height: 12%;
+                border-radius: 15px;
+                z-index: 20;
+                &.link2 {
+                    right:0;
+                    left:auto;
+                }
+            }
+        }
     }
 }
 .product-info {
