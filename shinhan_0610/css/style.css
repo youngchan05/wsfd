@@ -75,7 +75,7 @@ html { font-size: 9.5px; }
 
 .product-list .product-item .tit { margin-bottom: 5.8rem; text-align: center; font-size: 5rem; color: #0084d4; line-height: 5.2rem; font-family: "OneShinhanBold"; }
 
-.notice-wrap { padding: 5.6rem 5rem 7rem 5rem; background-color: #eaeaea; }
+.notice-wrap { padding: 5.6rem 5rem 7rem 5rem; background-color: #fff; }
 
 .notice-wrap .tit { display: block; width: 100%; margin-bottom: 2.2rem; font-size: 3.2rem; line-height: 4rem; letter-spacing: -1.5px; color: #000; font-weight: bold; font-family: 'Nanum Gothic'; }
 
