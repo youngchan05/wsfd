@@ -1,0 +1,76 @@
+.registerWrapper {
+  flex: 1;
+  padding: 120px 0;
+  background-color: #f9fafc;
+  .inputSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .whiteBox.register {
+    width: 414px;
+    height: 668px;
+    overflow: auto;
+  }
+  .whiteBox.inquiry {
+    width: 900px;
+    padding: 80px 90px;
+    .tit {
+      margin-bottom: 60px;
+    }
+  }
+  .utils {
+    display: flex;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5a5e6a;
+    .view {
+      margin-left: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: left;
+      color: #bec1c7;
+    }
+    .checkbox {
+      margin-right: auto;
+    }
+    .linkBox {
+      display: flex;
+      a {
+        + a {
+          position: relative;
+          display: inline-block;
+          padding-left: 8px;
+          margin-left: 8px;
+          &::after {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 10px;
+            background-color: #d5d8dc;
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
+.into {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #5a5e6a;
+  a {
+    margin-left: 4px;
+    color: #02b3d4;
+  }
+}

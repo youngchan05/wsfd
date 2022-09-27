@@ -1,0 +1,20 @@
+$orange: #eb3326;
+$black: #000;
+$white: #fff;
+@import "_layout.scss";
+@import "_register.scss";
+@import "_common.scss";
+
+.people {
+  .searchBox {
+    margin-bottom: 40px;
+  }
+}
+.donatoin {
+  .tabWrapper {
+    margin-bottom: 146px;
+  }
+  .toggleWrapper {
+    margin-top: 40px;
+  }
+}
