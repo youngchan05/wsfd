@@ -5,6 +5,221 @@ $white: #fff;
 @import "_register.scss";
 @import "_common.scss";
 
+//main
+
+.main {
+  .titleWrapper {
+    .sub {
+      margin-bottom: 24px;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.5;
+      text-align: left;
+      color: #02b3d4;
+    }
+    .tit {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.5;
+      text-align: left;
+      color: #000;
+    }
+    .desc {
+      margin-bottom: 32px;
+      font-size: 20px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000;
+      span {
+        color: #02b3d4;
+      }
+    }
+    .linkBtn {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #17a6e3;
+      padding: 10px 20px;
+      border-radius: 100px;
+      border: solid 1px #d5d8dc;
+      background-color: #fff;
+    }
+  }
+  .timerBox {
+    position: relative;
+    margin-top: -174px;
+    padding: 92px 0;
+    border-radius: 30px;
+    background-image: linear-gradient(107deg, #02b9d1 1%, #04a6da 107%);
+    p {
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1.5;
+      text-align: left;
+      color: #fff;
+      text-align: center;
+    }
+    .time {
+      display: flex;
+      justify-content: center;
+      strong {
+        display: inline-block;
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 1.5;
+        color: #fff;
+        + strong {
+          margin-left: 80px;
+        }
+      }
+      span {
+        margin-left: 16px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: left;
+        color: #fff;
+      }
+    }
+  }
+  .section01 {
+    overflow: hidden;
+    img {
+      position: relative;
+      width: 1920px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .titleBox {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 294px;
+      p {
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 1.5;
+        text-align: left;
+        color: #fff;
+      }
+    }
+  }
+  .section02 {
+    display: flex;
+    align-items: center;
+    margin: 56px auto 154px auto;
+    padding: 0;
+    .titleWrapper {
+      margin-left: 22px;
+    }
+    img {
+      width: 556px;
+    }
+  }
+  .section03 {
+    position: relative;
+    padding: 120px 0 300px 0;
+    background-color: #f9fafc;
+    .titleWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .tit,
+      .desc {
+        text-align: center;
+      }
+    }
+  }
+  .section04 {
+    display: flex;
+    align-items: flex-end;
+    padding: 200px 0 0 0;
+    .titleWrapper {
+      margin-right: auto;
+      padding-bottom: 482px;
+      position: relative;
+      .imgBox {
+        position: absolute;
+        right: -98px;
+        bottom: 0;
+        margin-top: 40px;
+        text-align: right;
+        img {
+          width: 274px;
+        }
+      }
+    }
+    .map {
+      width: 666px;
+      height: 666px;
+      border-radius: 30px;
+      background-color: #eee;
+    }
+  }
+  .section06 {
+    .titleWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+    .imgBox {
+      display: flex;
+      > div {
+        position: relative;
+        width: 33.33%;
+        border-radius: 10px;
+        &::after {
+          // position: absolute;
+          // left: 0;
+          // top: 0;
+          // width: 100%;
+          // height: 100%;
+          // border-radius: 10px;
+          // content: "";
+          // z-index: 10;
+          // background: linear-gradient(rgba(2, 179, 212, 0), 93%, #02b3d4 33%);
+        }
+        img {
+          width: 100%;
+        }
+        p {
+          position: absolute;
+          left: 24px;
+          bottom: 26px;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 1.5;
+          text-align: left;
+          color: #fff;
+        }
+        a {
+          position: absolute;
+          right: 26px;
+          bottom: 26px;
+          width: 22px;
+          height: 22px;
+          border-radius: 100px;
+          border: solid 1px #fff;
+          background: url(../img/Plus@2x.png) no-repeat center;
+          background-size: 14px;
+        }
+        + div {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
 .people {
   .searchBox {
     margin-bottom: 40px;
