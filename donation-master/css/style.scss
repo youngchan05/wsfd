@@ -233,3 +233,12 @@ $white: #fff;
     margin-top: 40px;
   }
 }
+
+
+@media screen and (max-width: 764px) {
+  .donatoin {
+    .tabWrapper {
+      margin-bottom: 60px;
+    }
+  }
+}
