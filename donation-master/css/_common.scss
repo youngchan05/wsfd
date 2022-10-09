@@ -1,5 +1,5 @@
 .isMobile {
-  display:none;
+  display: none;
 }
 .whiteBox {
   padding: 40px 20px;
@@ -363,10 +363,12 @@
   }
 }
 
-
 @media screen and (max-width: 764px) {
   .isMobile {
-    display:block;
+    display: block;
+  }
+  .is_pc {
+    display: none;
   }
   .tabWrapper {
     margin: -12px 0 0 -12px;
@@ -398,7 +400,7 @@
   .textHash {
     padding-right: 12px;
     margin-right: 12px;
-    font-size:16px;
+    font-size: 16px;
     flex: 0 0 auto;
   }
   .toggleBox {
@@ -412,9 +414,19 @@
       background-size: 100%;
     }
   }
-  
   .toggleBox .apply {
-      padding: 16px 12px;
-      font-size: 16px;
+    padding: 16px 12px;
+    font-size: 16px;
+  }
+  .toggleCont {
+    flex-direction: column;
+    img {
+      margin-bottom: 12px;
+    }
+  }
+  .toggleWrapper {
+    &.side {
+      padding-left: 60px;
+    }
   }
 }

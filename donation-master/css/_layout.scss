@@ -15,6 +15,11 @@ body {
     padding-top: 0;
     .headerWrapper {
       background-color: transparent;
+      z-index: 10;
+      &.fixed {
+        background-color: #02b3d4;
+        transition: all 0.2s;
+      }
     }
     .titleSection {
       display: flex;
@@ -39,6 +44,10 @@ body {
     .headerWrapper {
       background-color: transparent;
       z-index: 10;
+      &.fixed {
+        background-color: #02b3d4;
+        transition: all 0.2s;
+      }
     }
   }
 }
@@ -91,10 +100,12 @@ body {
   top: 0;
   width: 100%;
   background-color: #02b3d4;
+  z-index: 10;
   header {
     display: flex;
     padding: 20px 0;
     align-items: center;
+    position: relative;
     h1 {
       a {
         font-size: 24px;
@@ -108,12 +119,12 @@ body {
       }
     }
     .menu {
-      display:none;
+      display: none;
     }
     .login {
       position: absolute;
-      right:0;
-      top:0;
+      right: 20px;
+      top: 50%;
       margin-left: auto;
       font-size: 20px;
       font-weight: 600;
@@ -123,13 +134,14 @@ body {
       letter-spacing: normal;
       text-align: left;
       color: #f9fafc;
+      transform: translateY(-50%);
     }
   }
   .gnb {
     position: relative;
     display: flex;
     justify-content: center;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     ul {
       display: flex;
@@ -188,60 +200,70 @@ body {
 
 @media screen and (max-width: 764px) {
   .wrapper {
-    padding-top:60px;
+    padding-top: 60px;
   }
   .headerWrapper {
     position: fixed;
     width: 100%;
+    h1 {
+      position: relative;
+      z-index: 10;
+    }
     header {
       padding: 10px 20px;
       .menu {
-        display:block;
+        display: block;
         position: absolute;
-        right:20px;
-        top:50%;
+        right: 20px;
+        top: 50%;
         transform: translateY(-50%);
-        width:24px;
-        height:24px;
+        width: 24px;
+        height: 24px;
         background: url(../img//Menu@2x.png) no-repeat center;
         background-size: 100%;
+        &.active {
+          background: url(../img/Close@2x.png) no-repeat center;
+          background-size: 100%;
+        }
+      }
+      .login {
+        transform: translateY(0);
       }
     }
     .gnb {
-      display:none;
+      display: none;
       position: fixed;
-      left:0;
-      top:60px;
+      left: 0;
+      top: 0;
       background-color: #02b3d4;
-      padding:20px 0 48px 0;
+      padding: 80px 0 48px 0;
       .login {
         display: inline-block;
         width: 100%;
         position: relative;
-        left:0;
+        left: 0;
         top: 0;
-        padding:42px 0 0 30px;
+        padding: 42px 0 0 30px;
         margin-top: 42px;
         &::after {
           display: block;
           position: absolute;
-          left:30px;
-          top:0;
+          left: 30px;
+          top: 0;
           width: calc(100% - 60px);
           height: 1px;
           background-color: #fff;
           content: "";
         }
-
       }
       ul {
-        flex-direction: column;        
+        flex-direction: column;
         li {
           a {
             padding-left: 30px;
           }
           + li {
-            margin: 52px 0 0 0 ;
+            margin: 52px 0 0 0;
           }
         }
       }
@@ -271,7 +293,10 @@ body {
       }
     }
     .sideWrapper {
-      display:none;
+      display: none;
     }
   }
+}
+
+@media screen and (max-width: 764px) {
 }

@@ -1,7 +1,22 @@
 .registerWrapper {
+  position: relative;
   flex: 1;
   padding: 120px 0;
   background-color: #f9fafc;
+  > .content {
+    position: relative;
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: -190px;
+      width: 504px;
+      height: 774px;
+      display: block;
+      content: "";
+      background: url(../img/login\ image@2x.png) no-repeat center;
+      background-size: 100%;
+    }
+  }
   .inputSection {
     display: flex;
     flex-direction: column;
@@ -62,6 +77,13 @@
       }
     }
   }
+  &.inquiryWrapper {
+    > .content {
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 .into {
   margin-top: 60px;
@@ -80,13 +102,17 @@
     padding: 96px 20px 32px 20px;
     background-color: #fff;
     .content {
-      width:100%;
-      padding:0;
+      width: 100%;
+      padding: 0;
+      &::after {
+        display: none;
+      }
     }
-    .whiteBox.register,  .whiteBox.inquiry {
-      width:100%;
+    .whiteBox.register,
+    .whiteBox.inquiry {
+      width: 100%;
       height: auto;
-      padding:0;
+      padding: 0;
       overflow: visible;
       box-shadow: none;
     }
