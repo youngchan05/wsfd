@@ -14,6 +14,7 @@ body {
   &.sub {
     padding-top: 0;
     .headerWrapper {
+      overflow: hidden;
       background-color: transparent;
       z-index: 10;
       &.fixed {
@@ -22,12 +23,23 @@ body {
       }
     }
     .titleSection {
+      position: relative;
       display: flex;
       align-items: self-end;
       padding-bottom: 16px;
       height: 300px;
       background-color: #eee;
+      overflow: hidden;
+      img {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 2070px;
+        transform: translateX(-50%);
+      }
       .title {
+        position: relative;
+        z-index: 10;
         font-size: 36px;
         font-weight: bold;
         font-stretch: normal;
