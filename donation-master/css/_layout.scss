@@ -16,7 +16,7 @@ body {
     .headerWrapper {
       overflow: hidden;
       background-color: transparent;
-      z-index: 10;
+      z-index: 100;
       &.fixed {
         background-color: #02b3d4;
         transition: all 0.2s;
