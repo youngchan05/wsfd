@@ -4,9 +4,9 @@
   padding: 120px 0;
   background-color: #f9fafc;
   > .content {
+    display: flex;
     position: relative;
     &::after {
-      position: absolute;
       right: 0;
       bottom: -190px;
       width: 504px;
@@ -23,15 +23,25 @@
     gap: 20px;
   }
   .whiteBox.register {
-    width: 414px;
-    height: 668px;
-    overflow: auto;
+    max-width: 568px;
+    width:100%;
+    padding:0;
+    background-color: transparent;
+    box-shadow: none;
   }
   .whiteBox.inquiry {
     width: 900px;
     padding: 80px 90px;
+    margin:0 auto;
     .tit {
       margin-bottom: 60px;
+    }
+    .tableWrapper {
+      margin-top:40px;
+      overflow: auto;
+      table {
+        width:720px;
+      }
     }
   }
   .utils {

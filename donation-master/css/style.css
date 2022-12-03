@@ -297,10 +297,10 @@ body {
   background-color: #f9fafc;
 }
 .registerWrapper > .content {
+  display: flex;
   position: relative;
 }
 .registerWrapper > .content::after {
-  position: absolute;
   right: 0;
   bottom: -190px;
   width: 504px;
@@ -316,16 +316,26 @@ body {
   gap: 20px;
 }
 .registerWrapper .whiteBox.register {
-  width: 414px;
-  height: 668px;
-  overflow: auto;
+  max-width: 568px;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
 }
 .registerWrapper .whiteBox.inquiry {
   width: 900px;
   padding: 80px 90px;
+  margin: 0 auto;
 }
 .registerWrapper .whiteBox.inquiry .tit {
   margin-bottom: 60px;
+}
+.registerWrapper .whiteBox.inquiry .tableWrapper {
+  margin-top: 40px;
+  overflow: auto;
+}
+.registerWrapper .whiteBox.inquiry .tableWrapper table {
+  width: 720px;
 }
 .registerWrapper .utils {
   display: flex;
@@ -430,7 +440,7 @@ body {
   position: relative;
   padding-right: 20px;
   margin-right: 20px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1.5;
   text-align: left;
@@ -602,14 +612,14 @@ body {
 .toggleBox {
   display: flex;
   position: relative;
-  padding: 19px 76px 19px 32px;
+  padding: 10px 56px 10px 12px;
   margin-bottom: 20px;
   border-radius: 10px;
   background-color: #f9fafc;
   cursor: pointer;
 }
 .toggleBox strong {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1.5;
   text-align: left;
@@ -634,17 +644,17 @@ body {
 }
 .toggleBox .apply {
   position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  padding: 10px 20px;
+  right: 12px;
+  top: 10px;
+  height: calc(100% - 20px);
+  padding: 0 10px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
-  background-color: #02b3d4;
-  border-radius: 0 10px 10px 0;
+  color: #33c0db;
+  background-color: #d9f6fc;
+  border-radius: 10px;
 }
 
 .toggleCont {
@@ -723,6 +733,9 @@ body {
   color: #02b3d4;
 }
 
+.tabCont {
+  display: flex;
+}
 .tabCont .tabTit {
   display: flex;
   align-items: center;
@@ -763,6 +776,14 @@ body {
 .tabCont .desc + .desc {
   margin-top: 16px;
 }
+.tabCont .contBox {
+  flex: 0 1 470px;
+}
+.tabCont + .tabCont {
+  padding-top: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #e4e6ea;
+}
 
 .textWrapper .tit {
   display: inline-block;
@@ -795,12 +816,63 @@ body {
   margin-top: 60px;
 }
 
+.tableWrapper {
+  width: 100%;
+}
+.tableWrapper strong {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  color: #000;
+}
+.tableWrapper table {
+  width: 100%;
+}
+.tableWrapper table thead {
+  border-top: 2px solid #e4e6ea;
+  border-bottom: 2px solid #e4e6ea;
+}
+.tableWrapper table thead th {
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+}
+.tableWrapper table tbody tr td {
+  padding: 12px 0;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.7;
+  text-align: center;
+  color: #3b3f4a;
+  border-bottom: solid 1px #e4e6ea;
+}
+.tableWrapper table tbody tr td .ellipsis {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 764px) {
   .isMobile {
     display: block;
   }
   .is_pc {
     display: none;
+  }
+  .tabCont {
+    flex-direction: column;
+  }
+  .tabCont .contBox {
+    flex: auto;
+    margin-bottom: 20px;
   }
   .tabWrapper {
     margin: -12px 0 0 -12px;
@@ -855,7 +927,6 @@ body {
     background-size: 100%;
   }
   .toggleBox .apply {
-    padding: 16px 12px;
     font-size: 16px;
   }
   .toggleCont {
@@ -1152,10 +1223,10 @@ body {
 }
 
 .donatoin .tabWrapper {
-  margin-bottom: 146px;
+  margin-bottom: 80px;
 }
 .donatoin .toggleWrapper {
-  margin-top: 40px;
+  flex: 1 0 auto;
 }
 
 @media screen and (max-width: 764px) {
