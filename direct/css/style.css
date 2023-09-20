@@ -409,12 +409,15 @@ body {
   width: calc(100% + 452px);
 }
 .text-wrap .inner.show .slide-section {
-  width: 500px;
+  width: 480px;
   transition: all 0.5s;
   z-index: 10;
 }
 .text-wrap .inner.remove .slide-section {
   transition-property: none;
+}
+.text-wrap .inner.remove > img {
+  display: none;
 }
 .text-wrap .text-box {
   position: absolute;

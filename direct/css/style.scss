@@ -440,7 +440,7 @@ body {
                 width:calc(100% + 452px);
             }
             .slide-section {
-                width:500px;
+                width:480px;
                 transition: all .5s;
                 img {
                 }
@@ -450,6 +450,9 @@ body {
         &.remove{
             .slide-section {
                 transition-property: none;
+            }
+            > img {
+                display: none;
             }
         }
         // &::after {
