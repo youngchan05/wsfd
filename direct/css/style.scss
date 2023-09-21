@@ -486,6 +486,7 @@ body {
             transition: all .5s;
             z-index: 10;
             transform: skew(-0.1deg);
+            font-family: "SSGD";
             br {
                 display: none;
             }
@@ -533,6 +534,7 @@ body {
             transition: all .5s;
             transform: skew(-0.1deg);
             border-radius: 8px;
+            gap: 4px;
             span {
                 font-weight: 600;
             }

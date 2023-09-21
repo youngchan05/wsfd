@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
     box-sizing: border-box;
-    font-family:'Noto Sans KR';
+    font-family:'HGGGOTHICSSI','Noto Sans KR';
     font-weight: 400;
 }
 /* HTML5 display-role reset for older browsers */
@@ -62,32 +62,50 @@ em {
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'SSGD';
+    font-style: normal;
+    src: local('SSGD_ExtraBold'),
+        url('../fonts/SSGD_ExtraBold.ttf') format('truetype'),
+        url('../fonts/SSGD_ExtraBold.otf') format('opentype');
+}
 
 @font-face {
-    font-family: '삼성긴고딕';
+    font-family: 'HGGGOTHICSSI';
+    font-style: normal;
+    font-weight: 200;
+    src: local('HGGGOTHICSSI_20G'),
+        url('../fonts/HGGGOTHICSSI_20G.TTF') format('truetype'),
+        url('../fonts/HGGGOTHICSSI_PRO_20G.OTF') format('opentype');
+}
+@font-face {
+    font-family: 'HGGGOTHICSSI';
+    font-style: normal;
     font-weight: 400;
-    src: local('삼성긴고딕 Regular'),
-        url('../fonts/삼성긴고딕 Regular.ttf') format('truetype'),
-        url('../fonts/삼성긴고딕 Regular.otf') format('opentype');
+    src: local('HGGGOTHICSSI_40G'),
+        url('../fonts/HGGGOTHICSSI_40G.TTF') format('truetype'),
+        url('../fonts/HGGGOTHICSSI_PRO_40G.OTF') format('opentype');
 }
 @font-face {
-    font-family: '삼성긴고딕';
+    font-family: 'HGGGOTHICSSI';
+    font-style: normal;
     font-weight: 600;
-    src: local('삼성긴고딕 Medium'),
-        url('../fonts/삼성긴고딕 Medium.ttf') format('truetype'),
-        url('../fonts/삼성긴고딕 Medium.otf') format('opentype');
+    src: local('HGGGOTHICSSI_60G'),
+        url('../fonts/HGGGOTHICSSI_60G.TTF') format('truetype'),
+        url('../fonts/HGGGOTHICSSI_PRO_60G.OTF') format('opentype');
 }
 @font-face {
-    font-family: '삼성긴고딕';
+    font-family: 'HGGGOTHICSSI';
+    font-style: normal;
     font-weight: 800;
-    src: local('삼성긴고딕 Bold'),
-        url('../fonts/삼성긴고딕 Bold.ttf') format('truetype'),
-        url('../fonts/삼성긴고딕 Bold.otf') format('opentype');
+    src: local('HGGGOTHICSSI_80G'),
+        url('../fonts/HGGGOTHICSSI_80G.TTF') format('truetype'),
+        url('../fonts/HGGGOTHICSSI_PRO_80G.OTF') format('opentype');
 }
 @font-face {
-    font-family: '삼성긴고딕';
+    font-family: 'HGGGOTHICSSI';
+    font-style: normal;
     font-weight: 900;
-    src: local('삼성긴고딕 Bold'),
-        url('../fonts/삼성긴고딕 Bold.otf') format('opentype'),
-        url('../fonts/삼성긴고딕 Bold.ttf') format('truetype');
+    src: local('HGGGOTHICSSI99G'),
+        url('../fonts/HGGGOTHICSSI_PRO_99G.OTF') format('opentype');
 }
