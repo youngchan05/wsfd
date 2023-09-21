@@ -357,7 +357,7 @@ body {
         z-index: 10;
         img {
             position: relative;
-            width: 100%;
+            width: 480px;
             z-index: 10;
             
         }
@@ -552,23 +552,23 @@ body {
 
 .slide-section {
     display: flex;
+    align-items: center;
     width: 0;
     overflow: hidden;
     position: absolute;
     left: 620px;
     top:0;
     height:100%;
+    background: #2c7fdf;
     z-index: -1;
     img {
-        width: 500px;
+        width: 480px;
         // transition: all .5s;
     }
     &.right{
         right: 620px;
         left:auto;
-        height:100%;
-        img {
-        }
+        background: #e7f6fb;
         .item-wrap {
             width:456px;
             height: 134px;
