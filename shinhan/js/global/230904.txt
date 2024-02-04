@@ -1,0 +1,215 @@
+$(document).ready(function(){
+
+  $(".section01").addClass("show");
+
+
+  slide();
+  slide2();
+
+  var clientHeight = document.getElementById('header_wrap').clientHeight;
+  var section01 = $(".section01").offset();
+  var section02 = $(".section02").offset();
+
+  var para = document.location.href.split("#");
+  if (para[1] == "event01") {
+    $("html,body").animate({ scrollTop: section01.top - 100 }, 1);
+  } else if (para[1] == "event01_1") {
+    $("html,body").animate({ scrollTop: section01.top - 100 }, 1);
+  } else if (para[1] == "event01_2") {
+    $("html,body").animate({ scrollTop: section01.top - 100 }, 1);
+    $(".slide_cont1 .swiper_navi.next").click();
+  } else if (para[1] == "event02") {
+    $("html,body").animate({ scrollTop: section02.top - 100 }, 1);
+  } else if (para[1] == "event02_1") {
+    $("html,body").animate({ scrollTop: section02.top - 100 }, 1);
+  } else if (para[1] == "event02_2") {
+    $("html,body").animate({ scrollTop: section02.top - 100 }, 1);
+    $(".slide_cont2 .swiper_navi.next").click();
+  } 
+
+
+});
+
+
+$(window).load(function(){	
+
+  $(window).scroll(function(){
+    var position = $(this).scrollTop();
+    scrollEvent();
+  });
+  scrollEvent();
+
+});
+
+
+
+////////////////////////////////////////////////////////
+var secShow = checkMobileDevice();
+
+function scrollEvent(){
+  var wh = $(window).height();
+  var position = $(this).scrollTop();
+  var moveposition=310;
+  if(secShow==true){
+    moveposition=310;
+  }else{
+    moveposition=350;
+  }
+  var s1 = $(".section01").offset().top - moveposition;
+  var s2 = $(".section02").offset().top - moveposition;
+  // var s3 = $(".section03").offset().top - 550;
+
+  if (position > s1) {
+    $(".section01").addClass("show");
+  }
+  if(position > s2) {
+    $(".section02").addClass("show");
+  }
+  // if(position > s3) {
+  //   $(".section03").addClass("show");
+  // }
+}
+
+
+
+////////////////////////////////////////////////////////
+
+function slide() {
+  var slide_sw = new Swiper('.slide_sw', {
+    speed: 400,
+    slidesPerView: 1,
+    initialSlide: 0,
+    spaceBetween: 0,
+    observer: true,
+    observeParents: true,
+    loop: true,
+    navigation: {
+      nextEl: ".slide1 .swiper_navi.next",
+      prevEl: ".slide1 .swiper_navi.prev",
+    },
+    pagination: {
+      el: ".slide_cont1 .swiper-pagination",
+      clickable: true,
+    },
+    on: {
+      activeIndexChange: function() {
+        var secNum = this.activeIndex;
+        setTimeout(function() {
+          $(".slide_sw .swiper-slide").eq(secNum).addClass("on");
+        }, 400)
+      }
+    },
+  });
+}
+
+
+function slide2() {
+  var slide_sw2 = new Swiper('.slide_sw2', {
+    speed: 400,
+    slidesPerView: 1,
+    initialSlide: 0,
+    spaceBetween: 0,
+    observer: true,
+    observeParents: true,
+    loop: true,
+    navigation: {
+      nextEl: ".slide2 .swiper_navi.next",
+      prevEl: ".slide2 .swiper_navi.prev",
+    },
+    pagination: {
+      el: ".slide_cont2 .swiper-pagination",
+      clickable: true,
+    },
+    on: {
+      activeIndexChange: function() {
+        var secNum = this.activeIndex;
+        setTimeout(function() {
+          $(".slide_sw2 .swiper-slide").eq(secNum).addClass("on");
+        }, 400)
+      }
+    },
+  });
+}
+
+
+
+////////////////////////////////////////////////////////
+
+function setCookie( name, value, expiredays ) {
+  var todayDate = new Date();
+  todayDate.setDate(todayDate.getDate() + expiredays);
+  document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toUTCString() + ";"
+}
+
+// IE 확인
+function isIE() {
+  var agent = navigator.userAgent.toLowerCase();
+  return (agent.indexOf('trident') !== -1 || agent.indexOf("msie") !== -1)
+}
+
+// Mobile 확인
+function checkMobileDevice() {
+  var mobileKeyWords = new Array('Android', 'iPhone', 'iPod', 'BlackBerry', 'Windows CE', 'MOT', 'SonyEricsson');//'SAMSUNG', 'LG',
+  for (var info in mobileKeyWords) {
+      if(navigator.userAgent.match(mobileKeyWords[info]) != null) {
+          return true;
+      }
+  }
+  return false;
+}
+
+  
+var currentUrl = location.href;
+var title_this_page = document.title;
+var facebookShare = "https://www.facebook.com/sharer/sharer.php?u=" + currentUrl;
+var twitterShare = "https://twitter.com/intent/tweet?url=" + currentUrl;
+
+// 카카오톡 공유하기
+Kakao.init('fc1c9337beee43514f264e329244fbdf');
+function sendToKakaoTalk() {  
+    airbridge.events.send("share", {
+        label: "공유_카카오톡",
+        action: "자산관리_공유하기"
+    });
+    Kakao.Link.sendScrap({
+        requestUrl: currentUrl
+    });
+}
+
+function goFacebookShare(){
+    airbridge.events.send("category", {
+      label: "자산관리_공유하기",
+      action: "자산관리_facebook"
+    });
+    window.open(facebookShare, "", "scrollbars=no, width=600, height=600")
+}
+// IE 확인
+function isIE() {
+  var agent = navigator.userAgent.toLowerCase();
+  return (agent.indexOf('trident') !== -1 || agent.indexOf("msie") !== -1)
+}
+
+// 복사하기
+function copyToClipboard() {
+  airbridge.events.send("share", {
+      label: "공유_링크복사",
+      action: "자산관리_공유하기"
+  });
+  if (isIE()){
+      window.clipboardData.setData('Text', currentUrl);
+  }else if (navigator.userAgent.match('Android')) {
+      var input = document.createElement('input');
+      input.style.position = 'fixed';
+      input.style.top = '0';
+      document.body.appendChild(input);
+      input.value = currentUrl;
+      input.focus();
+      input.select();
+      document.execCommand('copy')
+      document.body.removeChild(input);
+  }else{
+      navigator.clipboard.writeText(currentUrl);
+  }
+  alert("링크를 복사했습니다.");
+}
+

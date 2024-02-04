@@ -1,0 +1,23 @@
+$(document).ready(function() {
+ 
+  $("header .btn_share > div").click(function() {
+    $(this).toggleClass('on');
+    $(".btn_share ul").stop().fadeToggle(250);
+  });
+
+  $(".btn_share ul li").click(function() {
+    closeDownShare();
+  });
+
+  function closeDownShare() {
+    $("header .btn_share > div").removeClass('on');
+    $(".btn_share ul").stop().fadeOut(250);
+  }
+
+  $(".section-benefit .benefit .arrow").click(function(){
+    $(this).stop().toggleClass("on");
+    $(this).parent().find("ul").stop().slideToggle(300);
+    $(this).parent().find(".list").stop().slideToggle(300);
+  });
+  
+});
