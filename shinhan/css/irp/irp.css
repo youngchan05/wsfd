@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+  .box_event .slide_cont .slide .txt h2 {
+    letter-spacing: -0.3vw;
+  }
+}

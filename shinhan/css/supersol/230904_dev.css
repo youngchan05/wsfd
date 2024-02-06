@@ -967,9 +967,10 @@ footer .inner>div .notice p .br {
 
   header .hd_cont .gnb ul li a {
     padding: 4vw 0;
-    font-size: 4.5vw;
+    font-size: 4vw;
     width: 100%;
     text-align: center;
+    min-width: auto;
   }
 
 
