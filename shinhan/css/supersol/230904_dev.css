@@ -1333,21 +1333,6 @@ footer .inner>div .notice p .br {
 }
 
 
-.section-benefit .benefit.benefit01 ul {
-  display: flex;
-  column-gap: 96px;
-}
-
-.section-benefit .benefit.benefit01 ul li+li {
-  padding-top: 0;
-  border-top: 0;
-  margin-top: 0;
-}
-
-.section-benefit .benefit.benefit01 ul li {}
-
-
-
 .section-benefit .benefit.benefit04 {
   padding: 30px 48px;
 }
