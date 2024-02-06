@@ -39,7 +39,7 @@
     width: 100%;
   }
   .box_event .text_cont .button .btn {
-      width: 100%;
+      width: 300px;
       height: 60px;
       line-height: 60px;
   }
