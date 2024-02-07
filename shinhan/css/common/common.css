@@ -925,7 +925,7 @@ footer .inner>div .notice p .br {
     }
 
     .inner {
-        padding: 0;
+        padding: 12vw 0 0vw
     }
 
     header .inner {
@@ -3178,6 +3178,7 @@ footer .inner>div .notice p .br {
 
     .box_event .text_cont {
         width: 100%;
+        order: 2;
     }
 
     .box_event .text_cont span {
@@ -3190,7 +3191,7 @@ footer .inner>div .notice p .br {
         font-size: 5vw;
         letter-spacing: -0.025em;
         line-height: 1.3;
-        margin-top: 3.8vw;
+        margin-top: 0;
     }
 
     .box_event .text_cont h2 strong {
@@ -3304,7 +3305,7 @@ footer .inner>div .notice p .br {
     .box_event .slide_cont {
         width: 100%;
         padding-bottom: 0;
-        padding: 8vw 0 11.2vw;
+        padding: 0 0 11.2vw;
     }
 
     .section04 .box_event .slide_cont {
