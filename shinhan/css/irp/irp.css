@@ -1,25 +1,30 @@
 .box_event .text_cont .button .btn {
   width: 460px;
 }
+
 .section01 {
-  background-color:#f4f5f7 ;
+  background-color: #f4f5f7;
 }
+
 .section02 {
-  background-color:#e7f4ff ;
+  background-color: #e7f4ff;
 }
+
 .section02 .box_event .slide_cont .slide {
-  padding:0;
+  padding: 0;
   overflow: hidden;
 }
+
 .section02 .box_event .slide_cont .slide .img .box_ani {
   padding-top: 114.2%;
 }
 
 .textCheck li {
-  margin-top:40px;
+  margin-top: 40px;
 }
-.textCheck li strong{
-  display:inline-block;
+
+.textCheck li strong {
+  display: inline-block;
   padding-left: 36px;
   font-size: 24px;
   line-height: 26px;
@@ -27,50 +32,72 @@
   color: #0046ff;
   background: url(../../img/common//icon_check.png) no-repeat left center;
 }
-.textCheck li p{
+
+.textCheck li p {
   font-size: 16px;
   line-height: 26px;
-  color:#444444;
+  color: #444444;
   font-family: 'SUIT';
   font-weight: 400;
 }
-@media (max-width: 1023px){
-  .box_event .text_cont .button{
+
+@media (max-width: 1023px) {
+  .box_event .text_cont .button {
     width: 100%;
   }
+
   .box_event .text_cont .button .btn {
-      width: 300px;
-      height: 60px;
-      line-height: 60px;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
   }
+
   .textCheck li {
     margin-top: 20px;
   }
-  .textCheck li strong{
+
+  .textCheck li strong {
     padding-left: 20px;
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 32px;
-    background-size:16px;
+    background-size: 16px;
   }
-  .textCheck li p{
+
+  .textCheck li p {
     font-size: 14px;
     line-height: 20px;
   }
 }
+
 @media (max-width: 767px) {
+  .section02 .box_event .text_cont {
+    order: 2
+  }
+
+  .section02 .box_event .slide_cont {
+    padding: 0vw 0 11.2vw;
+  }
+
+  .section02 .box_event .text_cont h2 {
+    margin-top: 0;
+  }
+
   .box_event .slide_cont .slide .txt h2 {
     letter-spacing: -0.3vw;
   }
 
-  .textCheck li strong{
+
+
+  .textCheck li strong {
     padding-left: 5vw;
     margin-bottom: 2.7vw;
     font-size: 4.2vw;
     line-height: 1;
     background-size: 3.3vw;
   }
-  .textCheck li p{
+
+  .textCheck li p {
     font-size: 3.2vw;
     line-height: 1.5;
   }
