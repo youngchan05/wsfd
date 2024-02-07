@@ -71,17 +71,6 @@
 }
 
 @media (max-width: 767px) {
-  .section02 .box_event .text_cont {
-    order: 2
-  }
-
-  .section02 .box_event .slide_cont {
-    padding: 0vw 0 11.2vw;
-  }
-
-  .section02 .box_event .text_cont h2 {
-    margin-top: 0;
-  }
 
   .box_event .slide_cont .slide .txt h2 {
     letter-spacing: -0.3vw;
