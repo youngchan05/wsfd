@@ -84,6 +84,10 @@
     letter-spacing: -0.07em;
   }
 
+  .textCheck li:first-child {
+    margin-top: 0;
+  }
+
   .textCheck li strong {
     padding-left: 5vw;
     margin-bottom: 2.7vw;
