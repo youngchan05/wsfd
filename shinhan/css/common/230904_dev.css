@@ -1071,6 +1071,11 @@ footer .inner>div .notice p .br {
     letter-spacing: -0.05em;
   }
 
+  footer .inner>div .box ul li.sm {
+    letter-spacing: -0.09em;
+
+  }
+
   footer .inner>div .box ul li::before {
     top: 1.5vw;
     width: 0.8vw;

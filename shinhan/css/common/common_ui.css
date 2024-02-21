@@ -1,3 +1,8 @@
+/* footer */
+.footer .inner .tit {
+    margin-bottom: 10px;
+}
+
 .section-benefit .benefit.benefit01 ul {
     display: flex;
     column-gap: 24px;
@@ -7,29 +12,33 @@
     border-top: 0;
     margin-top: 0;
 }
+
 .section-benefit .benefit.benefit01 ul li {
-    padding:40px;
+    padding: 40px;
     background-color: #f8f9fb;
     border-radius: 20px;
 }
 
-.section-benefit .benefit.benefit01 ul li:hover>a .txt h3   {
+.section-benefit .benefit.benefit01 ul li:hover>a .txt h3 {
     color: #0046ff;
 }
-.section-benefit .benefit.benefit01 ul li .txt span{
+
+.section-benefit .benefit.benefit01 ul li .txt span {
     font-size: 20px;
     line-height: 22px;
     color: #111;
     font-weight: 400;
     font-family: 'SUIT';
 }
-.section-benefit .benefit.benefit01 ul li .txt h3{
+
+.section-benefit .benefit.benefit01 ul li .txt h3 {
     margin: 4px 0 30px 0;
     font-size: 30px;
     line-height: 30px;
-    color:#111;
+    color: #111;
 }
-.section-benefit .benefit.benefit01 ul li .box_bene .arrow{
+
+.section-benefit .benefit.benefit01 ul li .box_bene .arrow {
     top: auto;
     bottom: 0;
     transform: translateY(0);
@@ -37,7 +46,7 @@
 
 @media (max-width: 1200px) {
 
-    .section-benefit .benefit.benefit01 ul li .txt span{
+    .section-benefit .benefit.benefit01 ul li .txt span {
         font-size: 16px;
         line-height: 18px;
         letter-spacing: -1px;
@@ -46,20 +55,27 @@
 }
 
 @media (max-width: 1023px) {
+    .footer .inner .tit {
+        margin-bottom: 5px;
+    }
+
     .section-benefit .benefit.benefit01 ul {
         column-gap: 12px;
     }
-    .section-benefit .benefit.benefit01 ul li .txt span{
+
+    .section-benefit .benefit.benefit01 ul li .txt span {
         font-size: 13px;
         line-height: 16px;
         letter-spacing: -1px;
     }
-    .section-benefit .benefit.benefit01 ul li .txt h3{
+
+    .section-benefit .benefit.benefit01 ul li .txt h3 {
         margin: 4px 0 14px 0;
         font-size: 19px;
         line-height: 22px;
     }
+
     .section-benefit .benefit.benefit01 ul li {
-        padding:20px;
+        padding: 20px;
     }
 }
