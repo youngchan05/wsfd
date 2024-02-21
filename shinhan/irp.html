@@ -370,7 +370,7 @@
       </div>
     </div>
 
-    <div class="section section-benefit">
+    <div class="section section-benefit bottom-benefit">
       <div class="inner">
         <div class="benefit_inner">
           <div class="benefit benefit01">
@@ -764,7 +764,7 @@
       }
       var s1 = $(".section01").offset().top - moveposition;
       var s2 = $(".section02").offset().top - moveposition;
-      // var s3 = $(".section03").offset().top - 550;
+      var s3 = $(".bottom-benefit").offset().top - 900;
 
       if (position > s1) {
         $(".section01").addClass("show");
@@ -772,9 +772,9 @@
       if (position > s2) {
         $(".section02").addClass("show");
       }
-      // if(position > s3) {
-      //   $(".section03").addClass("show");
-      // }
+      if (position > s3) {
+        $(".bottom-benefit").addClass("show");
+      }
     }
 
 

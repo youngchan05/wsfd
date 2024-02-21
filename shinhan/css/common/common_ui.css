@@ -3,6 +3,17 @@
     margin-bottom: 10px;
 }
 
+.bottom-benefit {
+    opacity: 0;
+    top: 40px;
+}
+
+.bottom-benefit.show {
+    top: 0;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
 .section-benefit .benefit.benefit01 ul {
     display: flex;
     column-gap: 24px;
