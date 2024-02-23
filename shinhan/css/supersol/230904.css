@@ -59,6 +59,7 @@
   /* 절대 위치 */
   bottom: -90px;
   right: -170px;
+  z-index: 1;
 }
 
 .top_rt_img img {

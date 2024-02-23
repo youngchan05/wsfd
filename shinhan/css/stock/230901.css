@@ -105,7 +105,7 @@
 }
 
 .box_event .text_cont .notice {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .box_event .text_cont .notice p {
@@ -637,7 +637,7 @@
   line-height: 1.5;
 }
 
-.box_event .slide_cont .slide .txt .notice .txt {
+.box_event .slide_cont .slide .txt .notice span {
   font-size: 16px;
   color: #444;
   font-family: "SUIT";
@@ -646,7 +646,7 @@
   line-height: 1.5;
 }
 
-.box_event .slide_cont .slide .txt .notice .txt.is_mo {
+.box_event .slide_cont .slide .txt .notice .is_mo {
   display: none;
 }
 
@@ -1079,6 +1079,10 @@
     font-size: 14px;
   }
 
+  .box_event .slide_cont .slide .txt .notice p span {
+    font-size: inherit;
+  }
+
   .box_event .slide_cont .slide .txt .notice p.minus {
     margin-left: 9px;
   }
@@ -1179,7 +1183,7 @@
   }
 
   .section-event.mob .inner {
-    padding: 0 0 20vw;
+    padding: 0 0 12vw;
   }
 
   .section-event.mob .event_inner {
@@ -1338,18 +1342,18 @@
     line-height: 1.4;
   }
 
-  .box_event .slide_cont .slide .txt .notice .txt {
+  .box_event .slide_cont .slide .txt .notice span {
     font-size: 3.2vw;
     letter-spacing: -0.2vw;
     line-height: 1.4;
   }
 
-  .box_event .slide_cont .slide .txt .notice .is_pc {
+  .box_event .slide_cont .slide .txt .notice span.is_pc {
     display: none;
   }
 
-  .box_event .slide_cont .slide .txt .notice .is_mo {
-    display: block;
+  .box_event .slide_cont .slide .txt .notice span.is_mo {
+    display: inline;
   }
 
   .box_event .slide_cont .slide .txt .notice p.minus {

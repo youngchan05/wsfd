@@ -88,6 +88,10 @@
     margin-top: 0;
   }
 
+  .textCheck {
+    padding-bottom: 12vw;
+  }
+
   .textCheck li strong {
     padding-left: 5vw;
     margin-bottom: 2.7vw;
