@@ -37,7 +37,7 @@
   font-size: 16px;
   line-height: 26px;
   color: #444444;
-  font-family: 'SUIT';
+  font-family: "SUIT";
   font-weight: 400;
 }
 
@@ -71,16 +71,11 @@
 }
 
 @media (max-width: 767px) {
-
-  .box_event .slide_cont .slide .txt h2 {
-    letter-spacing: -0.3vw;
-  }
-
   .box_event .slide_cont .slide .txt .notice p {
     font-size: 3.3vw;
   }
 
-  footer .inner>div .box ul li.red {
+  footer .inner > div .box ul li.red {
     letter-spacing: -0.07em;
   }
 
@@ -99,6 +94,10 @@
     line-height: 1;
     background-size: 3.3vw;
     letter-spacing: -0.025em;
+  }
+  .textCheck li strong.sub {
+    padding-left: 0;
+    background: none;
   }
 
   .textCheck li p {
