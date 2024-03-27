@@ -26,6 +26,7 @@
 }
 
 .section-benefit .benefit.benefit01 ul li {
+  padding-top: 0;
   width: calc(50% - 50px);
   /* padding: 40px; */
   /* background-color: #f8f9fb; */
