@@ -72,12 +72,10 @@
 
 @media (max-width: 767px) {
   .box_event .slide_cont .slide .txt .notice p {
-    font-size: 3.3vw;
+    font-size: 3vw;
   }
 
-  footer .inner > div .box ul li.red {
-    letter-spacing: -0.07em;
-  }
+
 
   .textCheck li:first-child {
     margin-top: 0;
@@ -95,6 +93,7 @@
     background-size: 3.3vw;
     letter-spacing: -0.025em;
   }
+
   .textCheck li strong.sub {
     padding-left: 0;
     background: none;
@@ -103,5 +102,14 @@
   .textCheck li p {
     font-size: 3.3vw;
     line-height: 1.5;
+  }
+
+  footer .inner>div .box ul li {
+    letter-spacing: -0.07em;
+  }
+
+  footer .inner>div .box ul li.red,
+  footer .inner>div .box ul li.last {
+    letter-spacing: -0.1em;
   }
 }
